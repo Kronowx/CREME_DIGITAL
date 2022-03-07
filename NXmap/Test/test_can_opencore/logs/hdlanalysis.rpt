@@ -1,0 +1,370 @@
+////////////////////////////////////////////////////////////////////////////////
+// NXpython NXpython3 v2020.1
+//
+//
+// Date:              Thu Apr 15 14:56:34 2021
+//
+// Command line       /opt/NanoXplore/NXmap3/2020.1/bin/nxpython3 
+// Distribution:      Ubuntu 18.04.4 LTS
+////////////////////////////////////////////////////////////////////////////////
+
+        |   ----------------------------------------------
+        |   - HDL Source code analysis                   -
+        |   ----------------------------------------------
+REMARK  |     Add Verilog Include Path: can_top.v
+REMARK  |     Add Verilog Include Path: can_registers.v
+REMARK  |     Add Verilog Include Path: can_register_syn.v
+REMARK  |     Add Verilog Include Path: can_register_asyn_syn.v
+REMARK  |     Add Verilog Include Path: can_register_asyn.v
+REMARK  |     Add Verilog Include Path: can_register.v
+REMARK  |     Add Verilog Include Path: can_ibo.v
+REMARK  |     Add Verilog Include Path: can_fifo.v
+REMARK  |     Add Verilog Include Path: can_defines.v
+REMARK  |     Add Verilog Include Path: can_crc.v
+REMARK  |     Add Verilog Include Path: can_btl.v
+REMARK  |     Add Verilog Include Path: can_bsp.v
+REMARK  |     Add Verilog Include Path: can_acf.v
+REMARK  |     The vhdl library search path for library "std" is now "/opt/NanoXplore/NXmap3/2020.1/share/vhdl/std"
+REMARK  |     The vhdl library search path for library "ieee" is now "/opt/NanoXplore/NXmap3/2020.1/share/vhdl/ieee"
+REMARK  |     The vhdl library search path for library "synopsys" is now "/opt/NanoXplore/NXmap3/2020.1/share/vhdl/synopsys"
+REMARK  |     The vhdl library search path for library "vl" is now "/opt/NanoXplore/NXmap3/2020.1/share/vhdl/vl"
+WARNING |     test_controleur_can.vhdl(47): using initial value 'U' for 'sig_clk_i' since it is never assigned
+REMARK  |     test_controleur_can.vhdl(136): going to verilog side to elaborate module 'can_top'
+REMARK  |     can_top.v(214): compiling module 'can_top'
+REMARK  |     can_registers.v(173): compiling module 'can_registers'
+WARNING |     can_registers.v(492): delay control is not supported for synthesis
+WARNING |     can_registers.v(493): delay control is not supported for synthesis
+WARNING |     can_registers.v(494): delay control is not supported for synthesis
+WARNING |     can_registers.v(495): delay control is not supported for synthesis
+WARNING |     can_registers.v(496): delay control is not supported for synthesis
+WARNING |     can_registers.v(497): delay control is not supported for synthesis
+REMARK  |     can_register_asyn_syn.v(77): compiling module 'can_register_asyn_syn(WIDTH=1,RESET_VALUE=1'b1)'
+WARNING |     can_register_asyn_syn.v(103): delay control is not supported for synthesis
+WARNING |     can_register_asyn_syn.v(105): delay control is not supported for synthesis
+WARNING |     can_register_asyn_syn.v(107): delay control is not supported for synthesis
+REMARK  |     can_register_asyn.v(77): compiling module 'can_register_asyn(WIDTH=4)'
+WARNING |     can_register_asyn.v(101): delay control is not supported for synthesis
+WARNING |     can_register_asyn.v(103): delay control is not supported for synthesis
+REMARK  |     can_register_asyn.v(77): compiling module 'can_register_asyn(WIDTH=3)'
+WARNING |     can_register_asyn.v(101): delay control is not supported for synthesis
+WARNING |     can_register_asyn.v(103): delay control is not supported for synthesis
+REMARK  |     can_register_asyn_syn.v(77): compiling module 'can_register_asyn_syn(WIDTH=1,RESET_VALUE=1'b0)'
+WARNING |     can_register_asyn_syn.v(103): delay control is not supported for synthesis
+WARNING |     can_register_asyn_syn.v(105): delay control is not supported for synthesis
+WARNING |     can_register_asyn_syn.v(107): delay control is not supported for synthesis
+REMARK  |     can_register_asyn_syn.v(77): compiling module 'can_register_asyn_syn(WIDTH=2,RESET_VALUE=2'b0)'
+WARNING |     can_register_asyn_syn.v(103): delay control is not supported for synthesis
+WARNING |     can_register_asyn_syn.v(105): delay control is not supported for synthesis
+WARNING |     can_register_asyn_syn.v(107): delay control is not supported for synthesis
+WARNING |     can_registers.v(592): delay control is not supported for synthesis
+WARNING |     can_registers.v(594): delay control is not supported for synthesis
+WARNING |     can_registers.v(609): delay control is not supported for synthesis
+WARNING |     can_registers.v(611): delay control is not supported for synthesis
+WARNING |     can_registers.v(664): delay control is not supported for synthesis
+WARNING |     can_registers.v(666): delay control is not supported for synthesis
+WARNING |     can_registers.v(675): delay control is not supported for synthesis
+WARNING |     can_registers.v(677): delay control is not supported for synthesis
+WARNING |     can_registers.v(686): delay control is not supported for synthesis
+WARNING |     can_registers.v(688): delay control is not supported for synthesis
+WARNING |     can_registers.v(697): delay control is not supported for synthesis
+WARNING |     can_registers.v(699): delay control is not supported for synthesis
+REMARK  |     can_register.v(77): compiling module 'can_register'
+WARNING |     can_register.v(98): delay control is not supported for synthesis
+REMARK  |     can_register_asyn.v(77): compiling module 'can_register_asyn(RESET_VALUE=96)'
+WARNING |     can_register_asyn.v(101): delay control is not supported for synthesis
+WARNING |     can_register_asyn.v(103): delay control is not supported for synthesis
+REMARK  |     can_register_asyn.v(77): compiling module 'can_register_asyn(WIDTH=1)'
+WARNING |     can_register_asyn.v(101): delay control is not supported for synthesis
+WARNING |     can_register_asyn.v(103): delay control is not supported for synthesis
+WARNING |     can_registers.v(835): delay control is not supported for synthesis
+WARNING |     can_registers.v(847): delay control is not supported for synthesis
+WARNING |     can_registers.v(1158): delay control is not supported for synthesis
+WARNING |     can_registers.v(1160): delay control is not supported for synthesis
+WARNING |     can_registers.v(1170): delay control is not supported for synthesis
+WARNING |     can_registers.v(1172): delay control is not supported for synthesis
+WARNING |     can_registers.v(1182): delay control is not supported for synthesis
+WARNING |     can_registers.v(1184): delay control is not supported for synthesis
+WARNING |     can_registers.v(1194): delay control is not supported for synthesis
+WARNING |     can_registers.v(1196): delay control is not supported for synthesis
+WARNING |     can_registers.v(1206): delay control is not supported for synthesis
+WARNING |     can_registers.v(1208): delay control is not supported for synthesis
+WARNING |     can_registers.v(1218): delay control is not supported for synthesis
+WARNING |     can_registers.v(1220): delay control is not supported for synthesis
+WARNING |     can_registers.v(1231): delay control is not supported for synthesis
+WARNING |     can_registers.v(1233): delay control is not supported for synthesis
+WARNING |     can_registers.v(1248): delay control is not supported for synthesis
+WARNING |     can_registers.v(1250): delay control is not supported for synthesis
+REMARK  |     can_btl.v(155): compiling module 'can_btl'
+WARNING |     can_btl.v(269): delay control is not supported for synthesis
+WARNING |     can_btl.v(271): delay control is not supported for synthesis
+WARNING |     can_btl.v(280): delay control is not supported for synthesis
+WARNING |     can_btl.v(282): delay control is not supported for synthesis
+WARNING |     can_btl.v(292): delay control is not supported for synthesis
+WARNING |     can_btl.v(311): delay control is not supported for synthesis
+WARNING |     can_btl.v(323): delay control is not supported for synthesis
+WARNING |     can_btl.v(336): delay control is not supported for synthesis
+WARNING |     can_btl.v(346): delay control is not supported for synthesis
+WARNING |     can_btl.v(348): delay control is not supported for synthesis
+WARNING |     can_btl.v(358): delay control is not supported for synthesis
+WARNING |     can_btl.v(360): delay control is not supported for synthesis
+WARNING |     can_btl.v(370): delay control is not supported for synthesis
+WARNING |     can_btl.v(372): delay control is not supported for synthesis
+WARNING |     can_btl.v(382): expression size 5 truncated to fit in target size 4
+WARNING |     can_btl.v(382): delay control is not supported for synthesis
+WARNING |     can_btl.v(384): delay control is not supported for synthesis
+WARNING |     can_btl.v(413): delay control is not supported for synthesis
+WARNING |     can_btl.v(414): delay control is not supported for synthesis
+WARNING |     can_btl.v(420): delay control is not supported for synthesis
+WARNING |     can_btl.v(421): delay control is not supported for synthesis
+WARNING |     can_btl.v(423): delay control is not supported for synthesis
+WARNING |     can_btl.v(425): delay control is not supported for synthesis
+WARNING |     can_btl.v(429): delay control is not supported for synthesis
+WARNING |     can_btl.v(440): delay control is not supported for synthesis
+WARNING |     can_btl.v(442): delay control is not supported for synthesis
+WARNING |     can_btl.v(444): delay control is not supported for synthesis
+WARNING |     can_btl.v(454): delay control is not supported for synthesis
+WARNING |     can_btl.v(458): delay control is not supported for synthesis
+WARNING |     can_btl.v(460): delay control is not supported for synthesis
+WARNING |     can_btl.v(469): delay control is not supported for synthesis
+WARNING |     can_btl.v(471): delay control is not supported for synthesis
+WARNING |     can_btl.v(473): delay control is not supported for synthesis
+REMARK  |     can_bsp.v(236): compiling module 'can_bsp'
+WARNING |     can_bsp.v(759): delay control is not supported for synthesis
+WARNING |     can_bsp.v(761): delay control is not supported for synthesis
+WARNING |     can_bsp.v(771): delay control is not supported for synthesis
+WARNING |     can_bsp.v(773): delay control is not supported for synthesis
+WARNING |     can_bsp.v(783): delay control is not supported for synthesis
+WARNING |     can_bsp.v(785): delay control is not supported for synthesis
+WARNING |     can_bsp.v(795): delay control is not supported for synthesis
+WARNING |     can_bsp.v(797): delay control is not supported for synthesis
+WARNING |     can_bsp.v(807): delay control is not supported for synthesis
+WARNING |     can_bsp.v(809): delay control is not supported for synthesis
+WARNING |     can_bsp.v(819): delay control is not supported for synthesis
+WARNING |     can_bsp.v(821): delay control is not supported for synthesis
+WARNING |     can_bsp.v(831): delay control is not supported for synthesis
+WARNING |     can_bsp.v(833): delay control is not supported for synthesis
+WARNING |     can_bsp.v(843): delay control is not supported for synthesis
+WARNING |     can_bsp.v(845): delay control is not supported for synthesis
+WARNING |     can_bsp.v(855): delay control is not supported for synthesis
+WARNING |     can_bsp.v(857): delay control is not supported for synthesis
+WARNING |     can_bsp.v(867): delay control is not supported for synthesis
+WARNING |     can_bsp.v(869): delay control is not supported for synthesis
+WARNING |     can_bsp.v(879): delay control is not supported for synthesis
+WARNING |     can_bsp.v(881): delay control is not supported for synthesis
+WARNING |     can_bsp.v(891): delay control is not supported for synthesis
+WARNING |     can_bsp.v(893): delay control is not supported for synthesis
+WARNING |     can_bsp.v(903): delay control is not supported for synthesis
+WARNING |     can_bsp.v(905): delay control is not supported for synthesis
+WARNING |     can_bsp.v(915): delay control is not supported for synthesis
+WARNING |     can_bsp.v(917): delay control is not supported for synthesis
+WARNING |     can_bsp.v(927): delay control is not supported for synthesis
+WARNING |     can_bsp.v(929): delay control is not supported for synthesis
+WARNING |     can_bsp.v(940): delay control is not supported for synthesis
+WARNING |     can_bsp.v(942): delay control is not supported for synthesis
+WARNING |     can_bsp.v(952): delay control is not supported for synthesis
+WARNING |     can_bsp.v(962): delay control is not supported for synthesis
+WARNING |     can_bsp.v(972): delay control is not supported for synthesis
+WARNING |     can_bsp.v(982): delay control is not supported for synthesis
+WARNING |     can_bsp.v(992): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1002): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1011): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1013): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1022): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1024): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1031): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1042): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1053): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1055): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1067): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1069): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1080): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1082): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1092): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1096): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1098): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1100): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1111): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1115): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1117): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1119): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1139): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1140): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1144): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1145): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1156): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1158): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1168): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1170): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1187): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1189): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1198): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1200): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1217): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1219): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1229): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1231): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1240): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1242): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1252): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1254): delay control is not supported for synthesis
+REMARK  |     can_crc.v(75): compiling module 'can_crc'
+WARNING |     can_crc.v(99): delay control is not supported for synthesis
+WARNING |     can_crc.v(103): delay control is not supported for synthesis
+WARNING |     can_crc.v(105): delay control is not supported for synthesis
+REMARK  |     can_acf.v(92): compiling module 'can_acf'
+WARNING |     can_acf.v(355): delay control is not supported for synthesis
+WARNING |     can_acf.v(357): delay control is not supported for synthesis
+WARNING |     can_acf.v(362): delay control is not supported for synthesis
+WARNING |     can_acf.v(364): delay control is not supported for synthesis
+WARNING |     can_acf.v(368): delay control is not supported for synthesis
+WARNING |     can_acf.v(371): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1343): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1345): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1355): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1357): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1367): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1369): delay control is not supported for synthesis
+REMARK  |     can_fifo.v(149): compiling module 'can_fifo'
+WARNING |     can_fifo.v(245): delay control is not supported for synthesis
+WARNING |     can_fifo.v(247): delay control is not supported for synthesis
+WARNING |     can_fifo.v(249): delay control is not supported for synthesis
+WARNING |     can_fifo.v(259): delay control is not supported for synthesis
+WARNING |     can_fifo.v(261): delay control is not supported for synthesis
+WARNING |     can_fifo.v(271): delay control is not supported for synthesis
+WARNING |     can_fifo.v(273): delay control is not supported for synthesis
+WARNING |     can_fifo.v(284): delay control is not supported for synthesis
+WARNING |     can_fifo.v(294): delay control is not supported for synthesis
+WARNING |     can_fifo.v(304): delay control is not supported for synthesis
+WARNING |     can_fifo.v(306): delay control is not supported for synthesis
+WARNING |     can_fifo.v(316): delay control is not supported for synthesis
+WARNING |     can_fifo.v(318): delay control is not supported for synthesis
+WARNING |     can_fifo.v(328): delay control is not supported for synthesis
+WARNING |     can_fifo.v(330): delay control is not supported for synthesis
+WARNING |     can_fifo.v(332): delay control is not supported for synthesis
+WARNING |     can_fifo.v(334): delay control is not supported for synthesis
+WARNING |     can_fifo.v(345): delay control is not supported for synthesis
+WARNING |     can_fifo.v(347): delay control is not supported for synthesis
+WARNING |     can_fifo.v(351): delay control is not supported for synthesis
+WARNING |     can_fifo.v(353): delay control is not supported for synthesis
+WARNING |     can_fifo.v(376): delay control is not supported for synthesis
+WARNING |     can_fifo.v(676): delay control is not supported for synthesis
+WARNING |     can_fifo.v(687): delay control is not supported for synthesis
+WARNING |     can_fifo.v(698): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1433): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1435): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1445): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1447): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1460): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1462): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1471): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1473): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1482): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1484): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1493): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1495): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1505): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1509): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1511): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1522): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1534): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1536): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1545): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1547): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1559): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1561): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1570): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1572): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1581): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1583): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1592): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1594): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1646): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1653): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1655): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1657): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1665): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1667): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1669): delay control is not supported for synthesis
+REMARK  |     can_ibo.v(66): compiling module 'can_ibo'
+WARNING |     can_bsp.v(1756): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1758): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1770): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1772): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1786): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1788): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1799): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1801): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1807): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1809): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1811): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1822): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1824): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1836): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1838): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1847): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1849): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1858): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1860): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1869): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1871): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1880): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1882): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1891): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1893): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1900): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1902): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1909): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1911): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1924): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1926): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1935): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1944): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1946): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1955): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1957): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1965): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1967): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1972): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1977): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1989): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1993): delay control is not supported for synthesis
+WARNING |     can_bsp.v(1995): delay control is not supported for synthesis
+WARNING |     can_bsp.v(2004): delay control is not supported for synthesis
+WARNING |     can_bsp.v(2015): delay control is not supported for synthesis
+WARNING |     can_bsp.v(2017): delay control is not supported for synthesis
+WARNING |     can_bsp.v(2029): delay control is not supported for synthesis
+WARNING |     can_bsp.v(2031): delay control is not supported for synthesis
+WARNING |     can_bsp.v(2043): delay control is not supported for synthesis
+WARNING |     can_bsp.v(2045): delay control is not supported for synthesis
+WARNING |     can_bsp.v(2055): delay control is not supported for synthesis
+WARNING |     can_bsp.v(2057): delay control is not supported for synthesis
+WARNING |     can_bsp.v(2066): delay control is not supported for synthesis
+WARNING |     can_bsp.v(2068): delay control is not supported for synthesis
+WARNING |     can_bsp.v(2077): delay control is not supported for synthesis
+WARNING |     can_bsp.v(2079): delay control is not supported for synthesis
+WARNING |     can_bsp.v(2099): delay control is not supported for synthesis
+WARNING |     can_bsp.v(2101): delay control is not supported for synthesis
+WARNING |     can_bsp.v(2135): delay control is not supported for synthesis
+WARNING |     can_bsp.v(2137): delay control is not supported for synthesis
+WARNING |     can_top.v(758): delay control is not supported for synthesis
+WARNING |     can_top.v(760): delay control is not supported for synthesis
+WARNING |     can_top.v(775): delay control is not supported for synthesis
+WARNING |     can_top.v(776): delay control is not supported for synthesis
+WARNING |     can_top.v(842): delay control is not supported for synthesis
+WARNING |     can_top.v(856): delay control is not supported for synthesis
+WARNING |     can_top.v(857): delay control is not supported for synthesis
+WARNING |     timer_x_bit.vhdl(53): comparison between unequal length arrays always returns FALSE
+REMARK  |     Renaming can_register_asyn_syn(WIDTH=1,RESET_VALUE=1'b1)
+        |          to: can_register_asyn_syn(XA57D77A3)
+REMARK  |     Renaming can_register_asyn(WIDTH=4)
+        |          to: can_register_asyn(X26B27E3E)
+REMARK  |     Renaming can_register_asyn(WIDTH=3)
+        |          to: can_register_asyn(XC5DBFCCC)
+REMARK  |     Renaming can_register_asyn_syn(WIDTH=1,RESET_VALUE=1'b0)
+        |          to: can_register_asyn_syn(X27F1AF3B)
+REMARK  |     Renaming can_register_asyn_syn(WIDTH=2,RESET_VALUE=2'b0)
+        |          to: can_register_asyn_syn(XB9CEC01C)
+REMARK  |     Renaming can_register_asyn(RESET_VALUE=96)
+        |          to: can_register_asyn(X78142282)
+REMARK  |     Renaming can_register_asyn(WIDTH=1)
+        |          to: can_register_asyn(X849D9080)

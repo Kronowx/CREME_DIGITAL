@@ -1,0 +1,21 @@
+////////////////////////////////////////////////////////////////////////////////
+// NXmap NXmap3 v2020.1
+//
+//
+// Date:              Tue Nov 30 16:46:20 2021
+//
+// Command line       /opt/NanoXplore/NXmap3/2020.1/bin/nxmap 
+// Distribution:      Ubuntu 18.04.4 LTS
+////////////////////////////////////////////////////////////////////////////////
+
+        | Running galaxy
+        |   Library created in 513 milli-seconds
+        |   Project created in 163 milli-seconds
+COMMAND |   import sys
+COMMAND |   import traceback
+COMMAND |   from nxmap import *
+COMMAND |   p = createProject()
+REMARK  |   Current directory changed to /mnt/d/ggourves/Documents/Projet/CREME/Software/NXmap/test_PLL
+        |   Library destroyed in 47 milli-seconds
+        |   Project destroyed in 44 milli-seconds
+        |   Done in 14 seconds

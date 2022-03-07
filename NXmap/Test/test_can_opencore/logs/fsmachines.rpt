@@ -1,0 +1,61 @@
+////////////////////////////////////////////////////////////////////////////////
+// NXpython NXpython3 v2020.1
+//
+//
+// Date:              Thu Apr 15 14:56:34 2021
+//
+// Command line       /opt/NanoXplore/NXmap3/2020.1/bin/nxpython3 
+// Distribution:      Ubuntu 18.04.4 LTS
+////////////////////////////////////////////////////////////////////////////////
+
+        |   ----------------------------------------------
+        |   - Finite State Machines Cells analysis       -
+        |   ----------------------------------------------
+        |     
+        |     Fsm 'etat' Analysis:
+        |     	State: NET etat.cs_can_off
+        |     	       DFF etat.cs_can_off_reg
+        |     	State: NET etat.cs_can_on
+        |     	       DFF etat.cs_can_on_reg
+        |     	State: NET etat.init
+        |     	       DFF etat.init_reg
+        |     	State: NET etat.read_data
+        |     	       DFF etat.read_data_reg
+        |     	State: NET etat.set_address_end
+        |     	       DFF etat.set_address_end_reg
+        |     	State: NET etat.set_address_start
+        |     	       DFF etat.set_address_start_reg
+        |     	State: NET etat.wait_time
+        |     	       DFF etat.wait_time_reg
+        |     	State: NET etat.write_data
+        |     	       DFF etat.write_data_reg
+WARNING |     	UNUSED --- etat.write_data
+        |     	State: NET etat.write_data_end
+        |     	       DFF etat.write_data_end_reg
+        |     	State: NET etat.write_data_start
+        |     	       DFF etat.write_data_start_reg
+        |     	Others is active
+        |     	Case is incomplete, Others clause will always be used
+        |     
+        |     Fsm 'etat_futur' Analysis:
+        |     	State: NET etat_futur.cs_can_off
+        |     	       DFF etat_futur.cs_can_off_reg
+        |     	State: NET etat_futur.cs_can_on
+        |     	       DFF etat_futur.cs_can_on_reg
+        |     	State: NET etat_futur.init
+        |     	       DFF etat_futur.init_reg
+        |     	State: NET etat_futur.read_data
+        |     	       DFF etat_futur.read_data_reg
+        |     	State: NET etat_futur.set_address_end
+        |     	       DFF etat_futur.set_address_end_reg
+        |     	State: NET etat_futur.set_address_start
+        |     	       DFF etat_futur.set_address_start_reg
+        |     	State: NET etat_futur.wait_time
+        |     	       DFF etat_futur.wait_time_reg
+        |     	State: NET etat_futur.write_data
+        |     	       DFF etat_futur.write_data_reg
+        |     	State: NET etat_futur.write_data_end
+        |     	       DFF etat_futur.write_data_end_reg
+        |     	State: NET etat_futur.write_data_start
+        |     	       DFF etat_futur.write_data_start_reg
+        |     	Others is not detected

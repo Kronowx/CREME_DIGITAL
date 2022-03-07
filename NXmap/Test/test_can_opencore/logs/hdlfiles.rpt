@@ -1,0 +1,32 @@
+////////////////////////////////////////////////////////////////////////////////
+// NXpython NXpython3 v2020.1
+//
+//
+// Date:              Thu Apr 15 14:56:34 2021
+//
+// Command line       /opt/NanoXplore/NXmap3/2020.1/bin/nxpython3 
+// Distribution:      Ubuntu 18.04.4 LTS
+////////////////////////////////////////////////////////////////////////////////
+
+        |   ----------------------------------------------
+        |   - HDL Source code report                     -
+        |   ----------------------------------------------
+        |     <Library>		:: <File>
+        |     work		:: can_top.v
+        |     work		:: can_registers.v
+        |     work		:: can_register_syn.v
+        |     work		:: can_register_asyn_syn.v
+        |     work		:: can_register_asyn.v
+        |     work		:: can_register.v
+        |     work		:: can_ibo.v
+        |     work		:: can_fifo.v
+        |     work		:: can_defines.v
+        |     work		:: can_crc.v
+        |     work		:: can_btl.v
+        |     work		:: can_bsp.v
+        |     work		:: can_acf.v
+        |     work		:: /opt/NanoXplore/NXmap3/2020.1/share/modelsim/nxLibrary.vhdp
+        |     work		:: test_controleur_can.vhdl
+        |     work		:: timer_x_bit.vhdl
+        |     
+        |     Top Cell: test_controleur_can	(work :: test_controleur_can.vhdl)

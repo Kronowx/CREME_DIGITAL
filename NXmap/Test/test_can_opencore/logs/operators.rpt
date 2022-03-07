@@ -1,0 +1,133 @@
+////////////////////////////////////////////////////////////////////////////////
+// NXpython NXpython3 v2020.1
+//
+//
+// Date:              Thu Apr 15 14:56:34 2021
+//
+// Command line       /opt/NanoXplore/NXmap3/2020.1/bin/nxpython3 
+// Distribution:      Ubuntu 18.04.4 LTS
+////////////////////////////////////////////////////////////////////////////////
+
+        |   ----------------------------------------------
+        |   - Operator Cells analysis                    -
+        |   ----------------------------------------------
+        |     
+        |     Operator 'LessThan_2u_2u'
+        |     	 : LessThan_L722	(line 722 in can_bsp.v)
+        |     
+        |     Operator 'LessThan_3u_3u'
+        |     	 : LessThan_sync_window	(line 389 in can_btl.v)
+        |     	 : LessThan_L742	(line 742 in can_bsp.v)
+        |     	 : LessThan_L1177	(line 1177 in can_bsp.v)
+        |     	 : LessThan_L1208	(line 1208 in can_bsp.v)
+        |     	 : LessThan_storing_header	(line 1329 in can_bsp.v)
+        |     	 : LessThan_L1506	(line 1506 in can_bsp.v)
+        |     	 : LessThan_L1612	(line 1612 in can_bsp.v)
+        |     	 : LessThan_L1624	(line 1624 in can_bsp.v)
+        |     
+        |     Operator 'LessThan_4u_4u'
+        |     	 : LessThan_L736	(line 736 in can_bsp.v)
+        |     	 : LessThan_L1272	(line 1272 in can_bsp.v)
+        |     	 : LessThan_L1273	(line 1273 in can_bsp.v)
+        |     	 : LessThan_L2042	(line 2042 in can_bsp.v)
+        |     
+        |     Operator 'LessThan_5u_5u'
+        |     	 : LessThan_L382	(line 382 in can_btl.v)
+        |     
+        |     Operator 'LessThan_6u_6u'
+        |     	 : LessThan_L2106	(line 2106 in can_bsp.v)
+        |     	 : LessThan_L2108	(line 2108 in can_bsp.v)
+        |     	 : LessThan_L2109	(line 2109 in can_bsp.v)
+        |     
+        |     Operator 'LessThan_8u_8u'
+        |     	 : LessThan_L268	(line 268 in can_btl.v)
+        |     	 : LessThan_L2028	(line 2028 in can_bsp.v)
+        |     	 : LessThan_L746	(line 746 in can_top.v)
+        |     	 : LessThan_L746_1	(line 746 in can_top.v)
+        |     	 : LessThan_L746_2	(line 746 in can_top.v)
+        |     	 : LessThan_L746_3	(line 746 in can_top.v)
+        |     
+        |     Operator 'LessThan_9u_9u'
+        |     	 : LessThan_L1962	(line 1962 in can_bsp.v)
+        |     	 : LessThan_L1964	(line 1964 in can_bsp.v)
+        |     	 : LessThan_L1969	(line 1969 in can_bsp.v)
+        |     	 : LessThan_L1994	(line 1994 in can_bsp.v)
+        |     	 : LessThan_L2014	(line 2014 in can_bsp.v)
+        |     	 : LessThan_L2016	(line 2016 in can_bsp.v)
+        |     	 : LessThan_L2016_1	(line 2016 in can_bsp.v)
+        |     	 : LessThan_L2030	(line 2030 in can_bsp.v)
+        |     	 : LessThan_L2086	(line 2086 in can_bsp.v)
+        |     	 : LessThan_L2086_1	(line 2086 in can_bsp.v)
+        |     	 : LessThan_L2087	(line 2087 in can_bsp.v)
+        |     	 : LessThan_L2087_1	(line 2087 in can_bsp.v)
+        |     
+        |     Operator 'add_2u_2u'
+        |     	 : add_L382	(line 382 in can_btl.v)
+        |     	 : add_L365	(line 365 in can_fifo.v)
+        |     	 : add_L1583	(line 1583 in can_bsp.v)
+        |     
+        |     Operator 'add_3u_3u'
+        |     	 : add_L837	(line 837 in can_registers.v)
+        |     	 : add_L389	(line 389 in can_btl.v)
+        |     	 : add_L710	(line 710 in can_bsp.v)
+        |     	 : add_L1022	(line 1022 in can_bsp.v)
+        |     	 : add_L1069	(line 1069 in can_bsp.v)
+        |     	 : add_L1098	(line 1098 in can_bsp.v)
+        |     	 : add_L1117	(line 1117 in can_bsp.v)
+        |     	 : add_L1357	(line 1357 in can_bsp.v)
+        |     	 : add_L1447	(line 1447 in can_bsp.v)
+        |     	 : add_L1484	(line 1484 in can_bsp.v)
+        |     	 : add_L1495	(line 1495 in can_bsp.v)
+        |     	 : add_L1509	(line 1509 in can_bsp.v)
+        |     	 : add_L1547	(line 1547 in can_bsp.v)
+        |     	 : add_L1572	(line 1572 in can_bsp.v)
+        |     	 : add_L1737	(line 1737 in can_bsp.v)
+        |     	 : add_L1738	(line 1738 in can_bsp.v)
+        |     	 : add_L1871	(line 1871 in can_bsp.v)
+        |     
+        |     Operator 'add_4u_4u'
+        |     	 : add_L300	(line 300 in can_btl.v)
+        |     	 : add_L261	(line 261 in can_fifo.v)
+        |     	 : add_L367	(line 367 in can_fifo.v)
+        |     	 : add_L1330	(line 1330 in can_bsp.v)
+        |     	 : add_L1331	(line 1331 in can_bsp.v)
+        |     	 : add_L1369	(line 1369 in can_bsp.v)
+        |     	 : add_L1390	(line 1390 in can_bsp.v)
+        |     	 : add_L2043	(line 2043 in can_bsp.v)
+        |     
+        |     Operator 'add_5u_5u'
+        |     	 : add_L372	(line 372 in can_btl.v)
+        |     	 : add_L1924	(line 1924 in can_bsp.v)
+        |     
+        |     Operator 'add_6u_6u'
+        |     	 : add_preset_cnt	(line 257 in can_btl.v)
+        |     	 : add_L271	(line 271 in can_fifo.v)
+        |     	 : add_L284	(line 284 in can_fifo.v)
+        |     	 : add_L294	(line 294 in can_fifo.v)
+        |     	 : add_L306	(line 306 in can_fifo.v)
+        |     	 : add_L365_1	(line 365 in can_fifo.v)
+        |     	 : add_L367_1	(line 367 in can_fifo.v)
+        |     	 : add_L1055	(line 1055 in can_bsp.v)
+        |     	 : add_L1758	(line 1758 in can_bsp.v)
+        |     	 : add_L1977	(line 1977 in can_bsp.v)
+        |     	 : add_L2004	(line 2004 in can_bsp.v)
+        |     
+        |     Operator 'add_7u_7u'
+        |     	 : add_L271	(line 271 in can_btl.v)
+        |     	 : add_L330	(line 330 in can_fifo.v)
+        |     	 : add_L332	(line 332 in can_fifo.v)
+        |     	 : add_L334	(line 334 in can_fifo.v)
+        |     	 : add_L351	(line 351 in can_fifo.v)
+        |     	 : add_L353	(line 353 in can_fifo.v)
+        |     
+        |     Operator 'add_8u_8u'
+        |     	 : add_L268	(line 268 in can_btl.v)
+        |     
+        |     Operator 'add_9u_9u'
+        |     	 : add_L1967	(line 1967 in can_bsp.v)
+        |     	 : add_L1972	(line 1972 in can_bsp.v)
+        |     	 : add_L1995	(line 1995 in can_bsp.v)
+        |     
+        |     Operator 'add_32u_32u'
+        |     	 : add_L51	(line 51 in timer_x_bit.vhdl)
+        |     	 : add_L56	(line 56 in timer_x_bit.vhdl)

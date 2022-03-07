@@ -1,0 +1,109 @@
+////////////////////////////////////////////////////////////////////////////////
+// NXpython NXpython3 v2020.1
+//
+//
+// Date:              Thu Apr 15 14:56:34 2021
+//
+// Command line       /opt/NanoXplore/NXmap3/2020.1/bin/nxpython3 
+// Distribution:      Ubuntu 18.04.4 LTS
+////////////////////////////////////////////////////////////////////////////////
+
+        | Synthesizing project (step 1/2) with KEVLAR-5.0
+        |   +---------------------------------------+
+        |   | Options                               |
+        |   +------------------------------+--------+
+        |   | Autosave                     |    Yes |
+        |   | DefaultFSMEncoding           | OneHot |
+        |   | DefaultRAMMapping            |   AUTO |
+        |   | DefaultROMMapping            |   AUTO |
+        |   | DisableAssertionChecking     |     No |
+        |   | DisableKeepPortOrdering      |     No |
+        |   | DisableRAMAlternateForm      |     No |
+        |   | DisableROMFullLutRecognition |     No |
+        |   | IgnoreRAMFlashClear          |     No |
+        |   | ManageUnconnectedOutputs     |  Error |
+        |   | ManageUnconnectedSignals     |  Error |
+        |   | MaxRegisterCount             |   2500 |
+        |   +------------------------------+--------+
+        |   Loading HDL
+        |     Loading succeeded in 1 second
+        |   Initializing design
+        |     Creating cell: 'reduce_nor_8'
+        |     Creating cell: 'can_register_asyn_syn(WIDTH=1,RESET_VALUE=1'b1)'
+        |     Creating cell: 'can_register_asyn(WIDTH=4)'
+        |     Creating cell: 'can_register_asyn(WIDTH=3)'
+        |     Creating cell: 'can_register_asyn_syn(WIDTH=1,RESET_VALUE=1'b0)'
+        |     Creating cell: 'can_register_asyn_syn(WIDTH=2,RESET_VALUE=2'b0)'
+        |     Creating cell: 'reduce_or_2'
+        |     Creating cell: 'can_register'
+        |     Creating cell: 'can_register_asyn(RESET_VALUE=96)'
+        |     Creating cell: 'can_register_asyn(WIDTH=1)'
+        |     Creating cell: 'Mux_3u_8u'
+        |     Creating cell: 'reduce_nor_3'
+        |     Creating cell: 'add_3u_3u'
+        |     Creating cell: 'reduce_and_3'
+        |     Creating cell: 'Mux_6u_64u'
+        |     Creating cell: 'can_registers'
+        |     Creating cell: 'add_6u_6u'
+        |     Creating cell: 'add_8u_8u'
+        |     Creating cell: 'LessThan_8u_8u'
+        |     Creating cell: 'add_7u_7u'
+        |     Creating cell: 'add_4u_4u'
+        |     Creating cell: 'reduce_nor_5'
+        |     Creating cell: 'add_5u_5u'
+        |     Creating cell: 'LessThan_5u_5u'
+        |     Creating cell: 'add_2u_2u'
+        |     Creating cell: 'LessThan_3u_3u'
+        |     Creating cell: 'can_btl'
+        |     Creating cell: 'reduce_nor_4'
+        |     Creating cell: 'reduce_nor_2'
+        |     Creating cell: 'reduce_or_3'
+        |     Creating cell: 'reduce_nor_6'
+        |     Creating cell: 'LessThan_2u_2u'
+        |     Creating cell: 'LessThan_4u_4u'
+        |     Creating cell: 'Decoder_3'
+        |     Creating cell: 'reduce_or_15'
+        |     Creating cell: 'can_crc'
+        |     Creating cell: 'can_acf'
+        |     Creating cell: 'reduce_nor_10'
+        |     Creating cell: 'Select_9'
+        |     Creating cell: 'Select_8'
+        |     Creating cell: 'Select_7'
+        |     Creating cell: 'reduce_nor_7'
+        |     Creating cell: 'reduce_and_6'
+        |     Creating cell: 'ClockedWritePort_6_8_0_63_7_0'
+        |     Creating cell: 'ReadPort_6_8_0_63_7_0'
+        |     Creating cell: 'ClockedWritePort_6_4_0_63_3_0'
+        |     Creating cell: 'ReadPort_6_4_0_63_3_0'
+        |     Creating cell: 'ClockedWritePort_6_1_0_63'
+        |     Creating cell: 'ReadPort_6_1_0_63'
+        |     Creating cell: 'can_fifo'
+        |     Creating cell: 'can_ibo'
+        |     Creating cell: 'Mux_4u_16u'
+        |     Creating cell: 'Mux_5u_32u'
+        |     Creating cell: 'LessThan_9u_9u'
+        |     Creating cell: 'add_9u_9u'
+        |     Creating cell: 'reduce_nor_9'
+        |     Creating cell: 'LessThan_6u_6u'
+        |     Creating cell: 'can_bsp'
+        |     Creating cell: 'can_top'
+        |     Creating cell: 'add_32u_32u'
+        |     Creating cell: 'reduce_nor_32'
+        |     Creating cell: 'timer_x_bit'
+        |     Creating cell: 'reduce_or_5'
+        |     Creating cell: 'Select_3'
+        |     Creating cell: 'Select_5'
+        |     Creating cell: 'reduce_or_7'
+        |     Creating cell: 'Select_4'
+        |     Creating cell: 'reduce_or_6'
+        |     Creating cell: 'reduce_or_8'
+        |     Creating cell: 'test_controleur_can'
+        |     Initializing test_controleur_can as Design Top
+        |     Initializing succeeded in 679 milli-seconds
+        |   Reporting BlackBoxes usage
+        |     Nothing to report
+        |   Reporting Model Directives usage
+        |     Nothing to report
+        |   Reporting Model Initializers usage
+        |     Nothing to report
+        |   Synthesizing project (step 1/2) succeeded in 2 seconds

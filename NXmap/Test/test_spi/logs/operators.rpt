@@ -1,0 +1,49 @@
+////////////////////////////////////////////////////////////////////////////////
+// NXpython NXpython3 v2020.1
+//
+//
+// Date:              Wed Feb 2 16:23:56 2022
+//
+// Command line       /opt/NanoXplore/NXmap3/2020.1/bin/nxpython3 
+// Distribution:      Ubuntu 18.04.4 LTS
+////////////////////////////////////////////////////////////////////////////////
+
+        |   ----------------------------------------------
+        |   - Operator Cells analysis                    -
+        |   ----------------------------------------------
+        |     
+        |     Operator 'add_2u_2u'
+        |     	 : add_wp_p1	(line 98 in ./../../OpenCores/test_SPI/fifo4.v)
+        |     	 : add_rp_p1	(line 108 in ./../../OpenCores/test_SPI/fifo4.v)
+        |     	 : add_L318	(line 318 in ./../../OpenCores/test_SPI/simple_spi_top.v)
+        |     
+        |     Operator 'add_3u_3u'
+        |     	 : add_L292	(line 292 in ./../../OpenCores/test_SPI/simple_spi_top.v)
+        |     
+        |     Operator 'add_8u_8u'
+        |     	 : add_L358	(line 358 in ./SPI_PERIPHERAL.vhdl)
+        |     
+        |     Operator 'add_12u_12u'
+        |     	 : add_L233	(line 233 in ./../../OpenCores/test_SPI/simple_spi_top.v)
+        |     
+        |     Operator 'add_13u_13u'
+        |     	 : add_L456	(line 456 in ./SPI_CONTROLER.vhdl)
+        |     
+        |     Operator 'add_24u_24u'
+        |     	 : add_L572	(line 572 in ./SPI_CONTROLER.vhdl)
+        |   
+        |   ----------------------------------------------
+        |   - Operator Instances processing              -
+        |   ----------------------------------------------
+        |       Adder add_L572
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 6 DSP: 0 ] for: add_L572
+        |       Adder add_L456
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 4 DSP: 0 ] for: add_L456
+        |       Adder spi_peripheral_1|spi_top_1|add_L233
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 3 DSP: 0 ] for: spi_peripheral_1|spi_top_1|add_L233
+        |       Adder spi_peripheral_1|add_L358
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: spi_peripheral_1|add_L358

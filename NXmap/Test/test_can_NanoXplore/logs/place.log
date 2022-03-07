@@ -1,0 +1,147 @@
+////////////////////////////////////////////////////////////////////////////////
+// NXpython NXpython3 v2020.1
+//
+//
+// Date:              Tue Sep 28 12:53:35 2021
+//
+// Command line       /opt/NanoXplore/NXmap3/2020.1/bin/nxpython3 
+// Distribution:      Ubuntu 18.04.4 LTS
+////////////////////////////////////////////////////////////////////////////////
+
+        | Placing project (step 1/5) with PREPAR-5.0
+        |   +--------------------------------------------------------------+
+        |   |       Retained options for 'Placing project (step 1/5)'      |
+        |   +--------------------+--------------------+--------------------+
+        |   |               Name | Asked Value        | Effective Value    |
+        |   +--------------------+--------------------+--------------------+
+        |   |    BypassingEffort | Medium             | Medium             |
+        |   +--------------------+--------------------+--------------------+
+        |   Cleaning design
+        |     Cleaning design succeeded in 25 milli-seconds
+        |   Converting instances
+        |     Extracting HDL locations
+        |       Extracting HDL locations in 19 milli-seconds
+WARNING |     Merging duplicated NX_BD 'nano_T_1|CKB_0' into 'nano_R_1|CKB_0'
+WARNING |     Removing useless BD 'CKB_0' (system -> system)
+WARNING |     Removing useless BD 'CKB_0' (system -> system)
+        |     Converting instances succeeded in 545 milli-seconds
+        |   Converting nets
+        |     Converting nets succeeded in 111 milli-seconds
+        |   Developping instances
+        |     Developping instances succeeded in 488 milli-seconds
+        |   Developping drawers
+        |     Developping drawers succeeded in 64 milli-seconds
+        |   Placing ring
+        |     Assigning <CKG::WFGRack::WFGSpot "SPOT[CKG2:WFG.WFG_C1]" WFG+WFB Free>
+        |     Placing ring succeeded in 1 second
+        |   Cleaving nets
+        |     Cleaving nets succeeded in 165 milli-seconds
+        |   Merging nets
+        |     Merging nets succeeded in 32 milli-seconds
+        |   Cleaning nets
+        |     Cleaning nets succeeded in 3 milli-seconds
+        |   Creating converters
+        |     Creating converters succeeded in 20 milli-seconds
+        |   Bypassing converters with a medium effort
+        |     Bypassing converters with a medium effort succeeded in 10 milli-seconds
+        |   Sharing CSCs
+        |     Sharing CSCs succeeded in 1 milli-second
+        |   Conforming modules
+        |     Conforming modules succeeded in 9 milli-seconds
+        |   Destroying BFF[{~}:1%~rfb_0[D]]
+        |   Checking resources
+        |     Checking resources succeeded in 34 milli-seconds
+        |   Populating core
+        |     Dispatching test_complet_nano in [10 3 20 10]
+        |       Dispatching succeeded in 126 milli-seconds
+REMARK  |     Set automatic aperture constraint to [9 3 21 10]
+        |     Populating core succeeded in 937 milli-seconds
+        |   Routing ring
+        |     Routing ring succeeded in 6 milli-seconds
+        |   Placing project (step 1/5) succeeded in 4 seconds
+////////////////////////////////////////////////////////////////////////////////
+// NXpython NXpython3 v2020.1
+//
+//
+// Date:              Tue Sep 28 12:53:35 2021
+//
+// Command line       /opt/NanoXplore/NXmap3/2020.1/bin/nxpython3 
+// Distribution:      Ubuntu 18.04.4 LTS
+////////////////////////////////////////////////////////////////////////////////
+
+        | Placing project (step 2/5) with STELAR-5.0
+        |   +--------------------------------------------------------------+
+        |   |       Retained options for 'Placing project (step 2/5)'      |
+        |   +--------------------+--------------------+--------------------+
+        |   |               Name | Asked Value        | Effective Value    |
+        |   +--------------------+--------------------+--------------------+
+        |   Dispatching test_complet_nano in [9 3 21 10]
+        |     Dispatching succeeded in 80 milli-seconds
+        |   Placing project (step 2/5) succeeded in 270 milli-seconds
+////////////////////////////////////////////////////////////////////////////////
+// NXpython NXpython3 v2020.1
+//
+//
+// Date:              Tue Sep 28 12:53:35 2021
+//
+// Command line       /opt/NanoXplore/NXmap3/2020.1/bin/nxpython3 
+// Distribution:      Ubuntu 18.04.4 LTS
+////////////////////////////////////////////////////////////////////////////////
+
+        | Placing project (step 3/5) with PULSAR-5.0
+        |   +--------------------------------------------------------------+
+        |   |       Retained options for 'Placing project (step 3/5)'      |
+        |   +--------------------+--------------------+--------------------+
+        |   |               Name | Asked Value        | Effective Value    |
+        |   +--------------------+--------------------+--------------------+
+        |   |   CongestionEffort | High               | High               |
+        |   |      DensityEffort | Low                | Low                |
+        |   |            Dynamic | No                 | No                 |
+        |   |      RoutingEffort | Medium             | Medium             |
+        |   +--------------------+--------------------+--------------------+
+        |   Optimizing routes with effort Medium
+        |     Optimizing routes with effort Medium done in 33 seconds
+        |     +----------------------------------------------------------------------------------------------+
+        |     |                 REPORT [AFTER OPTIMIZING ROUTES] [DENSITY:0.7] [CONGESTION:1]                |
+        |     +--------+--------+---------+------------+------------+----------+----------+---------+--------+
+        |     |  Depth |   Buds | Coarses | Oversize:0 | Overflow:0 | Incoming | Outgoing |   Gauge |  Moves |
+        |     +--------+--------+---------+------------+------------+----------+----------+---------+--------+
+        |     |      1 |    731 |   3.209 |            |            |    1.066 |      710 | 983.294 | 17.647 |
+        |     +--------+--------+---------+------------+------------+----------+----------+---------+--------+
+        |   Placing project (step 3/5) succeeded in 35 seconds
+////////////////////////////////////////////////////////////////////////////////
+// NXpython NXpython3 v2020.1
+//
+//
+// Date:              Tue Sep 28 12:53:35 2021
+//
+// Command line       /opt/NanoXplore/NXmap3/2020.1/bin/nxpython3 
+// Distribution:      Ubuntu 18.04.4 LTS
+////////////////////////////////////////////////////////////////////////////////
+
+        | Placing project (step 4/5) with BLIZAR-5.0
+        |   +--------------------------------------------------------------+
+        |   |       Retained options for 'Placing project (step 4/5)'      |
+        |   +--------------------+--------------------+--------------------+
+        |   |               Name | Asked Value        | Effective Value    |
+        |   +--------------------+--------------------+--------------------+
+        |   |    PolishingEffort | High               | High               |
+        |   +--------------------+--------------------+--------------------+
+        |   Placing project (step 4/5) succeeded in 206 milli-seconds
+////////////////////////////////////////////////////////////////////////////////
+// NXpython NXpython3 v2020.1
+//
+//
+// Date:              Tue Sep 28 12:53:35 2021
+//
+// Command line       /opt/NanoXplore/NXmap3/2020.1/bin/nxpython3 
+// Distribution:      Ubuntu 18.04.4 LTS
+////////////////////////////////////////////////////////////////////////////////
+
+        | Placing project (step 5/5) with QUASAR-5.0
+        |   +--------------------------------------------------------------+
+        |   |       Retained options for 'Placing project (step 5/5)'      |
+        |   +--------------------+--------------------+--------------------+
+        |   |               Name | Asked Value        | Effective Value    |
+        |   +--------------------+--------------------+--------------------+
+        |   Placing project (step 5/5) succeeded in 277 milli-seconds

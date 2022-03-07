@@ -1,0 +1,80 @@
+////////////////////////////////////////////////////////////////////////////////
+// NXpython NXpython3 v2020.1
+//
+//
+// Date:              Wed Feb 2 16:23:56 2022
+//
+// Command line       /opt/NanoXplore/NXmap3/2020.1/bin/nxpython3 
+// Distribution:      Ubuntu 18.04.4 LTS
+////////////////////////////////////////////////////////////////////////////////
+
+        |   ----------------------------------------------
+        |   - Standard Logic processing                  -
+        |   ----------------------------------------------
+        |   Design contains 1 Native Elements
+        |   	1 NX_RAM
+        |   
+        |   Flattening Design
+        |     Exploding Cell: SPI_CONTROLER
+        |     Removed 30 nets (unused)
+        |     Removed 30 instances (unused)
+        |   Analyzing Memory
+        |   Flattening Design
+        |     Exploding Cell: SPI_CONTROLER
+        |   Removed 364 nets (invisible)
+        |   Removed 364 instances (invisible)
+        |     Fake Tristate gate found: converted to And gate - SPI_CONTROLER::spi_peripheral_1|driver_1|i199
+        |     Fake Tristate gate found: converted to And gate - SPI_CONTROLER::spi_peripheral_1|driver_1|i199
+        |     Fake Tristate gate found: converted to And gate - SPI_CONTROLER::spi_peripheral_1|driver_1|i220
+        |     Fake Tristate gate found: converted to And gate - SPI_CONTROLER::spi_peripheral_1|driver_1|i220
+        |     Fake Tristate gate found: converted to And gate - SPI_CONTROLER::spi_peripheral_1|driver_1|i241
+        |     Fake Tristate gate found: converted to And gate - SPI_CONTROLER::spi_peripheral_1|driver_1|i241
+        |     Fake Tristate gate found: converted to And gate - SPI_CONTROLER::spi_peripheral_1|driver_1|i262
+        |     Fake Tristate gate found: converted to And gate - SPI_CONTROLER::spi_peripheral_1|driver_1|i262
+        |     Fake Tristate gate found: converted to And gate - SPI_CONTROLER::spi_peripheral_1|driver_1|i283
+        |     Fake Tristate gate found: converted to And gate - SPI_CONTROLER::spi_peripheral_1|driver_1|i283
+        |     Fake Tristate gate found: converted to And gate - SPI_CONTROLER::spi_peripheral_1|driver_1|i304
+        |     Fake Tristate gate found: converted to And gate - SPI_CONTROLER::spi_peripheral_1|driver_1|i304
+        |     Fake Tristate gate found: converted to And gate - SPI_CONTROLER::spi_peripheral_1|driver_1|i325
+        |     Fake Tristate gate found: converted to And gate - SPI_CONTROLER::spi_peripheral_1|driver_1|i325
+        |     Fake Tristate gate found: converted to And gate - SPI_CONTROLER::spi_peripheral_1|driver_1|i346
+        |     Fake Tristate gate found: converted to And gate - SPI_CONTROLER::spi_peripheral_1|driver_1|i346
+        |     Fake Tristate gate found: converted to And gate - SPI_CONTROLER::spi_peripheral_1|driver_1|i368
+        |     Fake Tristate gate found: converted to And gate - SPI_CONTROLER::spi_peripheral_1|driver_1|i368
+        |     Fake Tristate gate found: converted to And gate - SPI_CONTROLER::spi_peripheral_1|driver_1|i390
+        |     Fake Tristate gate found: converted to And gate - SPI_CONTROLER::spi_peripheral_1|driver_1|i390
+        |   Analyzing Dsp
+        |   Flattening Design
+        |   Boolean optimization ...
+        |     step 1
+        |   Removed 257 nets (invisible)
+        |   Removed 257 instances (invisible)
+        |   Removed 119 nets (invisible)
+        |   Removed 119 instances (invisible)
+        |   Removed 1 net (invisible)
+        |   Removed 1 instance (invisible)
+        |     step 2
+        |   Removed 7 nets (invisible)
+        |   Removed 7 instances (invisible)
+        |   Removed 175 nets (invisible)
+        |   Removed 175 instances (invisible)
+        |     Exploding Cell: SPI_CONTROLER
+        |   Maximum Optimize loops count reached(5): no further optimization
+        |   Mapping logic cell: LOGIC
+        |     Optimizing #Luts ...
+        |     step 1 :
+        |             lut = 510
+        |     step 2 :
+        |             lut = 502
+        |     step 3 :
+        |             lut = 478
+        |     step 4 :
+        |     step 5 :
+        |             lut = 468
+        |     step 6 :
+        |     step 7 :
+        |     final step
+        |             lut = 468
+        |   Flattening logic cell
+        |     Removed 8 nets (unused)
+        |     Removed 4 instances (unused)

@@ -1,0 +1,55 @@
+////////////////////////////////////////////////////////////////////////////////
+// NXpython NXpython3 v2020.1
+//
+//
+// Date:              Thu Apr 15 14:56:34 2021
+//
+// Command line       /opt/NanoXplore/NXmap3/2020.1/bin/nxpython3 
+// Distribution:      Ubuntu 18.04.4 LTS
+////////////////////////////////////////////////////////////////////////////////
+
+REMARK  | Current directory changed to . (logs/general.log: l11)
+REMARK  |     Add Verilog Include Path: can_top.v (logs/hdlanalysis.rpt: l14)
+REMARK  |     Add Verilog Include Path: can_registers.v (logs/hdlanalysis.rpt: l15)
+REMARK  |     Add Verilog Include Path: can_register_syn.v (logs/hdlanalysis.rpt: l16)
+REMARK  |     Add Verilog Include Path: can_register_asyn_syn.v (logs/hdlanalysis.rpt: l17)
+REMARK  |     Add Verilog Include Path: can_register_asyn.v (logs/hdlanalysis.rpt: l18)
+REMARK  |     Add Verilog Include Path: can_register.v (logs/hdlanalysis.rpt: l19)
+REMARK  |     Add Verilog Include Path: can_ibo.v (logs/hdlanalysis.rpt: l20)
+REMARK  |     Add Verilog Include Path: can_fifo.v (logs/hdlanalysis.rpt: l21)
+REMARK  |     Add Verilog Include Path: can_defines.v (logs/hdlanalysis.rpt: l22)
+REMARK  |     Add Verilog Include Path: can_crc.v (logs/hdlanalysis.rpt: l23)
+REMARK  |     Add Verilog Include Path: can_btl.v (logs/hdlanalysis.rpt: l24)
+REMARK  |     Add Verilog Include Path: can_bsp.v (logs/hdlanalysis.rpt: l25)
+REMARK  |     Add Verilog Include Path: can_acf.v (logs/hdlanalysis.rpt: l26)
+REMARK  |     The vhdl library search path for library "std" is now "/opt/NanoXplore/NXmap3/2020.1/share/vhdl/std" (logs/hdlanalysis.rpt: l27)
+REMARK  |     The vhdl library search path for library "ieee" is now "/opt/NanoXplore/NXmap3/2020.1/share/vhdl/ieee" (logs/hdlanalysis.rpt: l28)
+REMARK  |     The vhdl library search path for library "synopsys" is now "/opt/NanoXplore/NXmap3/2020.1/share/vhdl/synopsys" (logs/hdlanalysis.rpt: l29)
+REMARK  |     The vhdl library search path for library "vl" is now "/opt/NanoXplore/NXmap3/2020.1/share/vhdl/vl" (logs/hdlanalysis.rpt: l30)
+REMARK  |     test_controleur_can.vhdl(136): going to verilog side to elaborate module 'can_top' (logs/hdlanalysis.rpt: l32)
+REMARK  |     can_top.v(214): compiling module 'can_top' (logs/hdlanalysis.rpt: l33)
+REMARK  |     can_registers.v(173): compiling module 'can_registers' (logs/hdlanalysis.rpt: l34)
+REMARK  |     can_register_asyn_syn.v(77): compiling module 'can_register_asyn_syn(WIDTH=1,RESET_VALUE=1'b1)' (logs/hdlanalysis.rpt: l41)
+REMARK  |     can_register_asyn.v(77): compiling module 'can_register_asyn(WIDTH=4)' (logs/hdlanalysis.rpt: l45)
+REMARK  |     can_register_asyn.v(77): compiling module 'can_register_asyn(WIDTH=3)' (logs/hdlanalysis.rpt: l48)
+REMARK  |     can_register_asyn_syn.v(77): compiling module 'can_register_asyn_syn(WIDTH=1,RESET_VALUE=1'b0)' (logs/hdlanalysis.rpt: l51)
+REMARK  |     can_register_asyn_syn.v(77): compiling module 'can_register_asyn_syn(WIDTH=2,RESET_VALUE=2'b0)' (logs/hdlanalysis.rpt: l55)
+REMARK  |     can_register.v(77): compiling module 'can_register' (logs/hdlanalysis.rpt: l71)
+REMARK  |     can_register_asyn.v(77): compiling module 'can_register_asyn(RESET_VALUE=96)' (logs/hdlanalysis.rpt: l73)
+REMARK  |     can_register_asyn.v(77): compiling module 'can_register_asyn(WIDTH=1)' (logs/hdlanalysis.rpt: l76)
+REMARK  |     can_btl.v(155): compiling module 'can_btl' (logs/hdlanalysis.rpt: l97)
+REMARK  |     can_bsp.v(236): compiling module 'can_bsp' (logs/hdlanalysis.rpt: l131)
+REMARK  |     can_crc.v(75): compiling module 'can_crc' (logs/hdlanalysis.rpt: l210)
+REMARK  |     can_acf.v(92): compiling module 'can_acf' (logs/hdlanalysis.rpt: l214)
+REMARK  |     can_fifo.v(149): compiling module 'can_fifo' (logs/hdlanalysis.rpt: l227)
+REMARK  |     can_ibo.v(66): compiling module 'can_ibo' (logs/hdlanalysis.rpt: l288)
+REMARK  |     Renaming can_register_asyn_syn(WIDTH=1,RESET_VALUE=1'b1) (logs/hdlanalysis.rpt: l357)
+REMARK  |     Renaming can_register_asyn(WIDTH=4) (logs/hdlanalysis.rpt: l359)
+REMARK  |     Renaming can_register_asyn(WIDTH=3) (logs/hdlanalysis.rpt: l361)
+REMARK  |     Renaming can_register_asyn_syn(WIDTH=1,RESET_VALUE=1'b0) (logs/hdlanalysis.rpt: l363)
+REMARK  |     Renaming can_register_asyn_syn(WIDTH=2,RESET_VALUE=2'b0) (logs/hdlanalysis.rpt: l365)
+REMARK  |     Renaming can_register_asyn(RESET_VALUE=96) (logs/hdlanalysis.rpt: l367)
+REMARK  |     Renaming can_register_asyn(WIDTH=1) (logs/hdlanalysis.rpt: l369)
+REMARK  |     	Asynchronous (Unclocked) Read Port detected (logs/memories.rpt: l31)
+REMARK  |     	Asynchronous (Unclocked) Read Port detected (logs/memories.rpt: l50)
+REMARK  |     	Asynchronous (Unclocked) Read Port detected (logs/memories.rpt: l69)

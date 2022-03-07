@@ -1,0 +1,23 @@
+////////////////////////////////////////////////////////////////////////////////
+// NXpython NXpython3 v2020.1
+//
+//
+// Date:              Tue Sep 28 12:53:35 2021
+//
+// Command line       /opt/NanoXplore/NXmap3/2020.1/bin/nxpython3 
+// Distribution:      Ubuntu 18.04.4 LTS
+////////////////////////////////////////////////////////////////////////////////
+
+        | Generating bitstream of project with BITWIN-5.0
+        |   Creating config lines
+        |     Creating config lines succeeded in 2 seconds
+        |   Creating context lines
+        |     Creating context lines succeeded in 212 milli-seconds
+        |   +------------------------------------+
+        |   |      Configuration bits report     |
+        |   +----------------+---------+---------+
+        |   | Total count    | 6189616 |   100 % |
+        |   | Total used     |  859621 | 13.88 % |
+        |   | Total critical |   72583 |  1.17 % |
+        |   +----------------+---------+---------+
+        |   Generating bitstream of project succeeded in 7 seconds

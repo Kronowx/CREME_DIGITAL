@@ -1,0 +1,386 @@
+////////////////////////////////////////////////////////////////////////////////
+// NXpython NXpython3 v2020.1
+//
+//
+// Date:              Tue Sep 28 12:53:35 2021
+//
+// Command line       /opt/NanoXplore/NXmap3/2020.1/bin/nxpython3 
+// Distribution:      Ubuntu 18.04.4 LTS
+////////////////////////////////////////////////////////////////////////////////
+
+        |   ----------------------------------------------
+        |   - Finite State Machines Cells analysis       -
+        |   ----------------------------------------------
+        |     
+        |     Fsm 'etat' Analysis:
+        |     	State: NET etat.accept_code
+        |     	       DFF etat.accept_code_reg
+        |     	State: NET etat.accept_mask
+        |     	       DFF etat.accept_mask_reg
+        |     	State: NET etat.bus_timing0
+        |     	       DFF etat.bus_timing0_reg
+        |     	State: NET etat.bus_timing1
+        |     	       DFF etat.bus_timing1_reg
+        |     	State: NET etat.catch_read
+        |     	       DFF etat.catch_read_reg
+        |     	State: NET etat.clock_divide
+        |     	       DFF etat.clock_divide_reg
+        |     	State: NET etat.end_reset
+        |     	       DFF etat.end_reset_reg
+        |     	State: NET etat.end_reset2
+        |     	       DFF etat.end_reset2_reg
+        |     	State: NET etat.idle
+        |     	       DFF etat.idle_reg
+        |     	State: NET etat.normal_mode
+        |     	       DFF etat.normal_mode_reg
+        |     	State: NET etat.read_state
+        |     	       DFF etat.read_state_reg
+        |     	State: NET etat.rx_buffer_read
+        |     	       DFF etat.rx_buffer_read_reg
+        |     	State: NET etat.setup_transmission
+        |     	       DFF etat.setup_transmission_reg
+        |     	State: NET etat.start_reset
+        |     	       DFF etat.start_reset_reg
+        |     	State: NET etat.start_transmission
+        |     	       DFF etat.start_transmission_reg
+        |     	State: NET etat.tx_buffer_write
+        |     	       DFF etat.tx_buffer_write_reg
+        |     	State: NET etat.wait_n_clock
+        |     	       DFF etat.wait_n_clock_reg
+        |     	State: NET etat.write_state
+        |     	       DFF etat.write_state_reg
+        |     	Others is active
+        |     	Case is complete, Others clause is redundant and will only be used in OneHotSafe and OneHotSafeExtra modes
+        |     
+        |     Fsm 'etat_futur' Analysis:
+        |     	State: NET etat_futur.accept_code
+        |     	       DFF etat_futur.accept_code_reg
+        |     	State: NET etat_futur.accept_mask
+        |     	       DFF etat_futur.accept_mask_reg
+        |     	State: NET etat_futur.bus_timing0
+        |     	       DFF etat_futur.bus_timing0_reg
+        |     	State: NET etat_futur.bus_timing1
+        |     	       DFF etat_futur.bus_timing1_reg
+        |     	State: NET etat_futur.catch_read
+        |     	       DFF etat_futur.catch_read_reg
+        |     	State: NET etat_futur.clock_divide
+        |     	       DFF etat_futur.clock_divide_reg
+        |     	State: NET etat_futur.end_reset
+        |     	       DFF etat_futur.end_reset_reg
+        |     	State: NET etat_futur.end_reset2
+        |     	       DFF etat_futur.end_reset2_reg
+        |     	State: NET etat_futur.idle
+        |     	       DFF etat_futur.idle_reg
+        |     	State: NET etat_futur.normal_mode
+        |     	       DFF etat_futur.normal_mode_reg
+        |     	State: NET etat_futur.read_state
+        |     	       DFF etat_futur.read_state_reg
+        |     	State: NET etat_futur.rx_buffer_read
+        |     	       DFF etat_futur.rx_buffer_read_reg
+        |     	State: NET etat_futur.setup_transmission
+        |     	       DFF etat_futur.setup_transmission_reg
+        |     	State: NET etat_futur.start_reset
+        |     	       DFF etat_futur.start_reset_reg
+        |     	State: NET etat_futur.start_transmission
+        |     	       DFF etat_futur.start_transmission_reg
+        |     	State: NET etat_futur.tx_buffer_write
+        |     	       DFF etat_futur.tx_buffer_write_reg
+        |     	State: NET etat_futur.wait_n_clock
+        |     	       DFF etat_futur.wait_n_clock_reg
+        |     	State: NET etat_futur.write_state
+        |     	       DFF etat_futur.write_state_reg
+        |     	Others is not detected
+        |     
+        |     Fsm 'etat' Analysis:
+        |     	State: NET etat.accept_code
+        |     	       DFF etat.accept_code_reg
+        |     	State: NET etat.accept_mask
+        |     	       DFF etat.accept_mask_reg
+        |     	State: NET etat.bus_timing0
+        |     	       DFF etat.bus_timing0_reg
+        |     	State: NET etat.bus_timing1
+        |     	       DFF etat.bus_timing1_reg
+        |     	State: NET etat.clock_divide
+        |     	       DFF etat.clock_divide_reg
+        |     	State: NET etat.end_reset
+        |     	       DFF etat.end_reset_reg
+        |     	State: NET etat.end_reset2
+        |     	       DFF etat.end_reset2_reg
+        |     	State: NET etat.idle
+        |     	       DFF etat.idle_reg
+        |     	State: NET etat.normal_mode
+        |     	       DFF etat.normal_mode_reg
+        |     	State: NET etat.setup_transmission
+        |     	       DFF etat.setup_transmission_reg
+        |     	State: NET etat.start_reset
+        |     	       DFF etat.start_reset_reg
+        |     	State: NET etat.start_transmission
+        |     	       DFF etat.start_transmission_reg
+        |     	State: NET etat.tx_buffer_write
+        |     	       DFF etat.tx_buffer_write_reg
+        |     	State: NET etat.wait_n_clock
+        |     	       DFF etat.wait_n_clock_reg
+        |     	State: NET etat.write_state
+        |     	       DFF etat.write_state_reg
+        |     	Others is active
+        |     	Case is complete, Others clause is redundant and will only be used in OneHotSafe and OneHotSafeExtra modes
+        |     
+        |     Fsm 'etat_futur' Analysis:
+        |     	State: NET etat_futur.accept_code
+        |     	       DFF etat_futur.accept_code_reg
+        |     	State: NET etat_futur.accept_mask
+        |     	       DFF etat_futur.accept_mask_reg
+        |     	State: NET etat_futur.bus_timing0
+        |     	       DFF etat_futur.bus_timing0_reg
+        |     	State: NET etat_futur.bus_timing1
+        |     	       DFF etat_futur.bus_timing1_reg
+        |     	State: NET etat_futur.clock_divide
+        |     	       DFF etat_futur.clock_divide_reg
+        |     	State: NET etat_futur.end_reset
+        |     	       DFF etat_futur.end_reset_reg
+        |     	State: NET etat_futur.end_reset2
+        |     	       DFF etat_futur.end_reset2_reg
+        |     	State: NET etat_futur.idle
+        |     	       DFF etat_futur.idle_reg
+        |     	State: NET etat_futur.normal_mode
+        |     	       DFF etat_futur.normal_mode_reg
+        |     	State: NET etat_futur.setup_transmission
+        |     	       DFF etat_futur.setup_transmission_reg
+        |     	State: NET etat_futur.start_reset
+        |     	       DFF etat_futur.start_reset_reg
+        |     	State: NET etat_futur.start_transmission
+        |     	       DFF etat_futur.start_transmission_reg
+        |     	State: NET etat_futur.tx_buffer_write
+        |     	       DFF etat_futur.tx_buffer_write_reg
+        |     	State: NET etat_futur.wait_n_clock
+        |     	       DFF etat_futur.wait_n_clock_reg
+        |     	State: NET etat_futur.write_state
+        |     	       DFF etat_futur.write_state_reg
+        |     	Others is not detected
+        |     
+        |     Fsm 'etat' Analysis:
+        |     	State: NET etat.bus_request_read
+        |     	       DFF etat.bus_request_read_reg
+        |     	State: NET etat.bus_request_write
+        |     	       DFF etat.bus_request_write_reg
+        |     	State: NET etat.idle
+        |     	       DFF etat.idle_reg
+        |     	State: NET etat.read
+        |     	       DFF etat.read_reg
+        |     	State: NET etat.wait_for_ack
+        |     	       DFF etat.wait_for_ack_reg
+        |     	Others is active
+        |     	Case is complete, Others clause is redundant and will only be used in OneHotSafe and OneHotSafeExtra modes
+        |     
+        |     Fsm 'etat_futur' Analysis:
+        |     	State: NET etat_futur.bus_request_read
+        |     	       DFF etat_futur.bus_request_read_reg
+        |     	State: NET etat_futur.bus_request_write
+        |     	       DFF etat_futur.bus_request_write_reg
+        |     	State: NET etat_futur.idle
+        |     	       DFF etat_futur.idle_reg
+        |     	State: NET etat_futur.read
+        |     	       DFF etat_futur.read_reg
+        |     	State: NET etat_futur.wait_for_ack
+        |     	       DFF etat_futur.wait_for_ack_reg
+        |     	Others is not detected
+        |   
+        |   ----------------------------------------------
+        |   - Finite State Machines Instances processing -
+        |   ----------------------------------------------
+        |   
+        |   FSM 'nano_R_1|can_controller_1|driver_1|etat' Mapping:
+        |   	State: bus_request_read
+        |   		Hidden:   nano_R_1|can_controller_1|driver_1|etat.bus_request_read_reg
+        |   	State: bus_request_write
+        |   		Hidden:   nano_R_1|can_controller_1|driver_1|etat.bus_request_write_reg
+        |   	State: idle
+        |   		Hidden:   nano_R_1|can_controller_1|driver_1|etat.idle_reg
+        |   	State: read
+        |   		Hidden:   nano_R_1|can_controller_1|driver_1|etat.read_reg
+        |   	State: wait_for_ack
+        |   		Hidden:   nano_R_1|can_controller_1|driver_1|etat.wait_for_ack_reg
+        |   	Others is used: Case is incomplete in Standard mode
+        |   
+        |   FSM 'nano_R_1|can_controller_1|driver_1|etat_futur' Mapping:
+        |   	State: bus_request_read
+        |   		Hidden:   nano_R_1|can_controller_1|driver_1|etat_futur.bus_request_read_reg
+        |   	State: bus_request_write
+        |   		Hidden:   nano_R_1|can_controller_1|driver_1|etat_futur.bus_request_write_reg
+        |   	State: idle
+        |   		Hidden:   nano_R_1|can_controller_1|driver_1|etat_futur.idle_reg
+        |   	State: read
+        |   		Hidden:   nano_R_1|can_controller_1|driver_1|etat_futur.read_reg
+        |   	State: wait_for_ack
+        |   		Hidden:   nano_R_1|can_controller_1|driver_1|etat_futur.wait_for_ack_reg
+        |   	Others is not present
+        |   
+        |   FSM 'nano_R_1|etat' Mapping:
+        |   	State: accept_code
+        |   		Hidden:   nano_R_1|etat.accept_code_reg
+        |   	State: accept_mask
+        |   		Hidden:   nano_R_1|etat.accept_mask_reg
+        |   	State: bus_timing0
+        |   		Hidden:   nano_R_1|etat.bus_timing0_reg
+        |   	State: bus_timing1
+        |   		Hidden:   nano_R_1|etat.bus_timing1_reg
+        |   	State: catch_read
+        |   		Hidden:   nano_R_1|etat.catch_read_reg
+        |   	State: clock_divide
+        |   		Hidden:   nano_R_1|etat.clock_divide_reg
+        |   	State: end_reset
+        |   		Hidden:   nano_R_1|etat.end_reset_reg
+        |   	State: end_reset2
+        |   		Hidden:   nano_R_1|etat.end_reset2_reg
+        |   	State: idle
+        |   		Hidden:   nano_R_1|etat.idle_reg
+        |   	State: normal_mode
+        |   		Hidden:   nano_R_1|etat.normal_mode_reg
+        |   	State: read_state
+        |   		Hidden:   nano_R_1|etat.read_state_reg
+        |   	State: rx_buffer_read
+        |   		Hidden:   nano_R_1|etat.rx_buffer_read_reg
+        |   	State: setup_transmission
+        |   		Hidden:   nano_R_1|etat.setup_transmission_reg
+        |   	State: start_reset
+        |   		Hidden:   nano_R_1|etat.start_reset_reg
+        |   	State: start_transmission
+        |   		Hidden:   nano_R_1|etat.start_transmission_reg
+        |   	State: tx_buffer_write
+        |   		Hidden:   nano_R_1|etat.tx_buffer_write_reg
+        |   	State: wait_n_clock
+        |   		Hidden:   nano_R_1|etat.wait_n_clock_reg
+        |   	State: write_state
+        |   		Hidden:   nano_R_1|etat.write_state_reg
+        |   	Others is used: Case is incomplete in Standard mode
+        |   
+        |   FSM 'nano_R_1|etat_futur' Mapping:
+        |   	State: accept_code
+        |   		Hidden:   nano_R_1|etat_futur.accept_code_reg
+        |   	State: accept_mask
+        |   		Hidden:   nano_R_1|etat_futur.accept_mask_reg
+        |   	State: bus_timing0
+        |   		Hidden:   nano_R_1|etat_futur.bus_timing0_reg
+        |   	State: bus_timing1
+        |   		Hidden:   nano_R_1|etat_futur.bus_timing1_reg
+        |   	State: catch_read
+        |   		Hidden:   nano_R_1|etat_futur.catch_read_reg
+        |   	State: clock_divide
+        |   		Hidden:   nano_R_1|etat_futur.clock_divide_reg
+        |   	State: end_reset
+        |   		Hidden:   nano_R_1|etat_futur.end_reset_reg
+        |   	State: end_reset2
+        |   		Hidden:   nano_R_1|etat_futur.end_reset2_reg
+        |   	State: idle
+        |   		Hidden:   nano_R_1|etat_futur.idle_reg
+        |   	State: normal_mode
+        |   		Hidden:   nano_R_1|etat_futur.normal_mode_reg
+        |   	State: read_state
+        |   		Hidden:   nano_R_1|etat_futur.read_state_reg
+        |   	State: rx_buffer_read
+        |   		Hidden:   nano_R_1|etat_futur.rx_buffer_read_reg
+        |   	State: setup_transmission
+        |   		Hidden:   nano_R_1|etat_futur.setup_transmission_reg
+        |   	State: start_reset
+        |   		Hidden:   nano_R_1|etat_futur.start_reset_reg
+        |   	State: start_transmission
+        |   		Hidden:   nano_R_1|etat_futur.start_transmission_reg
+        |   	State: tx_buffer_write
+        |   		Hidden:   nano_R_1|etat_futur.tx_buffer_write_reg
+        |   	State: wait_n_clock
+        |   		Hidden:   nano_R_1|etat_futur.wait_n_clock_reg
+        |   	State: write_state
+        |   		Hidden:   nano_R_1|etat_futur.write_state_reg
+        |   	Others is not present
+        |   
+        |   FSM 'nano_T_1|can_controller_1|driver_1|etat' Mapping:
+        |   	State: bus_request_read
+        |   		Hidden:   nano_T_1|can_controller_1|driver_1|etat.bus_request_read_reg
+        |   	State: bus_request_write
+        |   		Hidden:   nano_T_1|can_controller_1|driver_1|etat.bus_request_write_reg
+        |   	State: idle
+        |   		Hidden:   nano_T_1|can_controller_1|driver_1|etat.idle_reg
+        |   	State: read
+        |   		Hidden:   nano_T_1|can_controller_1|driver_1|etat.read_reg
+        |   	State: wait_for_ack
+        |   		Hidden:   nano_T_1|can_controller_1|driver_1|etat.wait_for_ack_reg
+        |   	Others is used: Case is incomplete in Standard mode
+        |   
+        |   FSM 'nano_T_1|can_controller_1|driver_1|etat_futur' Mapping:
+        |   	State: bus_request_read
+        |   		Hidden:   nano_T_1|can_controller_1|driver_1|etat_futur.bus_request_read_reg
+        |   	State: bus_request_write
+        |   		Hidden:   nano_T_1|can_controller_1|driver_1|etat_futur.bus_request_write_reg
+        |   	State: idle
+        |   		Hidden:   nano_T_1|can_controller_1|driver_1|etat_futur.idle_reg
+        |   	State: read
+        |   		Hidden:   nano_T_1|can_controller_1|driver_1|etat_futur.read_reg
+        |   	State: wait_for_ack
+        |   		Hidden:   nano_T_1|can_controller_1|driver_1|etat_futur.wait_for_ack_reg
+        |   	Others is not present
+        |   
+        |   FSM 'nano_T_1|etat' Mapping:
+        |   	State: accept_code
+        |   		Hidden:   nano_T_1|etat.accept_code_reg
+        |   	State: accept_mask
+        |   		Hidden:   nano_T_1|etat.accept_mask_reg
+        |   	State: bus_timing0
+        |   		Hidden:   nano_T_1|etat.bus_timing0_reg
+        |   	State: bus_timing1
+        |   		Hidden:   nano_T_1|etat.bus_timing1_reg
+        |   	State: clock_divide
+        |   		Hidden:   nano_T_1|etat.clock_divide_reg
+        |   	State: end_reset
+        |   		Hidden:   nano_T_1|etat.end_reset_reg
+        |   	State: end_reset2
+        |   		Hidden:   nano_T_1|etat.end_reset2_reg
+        |   	State: idle
+        |   		Hidden:   nano_T_1|etat.idle_reg
+        |   	State: normal_mode
+        |   		Hidden:   nano_T_1|etat.normal_mode_reg
+        |   	State: setup_transmission
+        |   		Hidden:   nano_T_1|etat.setup_transmission_reg
+        |   	State: start_reset
+        |   		Hidden:   nano_T_1|etat.start_reset_reg
+        |   	State: start_transmission
+        |   		Hidden:   nano_T_1|etat.start_transmission_reg
+        |   	State: tx_buffer_write
+        |   		Hidden:   nano_T_1|etat.tx_buffer_write_reg
+        |   	State: wait_n_clock
+        |   		Hidden:   nano_T_1|etat.wait_n_clock_reg
+        |   	State: write_state
+        |   		Hidden:   nano_T_1|etat.write_state_reg
+        |   	Others is used: Case is incomplete in Standard mode
+        |   
+        |   FSM 'nano_T_1|etat_futur' Mapping:
+        |   	State: accept_code
+        |   		Hidden:   nano_T_1|etat_futur.accept_code_reg
+        |   	State: accept_mask
+        |   		Hidden:   nano_T_1|etat_futur.accept_mask_reg
+        |   	State: bus_timing0
+        |   		Hidden:   nano_T_1|etat_futur.bus_timing0_reg
+        |   	State: bus_timing1
+        |   		Hidden:   nano_T_1|etat_futur.bus_timing1_reg
+        |   	State: clock_divide
+        |   		Hidden:   nano_T_1|etat_futur.clock_divide_reg
+        |   	State: end_reset
+        |   		Hidden:   nano_T_1|etat_futur.end_reset_reg
+        |   	State: end_reset2
+        |   		Hidden:   nano_T_1|etat_futur.end_reset2_reg
+        |   	State: idle
+        |   		Hidden:   nano_T_1|etat_futur.idle_reg
+        |   	State: normal_mode
+        |   		Hidden:   nano_T_1|etat_futur.normal_mode_reg
+        |   	State: setup_transmission
+        |   		Hidden:   nano_T_1|etat_futur.setup_transmission_reg
+        |   	State: start_reset
+        |   		Hidden:   nano_T_1|etat_futur.start_reset_reg
+        |   	State: start_transmission
+        |   		Hidden:   nano_T_1|etat_futur.start_transmission_reg
+        |   	State: tx_buffer_write
+        |   		Hidden:   nano_T_1|etat_futur.tx_buffer_write_reg
+        |   	State: wait_n_clock
+        |   		Hidden:   nano_T_1|etat_futur.wait_n_clock_reg
+        |   	State: write_state
+        |   		Hidden:   nano_T_1|etat_futur.write_state_reg
+        |   	Others is not present

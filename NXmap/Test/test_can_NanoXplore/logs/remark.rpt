@@ -1,0 +1,58 @@
+////////////////////////////////////////////////////////////////////////////////
+// NXpython NXpython3 v2020.1
+//
+//
+// Date:              Tue Sep 28 12:53:35 2021
+//
+// Command line       /opt/NanoXplore/NXmap3/2020.1/bin/nxpython3 
+// Distribution:      Ubuntu 18.04.4 LTS
+////////////////////////////////////////////////////////////////////////////////
+
+REMARK  | Current directory changed to . (logs/general.log: l11)
+REMARK  |     Add Verilog Include Path: ./../../OpenCores/can/trunk/rtl/verilog (logs/hdlanalysis.rpt: l14)
+REMARK  |     Add Verilog Include Path: ./../../OpenCores/can/trunk/rtl/verilog (logs/hdlanalysis.rpt: l15)
+REMARK  |     Add Verilog Include Path: ./../../OpenCores/can/trunk/rtl/verilog (logs/hdlanalysis.rpt: l16)
+REMARK  |     Add Verilog Include Path: ./../../OpenCores/can/trunk/rtl/verilog (logs/hdlanalysis.rpt: l17)
+REMARK  |     Add Verilog Include Path: . (logs/hdlanalysis.rpt: l18)
+REMARK  |     Add Verilog Include Path: ./../../OpenCores/can/trunk/rtl/verilog (logs/hdlanalysis.rpt: l19)
+REMARK  |     Add Verilog Include Path: ./../../OpenCores/can/trunk/rtl/verilog (logs/hdlanalysis.rpt: l20)
+REMARK  |     Add Verilog Include Path: ./../../OpenCores/can/trunk/rtl/verilog (logs/hdlanalysis.rpt: l21)
+REMARK  |     Add Verilog Include Path: ./../../OpenCores/can/trunk/rtl/verilog (logs/hdlanalysis.rpt: l22)
+REMARK  |     Add Verilog Include Path: ./../../OpenCores/can/trunk/rtl/verilog (logs/hdlanalysis.rpt: l23)
+REMARK  |     Add Verilog Include Path: ./../../OpenCores/can/trunk/rtl/verilog (logs/hdlanalysis.rpt: l24)
+REMARK  |     Add Verilog Include Path: ./../../OpenCores/can/trunk/rtl/verilog (logs/hdlanalysis.rpt: l25)
+REMARK  |     Add Verilog Include Path: ./../../OpenCores/can/trunk/rtl/verilog (logs/hdlanalysis.rpt: l26)
+REMARK  |     The vhdl library search path for library "std" is now "/opt/NanoXplore/NXmap3/2020.1/share/vhdl/std" (logs/hdlanalysis.rpt: l27)
+REMARK  |     The vhdl library search path for library "ieee" is now "/opt/NanoXplore/NXmap3/2020.1/share/vhdl/ieee" (logs/hdlanalysis.rpt: l28)
+REMARK  |     The vhdl library search path for library "synopsys" is now "/opt/NanoXplore/NXmap3/2020.1/share/vhdl/synopsys" (logs/hdlanalysis.rpt: l29)
+REMARK  |     The vhdl library search path for library "vl" is now "/opt/NanoXplore/NXmap3/2020.1/share/vhdl/vl" (logs/hdlanalysis.rpt: l30)
+REMARK  |     ./can_controller.vhd(157): going to verilog side to elaborate module 'can_top' (logs/hdlanalysis.rpt: l31)
+REMARK  |     ./../../OpenCores/can/trunk/rtl/verilog/can_top.v(214): compiling module 'can_top' (logs/hdlanalysis.rpt: l32)
+REMARK  |     ./../../OpenCores/can/trunk/rtl/verilog/can_registers.v(173): compiling module 'can_registers' (logs/hdlanalysis.rpt: l33)
+REMARK  |     ./../../OpenCores/can/trunk/rtl/verilog/can_register_asyn_syn.v(77): compiling module 'can_register_asyn_syn(WIDTH=1,RESET_VALUE=1'b1)' (logs/hdlanalysis.rpt: l40)
+REMARK  |     ./../../OpenCores/can/trunk/rtl/verilog/can_register_asyn.v(77): compiling module 'can_register_asyn(WIDTH=4)' (logs/hdlanalysis.rpt: l44)
+REMARK  |     ./../../OpenCores/can/trunk/rtl/verilog/can_register_asyn.v(77): compiling module 'can_register_asyn(WIDTH=3)' (logs/hdlanalysis.rpt: l47)
+REMARK  |     ./../../OpenCores/can/trunk/rtl/verilog/can_register_asyn_syn.v(77): compiling module 'can_register_asyn_syn(WIDTH=1,RESET_VALUE=1'b0)' (logs/hdlanalysis.rpt: l50)
+REMARK  |     ./../../OpenCores/can/trunk/rtl/verilog/can_register_asyn_syn.v(77): compiling module 'can_register_asyn_syn(WIDTH=2,RESET_VALUE=2'b0)' (logs/hdlanalysis.rpt: l54)
+REMARK  |     ./../../OpenCores/can/trunk/rtl/verilog/can_register.v(77): compiling module 'can_register' (logs/hdlanalysis.rpt: l70)
+REMARK  |     ./../../OpenCores/can/trunk/rtl/verilog/can_register_asyn.v(77): compiling module 'can_register_asyn(RESET_VALUE=96)' (logs/hdlanalysis.rpt: l72)
+REMARK  |     ./../../OpenCores/can/trunk/rtl/verilog/can_register_asyn.v(77): compiling module 'can_register_asyn(WIDTH=1)' (logs/hdlanalysis.rpt: l75)
+REMARK  |     ./../../OpenCores/can/trunk/rtl/verilog/can_btl.v(155): compiling module 'can_btl' (logs/hdlanalysis.rpt: l96)
+REMARK  |     ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v(236): compiling module 'can_bsp' (logs/hdlanalysis.rpt: l130)
+REMARK  |     ./../../OpenCores/can/trunk/rtl/verilog/can_crc.v(75): compiling module 'can_crc' (logs/hdlanalysis.rpt: l209)
+REMARK  |     ./../../OpenCores/can/trunk/rtl/verilog/can_acf.v(92): compiling module 'can_acf' (logs/hdlanalysis.rpt: l213)
+REMARK  |     ./../../OpenCores/can/trunk/rtl/verilog/can_fifo.v(149): compiling module 'can_fifo' (logs/hdlanalysis.rpt: l226)
+REMARK  |     ./../../OpenCores/can/trunk/rtl/verilog/can_ibo.v(66): compiling module 'can_ibo' (logs/hdlanalysis.rpt: l287)
+REMARK  |     Renaming nx#NX_BD (logs/hdlanalysis.rpt: l361)
+REMARK  |     Renaming can_register_asyn_syn(WIDTH=1,RESET_VALUE=1'b1) (logs/hdlanalysis.rpt: l363)
+REMARK  |     Renaming can_register_asyn(WIDTH=4) (logs/hdlanalysis.rpt: l365)
+REMARK  |     Renaming can_register_asyn(WIDTH=3) (logs/hdlanalysis.rpt: l367)
+REMARK  |     Renaming can_register_asyn_syn(WIDTH=1,RESET_VALUE=1'b0) (logs/hdlanalysis.rpt: l369)
+REMARK  |     Renaming can_register_asyn_syn(WIDTH=2,RESET_VALUE=2'b0) (logs/hdlanalysis.rpt: l371)
+REMARK  |     Renaming can_register_asyn(RESET_VALUE=96) (logs/hdlanalysis.rpt: l373)
+REMARK  |     Renaming can_register_asyn(WIDTH=1) (logs/hdlanalysis.rpt: l375)
+REMARK  |     Renaming wishbone_driver(n_addr=8,n_data=8) (logs/hdlanalysis.rpt: l377)
+REMARK  |     	Asynchronous (Unclocked) Read Port detected (logs/memories.rpt: l31)
+REMARK  |     	Asynchronous (Unclocked) Read Port detected (logs/memories.rpt: l50)
+REMARK  |     	Asynchronous (Unclocked) Read Port detected (logs/memories.rpt: l69)
+REMARK  |     Set automatic aperture constraint to [9 3 21 10] (logs/general.log: l287)

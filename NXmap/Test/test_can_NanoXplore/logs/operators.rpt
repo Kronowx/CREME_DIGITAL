@@ -1,0 +1,439 @@
+////////////////////////////////////////////////////////////////////////////////
+// NXpython NXpython3 v2020.1
+//
+//
+// Date:              Tue Sep 28 12:53:35 2021
+//
+// Command line       /opt/NanoXplore/NXmap3/2020.1/bin/nxpython3 
+// Distribution:      Ubuntu 18.04.4 LTS
+////////////////////////////////////////////////////////////////////////////////
+
+        |   ----------------------------------------------
+        |   - Operator Cells analysis                    -
+        |   ----------------------------------------------
+        |     
+        |     Operator 'LessThan_2u_2u'
+        |     	 : LessThan_L722	(line 722 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     
+        |     Operator 'LessThan_3u_3u'
+        |     	 : LessThan_sync_window	(line 389 in ./../../OpenCores/can/trunk/rtl/verilog/can_btl.v)
+        |     	 : LessThan_L742	(line 742 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : LessThan_L1177	(line 1177 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : LessThan_L1208	(line 1208 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : LessThan_storing_header	(line 1329 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : LessThan_L1506	(line 1506 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : LessThan_L1612	(line 1612 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : LessThan_L1624	(line 1624 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     
+        |     Operator 'LessThan_4u_4u'
+        |     	 : LessThan_L736	(line 736 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : LessThan_L1272	(line 1272 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : LessThan_L1273	(line 1273 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : LessThan_L2042	(line 2042 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     
+        |     Operator 'LessThan_5u_5u'
+        |     	 : LessThan_L382	(line 382 in ./../../OpenCores/can/trunk/rtl/verilog/can_btl.v)
+        |     
+        |     Operator 'LessThan_6u_6u'
+        |     	 : LessThan_L2106	(line 2106 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : LessThan_L2108	(line 2108 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : LessThan_L2109	(line 2109 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     
+        |     Operator 'LessThan_8u_8u'
+        |     	 : LessThan_L268	(line 268 in ./../../OpenCores/can/trunk/rtl/verilog/can_btl.v)
+        |     	 : LessThan_L2028	(line 2028 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : LessThan_L746	(line 746 in ./../../OpenCores/can/trunk/rtl/verilog/can_top.v)
+        |     	 : LessThan_L746_1	(line 746 in ./../../OpenCores/can/trunk/rtl/verilog/can_top.v)
+        |     	 : LessThan_L746_2	(line 746 in ./../../OpenCores/can/trunk/rtl/verilog/can_top.v)
+        |     	 : LessThan_L746_3	(line 746 in ./../../OpenCores/can/trunk/rtl/verilog/can_top.v)
+        |     
+        |     Operator 'LessThan_9u_9u'
+        |     	 : LessThan_L1962	(line 1962 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : LessThan_L1964	(line 1964 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : LessThan_L1969	(line 1969 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : LessThan_L1994	(line 1994 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : LessThan_L2014	(line 2014 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : LessThan_L2016	(line 2016 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : LessThan_L2016_1	(line 2016 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : LessThan_L2030	(line 2030 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : LessThan_L2086	(line 2086 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : LessThan_L2086_1	(line 2086 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : LessThan_L2087	(line 2087 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : LessThan_L2087_1	(line 2087 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     
+        |     Operator 'add_2u_2u'
+        |     	 : add_L382	(line 382 in ./../../OpenCores/can/trunk/rtl/verilog/can_btl.v)
+        |     	 : add_L365	(line 365 in ./../../OpenCores/can/trunk/rtl/verilog/can_fifo.v)
+        |     	 : add_L1583	(line 1583 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     
+        |     Operator 'add_3u_3u'
+        |     	 : add_L837	(line 837 in ./../../OpenCores/can/trunk/rtl/verilog/can_registers.v)
+        |     	 : add_L389	(line 389 in ./../../OpenCores/can/trunk/rtl/verilog/can_btl.v)
+        |     	 : add_L710	(line 710 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : add_L1022	(line 1022 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : add_L1069	(line 1069 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : add_L1098	(line 1098 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : add_L1117	(line 1117 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : add_L1357	(line 1357 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : add_L1447	(line 1447 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : add_L1484	(line 1484 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : add_L1495	(line 1495 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : add_L1509	(line 1509 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : add_L1547	(line 1547 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : add_L1572	(line 1572 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : add_L1737	(line 1737 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : add_L1738	(line 1738 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : add_L1871	(line 1871 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     
+        |     Operator 'add_4u_4u'
+        |     	 : add_L300	(line 300 in ./../../OpenCores/can/trunk/rtl/verilog/can_btl.v)
+        |     	 : add_L261	(line 261 in ./../../OpenCores/can/trunk/rtl/verilog/can_fifo.v)
+        |     	 : add_L367	(line 367 in ./../../OpenCores/can/trunk/rtl/verilog/can_fifo.v)
+        |     	 : add_L1330	(line 1330 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : add_L1331	(line 1331 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : add_L1369	(line 1369 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : add_L1390	(line 1390 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : add_L2043	(line 2043 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : add_L363	(line 363 in ./nano_T.vhd)
+        |     	 : add_L385	(line 385 in ./nano_R.vhd)
+        |     
+        |     Operator 'add_5u_5u'
+        |     	 : add_L372	(line 372 in ./../../OpenCores/can/trunk/rtl/verilog/can_btl.v)
+        |     	 : add_L1924	(line 1924 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     
+        |     Operator 'add_6u_6u'
+        |     	 : add_preset_cnt	(line 257 in ./../../OpenCores/can/trunk/rtl/verilog/can_btl.v)
+        |     	 : add_L271	(line 271 in ./../../OpenCores/can/trunk/rtl/verilog/can_fifo.v)
+        |     	 : add_L284	(line 284 in ./../../OpenCores/can/trunk/rtl/verilog/can_fifo.v)
+        |     	 : add_L294	(line 294 in ./../../OpenCores/can/trunk/rtl/verilog/can_fifo.v)
+        |     	 : add_L306	(line 306 in ./../../OpenCores/can/trunk/rtl/verilog/can_fifo.v)
+        |     	 : add_L365_1	(line 365 in ./../../OpenCores/can/trunk/rtl/verilog/can_fifo.v)
+        |     	 : add_L367_1	(line 367 in ./../../OpenCores/can/trunk/rtl/verilog/can_fifo.v)
+        |     	 : add_L1055	(line 1055 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : add_L1758	(line 1758 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : add_L1977	(line 1977 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : add_L2004	(line 2004 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     
+        |     Operator 'add_7u_7u'
+        |     	 : add_L271	(line 271 in ./../../OpenCores/can/trunk/rtl/verilog/can_btl.v)
+        |     	 : add_L330	(line 330 in ./../../OpenCores/can/trunk/rtl/verilog/can_fifo.v)
+        |     	 : add_L332	(line 332 in ./../../OpenCores/can/trunk/rtl/verilog/can_fifo.v)
+        |     	 : add_L334	(line 334 in ./../../OpenCores/can/trunk/rtl/verilog/can_fifo.v)
+        |     	 : add_L351	(line 351 in ./../../OpenCores/can/trunk/rtl/verilog/can_fifo.v)
+        |     	 : add_L353	(line 353 in ./../../OpenCores/can/trunk/rtl/verilog/can_fifo.v)
+        |     
+        |     Operator 'add_8u_8u'
+        |     	 : add_L268	(line 268 in ./../../OpenCores/can/trunk/rtl/verilog/can_btl.v)
+        |     	 : add_L364	(line 364 in ./nano_T.vhd)
+        |     	 : add_L387	(line 387 in ./nano_T.vhd)
+        |     	 : add_L386	(line 386 in ./nano_R.vhd)
+        |     	 : add_L432	(line 432 in ./nano_R.vhd)
+        |     
+        |     Operator 'add_9u_9u'
+        |     	 : add_L1967	(line 1967 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : add_L1972	(line 1972 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |     	 : add_L1995	(line 1995 in ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v)
+        |   
+        |   ----------------------------------------------
+        |   - Operator Instances processing              -
+        |   ----------------------------------------------
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_bsp|add_L1967
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 3 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|add_L1967
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_bsp|add_L1972
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 3 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|add_L1972
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_bsp|add_L1995
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 3 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|add_L1995
+        |       Adder nano_T_1|can_controller_1|can_top_1|i_can_bsp|add_L1967
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 3 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_bsp|add_L1967
+        |       Adder nano_T_1|can_controller_1|can_top_1|i_can_bsp|add_L1972
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 3 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_bsp|add_L1972
+        |       Adder nano_T_1|can_controller_1|can_top_1|i_can_bsp|add_L1995
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 3 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_bsp|add_L1995
+        |       Adder nano_R_1|add_L386
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_R_1|add_L386
+        |       Adder nano_R_1|add_L432
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_R_1|add_L432
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_btl|add_L268
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_btl|add_L268
+        |       Adder nano_T_1|add_L364
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_T_1|add_L364
+        |       Adder nano_T_1|add_L387
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_T_1|add_L387
+        |       Adder nano_T_1|can_controller_1|can_top_1|i_can_btl|add_L268
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_btl|add_L268
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|add_L330
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|add_L330
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|add_L332
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|add_L332
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|add_L334
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|add_L334
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|add_L351
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|add_L351
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|add_L353
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|add_L353
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_btl|add_L271
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_btl|add_L271
+        |       Adder nano_T_1|can_controller_1|can_top_1|i_can_btl|add_L271
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_btl|add_L271
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_bsp|add_L1055
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|add_L1055
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_bsp|add_L1758
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|add_L1758
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_bsp|add_L1977
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|add_L1977
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_bsp|add_L2004
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|add_L2004
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|add_L271
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|add_L271
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|add_L284
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|add_L284
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|add_L294
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|add_L294
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|add_L306
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|add_L306
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|add_L365_1
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|add_L365_1
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|add_L367_1
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|add_L367_1
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_btl|add_preset_cnt
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_btl|add_preset_cnt
+        |       Adder nano_T_1|can_controller_1|can_top_1|i_can_bsp|add_L1055
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_bsp|add_L1055
+        |       Adder nano_T_1|can_controller_1|can_top_1|i_can_bsp|add_L1758
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_bsp|add_L1758
+        |       Adder nano_T_1|can_controller_1|can_top_1|i_can_bsp|add_L1977
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_bsp|add_L1977
+        |       Adder nano_T_1|can_controller_1|can_top_1|i_can_bsp|add_L2004
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_bsp|add_L2004
+        |       Adder nano_T_1|can_controller_1|can_top_1|i_can_btl|add_preset_cnt
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_btl|add_preset_cnt
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_bsp|add_L1924
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|add_L1924
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_btl|add_L372
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_btl|add_L372
+        |       Adder nano_T_1|can_controller_1|can_top_1|i_can_btl|add_L372
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_btl|add_L372
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_bsp|add_L1331
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 1 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|add_L1331
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_bsp|add_L1390
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 1 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|add_L1390
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_btl|add_L300
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_btl|add_L300
+        |       Adder nano_T_1|can_controller_1|can_top_1|i_can_btl|add_L300
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 2 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_btl|add_L300
+        |       Adder nano_R_1|can_controller_1|can_top_1|i_can_btl|add_L389
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 1 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_btl|add_L389
+        |       Adder nano_T_1|can_controller_1|can_top_1|i_can_btl|add_L389
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 1 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_btl|add_L389
+        |       LessThan nano_R_1|can_controller_1|can_top_1|LessThan_L746
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|LessThan_L746
+        |       LessThan nano_R_1|can_controller_1|can_top_1|LessThan_L746_1
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 3 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|LessThan_L746_1
+        |       LessThan nano_R_1|can_controller_1|can_top_1|LessThan_L746_2
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 2 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|LessThan_L746_2
+        |       LessThan nano_R_1|can_controller_1|can_top_1|LessThan_L746_3
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 2 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|LessThan_L746_3
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2028
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 3 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2028
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_btl|LessThan_L268
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 3 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_btl|LessThan_L268
+        |       LessThan nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2028
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 3 CY: 0 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2028
+        |       LessThan nano_T_1|can_controller_1|can_top_1|i_can_btl|LessThan_L268
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 3 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_btl|LessThan_L268
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_btl|LessThan_L382
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 2 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_btl|LessThan_L382
+        |       LessThan nano_T_1|can_controller_1|can_top_1|i_can_btl|LessThan_L382
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 2 CY: 0 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_btl|LessThan_L382
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L742
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L742
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1177
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1177
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1208
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1208
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1506
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1506
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1612
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1612
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1624
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1624
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_storing_header
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 1 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_storing_header
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_btl|LessThan_sync_window
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 1 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_btl|LessThan_sync_window
+        |       LessThan nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L742
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L742
+        |       LessThan nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1177
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1177
+        |       LessThan nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1208
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1208
+        |       LessThan nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1506
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1506
+        |       LessThan nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1612
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1612
+        |       LessThan nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1624
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1624
+        |       LessThan nano_T_1|can_controller_1|can_top_1|i_can_btl|LessThan_sync_window
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 1 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_btl|LessThan_sync_window
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L722
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L722
+        |       LessThan nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L722
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L722
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L736
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L736
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1272
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1272
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1273
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1273
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2042
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2042
+        |       LessThan nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L736
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L736
+        |       LessThan nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2042
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2042
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1962
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 3 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1962
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1964
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1964
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1969
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1969
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1994
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 3 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1994
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2014
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2014
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2016
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2016
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2016_1
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2016_1
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2030
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2030
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2086
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 3 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2086
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2086_1
+        |       	Will be mapped into a CY  chain
+        |       Standard Map into CY   [ FE: 0 CY: 3 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2086_1
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2087
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2087
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2087_1
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2087_1
+        |       LessThan nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1962
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 3 CY: 0 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1962
+        |       LessThan nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1964
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1964
+        |       LessThan nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1969
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1969
+        |       LessThan nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1994
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 3 CY: 0 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L1994
+        |       LessThan nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2014
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2014
+        |       LessThan nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2016
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2016
+        |       LessThan nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2016_1
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2016_1
+        |       LessThan nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2030
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_T_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2030
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2106
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 2 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2106
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2108
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 1 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2108
+        |       LessThan nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2109
+        |       	Will be mapped into Standard Logic
+        |       Setting  Map into Luts [ FE: 2 CY: 0 DSP: 0 ] for: nano_R_1|can_controller_1|can_top_1|i_can_bsp|LessThan_L2109

@@ -1,0 +1,142 @@
+////////////////////////////////////////////////////////////////////////////////
+// NXpython NXpython3 v2020.1
+//
+//
+// Date:              Tue Sep 28 12:53:35 2021
+//
+// Command line       /opt/NanoXplore/NXmap3/2020.1/bin/nxpython3 
+// Distribution:      Ubuntu 18.04.4 LTS
+////////////////////////////////////////////////////////////////////////////////
+
+        |   ----------------------------------------------
+        |   - Memory Cells analysis                      -
+        |   ----------------------------------------------
+        |     
+        |     HDL 'can_fifo_fifo' Raw description seems to be 'Read after Write'
+        |     	Physical implementation in RF/RAM may not follow it exactly without additional logic
+        |     
+        |     Ram 'can_fifo_fifo' Analysis:
+        |     	Port 0 : 
+        |     		Slc  Size: 0
+        |     		Addr Size: 6
+        |     		Din  Size: 8 (W)
+        |     		Dout Size: 0
+        |     	Port 1 : 
+        |     		Slc  Size: 0
+        |     		Addr Size: 6
+        |     		Din  Size: 0
+        |     		Dout Size: 8 (RA)
+        |     	Array Depth 64
+        |     	Array Width 8
+REMARK  |     	Asynchronous (Unclocked) Read Port detected
+        |     	Check for possible timing/simulation issues
+        |     
+        |     HDL 'can_fifo_length_fifo' Raw description seems to be 'Read after Write'
+        |     	Physical implementation in RF/RAM may not follow it exactly without additional logic
+        |     
+        |     Ram 'can_fifo_length_fifo' Analysis:
+        |     	Port 0 : 
+        |     		Slc  Size: 0
+        |     		Addr Size: 6
+        |     		Din  Size: 4 (W)
+        |     		Dout Size: 0
+        |     	Port 1 : 
+        |     		Slc  Size: 0
+        |     		Addr Size: 6
+        |     		Din  Size: 0
+        |     		Dout Size: 4 (RA)
+        |     	Array Depth 64
+        |     	Array Width 4
+REMARK  |     	Asynchronous (Unclocked) Read Port detected
+        |     	Check for possible timing/simulation issues
+        |     
+        |     HDL 'can_fifo_overrun_info' Raw description seems to be 'Read after Write'
+        |     	Physical implementation in RF/RAM may not follow it exactly without additional logic
+        |     
+        |     Ram 'can_fifo_overrun_info' Analysis:
+        |     	Port 0 : 
+        |     		Slc  Size: 0
+        |     		Addr Size: 6
+        |     		Din  Size: 1 (W)
+        |     		Dout Size: 0
+        |     	Port 1 : 
+        |     		Slc  Size: 0
+        |     		Addr Size: 6
+        |     		Din  Size: 0
+        |     		Dout Size: 1 (RA)
+        |     	Array Depth 64
+        |     	Array Width 1
+REMARK  |     	Asynchronous (Unclocked) Read Port detected
+        |     	Check for possible timing/simulation issues
+        |     
+        |     Rom 'can_registers_clkout_div' Analysis:
+        |     	Port 0 : 
+        |     		Addr Size: 3
+        |     		Dout Size: 3 (RA)
+        |     	Array Depth 8
+        |     	Array Width 3
+        |     	INIT: 000,001,010,011,100,101,110,000
+        |     	Clockless ROM can only mapped into LUT: No explicit ROM instance will be generated
+        |   
+        |   ----------------------------------------------
+        |   - Memory Instances processing                -
+        |   ----------------------------------------------
+        |     NX_RF and NX_RAM instanciation summary
+        |     	Nothing to report
+        |     
+        |     RAM Generation for nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|fifo
+        |     	RAM AUTO mapping into RF elements (default)
+        |     Memory nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|fifo
+        |     	Will be mapped into NX_RF elements
+        |     	Implementing Memory Array: 64 words of 8 bits
+        |     		as 1 x 1 lines of 1 blocks of 64 words of 1 x 16 bits
+        |     		using 1 NX_RFB elements
+WARNING |     Creating pseudo Read Clock (inverted Write Clock) for async port
+        |     
+        |     RAM Generation for nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|length_fifo
+        |     	RAM AUTO mapping into RF elements (default)
+        |     Memory nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|length_fifo
+        |     	Will be mapped into NX_RF elements
+        |     	Implementing Memory Array: 64 words of 4 bits
+        |     		as 1 x 1 lines of 1 blocks of 64 words of 1 x 16 bits
+        |     		using 1 NX_RFB elements
+WARNING |     Creating pseudo Read Clock (inverted Write Clock) for async port
+        |     
+        |     RAM Generation for nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|overrun_info
+        |     	RAM AUTO mapping into RF elements (default)
+        |     Memory nano_R_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|overrun_info
+        |     	Will be mapped into NX_RF elements
+        |     	Implementing Memory Array: 64 words of 1 bits
+        |     		as 1 x 1 lines of 1 blocks of 64 words of 1 x 16 bits
+        |     		using 1 NX_RFB elements
+WARNING |     Creating pseudo Read Clock (inverted Write Clock) for async port
+        |     
+        |     RAM Generation for nano_T_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|fifo
+        |     	RAM AUTO mapping into RF elements (default)
+        |     Memory nano_T_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|fifo
+        |     	Will be mapped into NX_RF elements
+        |     	Implementing Memory Array: 64 words of 8 bits
+        |     		as 1 x 1 lines of 1 blocks of 64 words of 1 x 16 bits
+        |     		using 1 NX_RFB elements
+WARNING |     Creating pseudo Read Clock (inverted Write Clock) for async port
+        |     
+        |     RAM Generation for nano_T_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|length_fifo
+        |     	RAM AUTO mapping into RF elements (default)
+        |     Memory nano_T_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|length_fifo
+        |     	Will be mapped into NX_RF elements
+        |     	Implementing Memory Array: 64 words of 4 bits
+        |     		as 1 x 1 lines of 1 blocks of 64 words of 1 x 16 bits
+        |     		using 1 NX_RFB elements
+WARNING |     Creating pseudo Read Clock (inverted Write Clock) for async port
+        |     
+        |     RAM Generation for nano_T_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|overrun_info
+        |     	RAM AUTO mapping into RF elements (default)
+        |     Memory nano_T_1|can_controller_1|can_top_1|i_can_bsp|i_can_fifo|overrun_info
+        |     	Will be mapped into NX_RF elements
+        |     	Implementing Memory Array: 64 words of 1 bits
+        |     		as 1 x 1 lines of 1 blocks of 64 words of 1 x 16 bits
+        |     		using 1 NX_RFB elements
+WARNING |     Creating pseudo Read Clock (inverted Write Clock) for async port
+        |     
+        |     NX_RF and NX_RAM usage summary
+        |     	Design uses 6 NX_RF blocks

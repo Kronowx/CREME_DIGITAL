@@ -1,0 +1,396 @@
+////////////////////////////////////////////////////////////////////////////////
+// NXpython NXpython3 v2020.1
+//
+//
+// Date:              Tue Sep 28 12:53:35 2021
+//
+// Command line       /opt/NanoXplore/NXmap3/2020.1/bin/nxpython3 
+// Distribution:      Ubuntu 18.04.4 LTS
+////////////////////////////////////////////////////////////////////////////////
+
+REMARK  | Current directory changed to .
+        | Using variant: NG-MEDIUM
+        | Calibrating plane
+        |   Calibrating plane succeeded
+        | Characterizing plane
+        |   Characterizing library
+        |     Characterizing library done in 214 milli-seconds
+        |   Characterizing plane done in 4 seconds
+        | Synthesizing project (step 1/2) with KEVLAR-5.0
+        |   +---------------------------------------+
+        |   | Options                               |
+        |   +------------------------------+--------+
+        |   | Autosave                     |    Yes |
+        |   | DefaultFSMEncoding           | OneHot |
+        |   | DefaultRAMMapping            |   AUTO |
+        |   | DefaultROMMapping            |   AUTO |
+        |   | DisableAssertionChecking     |     No |
+        |   | DisableKeepPortOrdering      |     No |
+        |   | DisableRAMAlternateForm      |     No |
+        |   | DisableROMFullLutRecognition |     No |
+        |   | IgnoreRAMFlashClear          |     No |
+        |   | ManageUnconnectedOutputs     |  Error |
+        |   | ManageUnconnectedSignals     |  Error |
+        |   | MaxRegisterCount             |   2500 |
+        |   +------------------------------+--------+
+        |   Loading HDL
+        |     Loading succeeded in 1 second
+        |   Initializing design
+        |     Creating cell: 'reduce_nor_8'
+        |     Creating cell: 'can_register_asyn_syn(WIDTH=1,RESET_VALUE=1'b1)'
+        |     Creating cell: 'can_register_asyn(WIDTH=4)'
+        |     Creating cell: 'can_register_asyn(WIDTH=3)'
+        |     Creating cell: 'can_register_asyn_syn(WIDTH=1,RESET_VALUE=1'b0)'
+        |     Creating cell: 'can_register_asyn_syn(WIDTH=2,RESET_VALUE=2'b0)'
+        |     Creating cell: 'reduce_or_2'
+        |     Creating cell: 'can_register'
+        |     Creating cell: 'can_register_asyn(RESET_VALUE=96)'
+        |     Creating cell: 'can_register_asyn(WIDTH=1)'
+        |     Creating cell: 'Mux_3u_8u'
+        |     Creating cell: 'reduce_nor_3'
+        |     Creating cell: 'add_3u_3u'
+        |     Creating cell: 'reduce_and_3'
+        |     Creating cell: 'Mux_6u_64u'
+        |     Creating cell: 'can_registers'
+        |     Creating cell: 'add_6u_6u'
+        |     Creating cell: 'add_8u_8u'
+        |     Creating cell: 'LessThan_8u_8u'
+        |     Creating cell: 'add_7u_7u'
+        |     Creating cell: 'add_4u_4u'
+        |     Creating cell: 'reduce_nor_5'
+        |     Creating cell: 'add_5u_5u'
+        |     Creating cell: 'LessThan_5u_5u'
+        |     Creating cell: 'add_2u_2u'
+        |     Creating cell: 'LessThan_3u_3u'
+        |     Creating cell: 'can_btl'
+        |     Creating cell: 'reduce_nor_4'
+        |     Creating cell: 'reduce_nor_2'
+        |     Creating cell: 'reduce_or_3'
+        |     Creating cell: 'reduce_nor_6'
+        |     Creating cell: 'LessThan_2u_2u'
+        |     Creating cell: 'LessThan_4u_4u'
+        |     Creating cell: 'Decoder_3'
+        |     Creating cell: 'reduce_or_15'
+        |     Creating cell: 'can_crc'
+        |     Creating cell: 'can_acf'
+        |     Creating cell: 'reduce_nor_10'
+        |     Creating cell: 'Select_9'
+        |     Creating cell: 'Select_8'
+        |     Creating cell: 'Select_7'
+        |     Creating cell: 'reduce_nor_7'
+        |     Creating cell: 'reduce_and_6'
+        |     Creating cell: 'ClockedWritePort_6_8_0_63_7_0'
+        |     Creating cell: 'ReadPort_6_8_0_63_7_0'
+        |     Creating cell: 'ClockedWritePort_6_4_0_63_3_0'
+        |     Creating cell: 'ReadPort_6_4_0_63_3_0'
+        |     Creating cell: 'ClockedWritePort_6_1_0_63'
+        |     Creating cell: 'ReadPort_6_1_0_63'
+        |     Creating cell: 'can_fifo'
+        |     Creating cell: 'can_ibo'
+        |     Creating cell: 'Mux_4u_16u'
+        |     Creating cell: 'Mux_5u_32u'
+        |     Creating cell: 'LessThan_9u_9u'
+        |     Creating cell: 'add_9u_9u'
+        |     Creating cell: 'reduce_nor_9'
+        |     Creating cell: 'LessThan_6u_6u'
+        |     Creating cell: 'can_bsp'
+        |     Creating cell: 'can_top'
+        |     Creating cell: 'reduce_or_4'
+        |     Creating cell: 'Select_4'
+        |     Creating cell: 'Select_3'
+        |     Creating cell: 'Select_5'
+        |     Creating cell: 'wishbone_driver(n_addr=8,n_data=8)'
+        |     Creating cell: 'can_controller'
+        |     Creating cell: 'reduce_nor_15'
+        |     Creating cell: 'reduce_or_10'
+        |     Creating cell: 'reduce_or_5'
+        |     Creating cell: 'reduce_or_9'
+        |     Creating cell: 'reduce_or_8'
+        |     Creating cell: 'reduce_or_7'
+        |     Creating cell: 'reduce_or_6'
+        |     Creating cell: 'reduce_or_12'
+        |     Creating cell: 'reduce_or_11'
+        |     Creating cell: 'Select_6'
+        |     Creating cell: 'reduce_or_13'
+        |     Creating cell: 'reduce_or_14'
+        |     Creating cell: 'nano_T'
+        |     Creating cell: 'reduce_nor_18'
+        |     Creating cell: 'reduce_or_17'
+        |     Creating cell: 'nano_R'
+        |     Creating cell: 'test_complet_nano'
+        |     Initializing test_complet_nano as Design Top
+        |     Initializing succeeded in 349 milli-seconds
+        |   Reporting BlackBoxes usage
+        |     Nothing to report
+        |   Reporting Model Directives usage
+        |     Nothing to report
+        |   Reporting Model Initializers usage
+        |     Nothing to report
+        |   Synthesizing project (step 1/2) succeeded in 1 second
+        | Saving archive in 'synthesized-auto.nym'
+        |   Saving succeeded in 2 seconds
+        | Synthesizing project (step 2/2) with PLANAR-5.0
+        |   +---------------------------------------+
+        |   | Options                               |
+        |   +------------------------------+--------+
+        |   | Autosave                     |    Yes |
+        |   | DisableAdderBasicMerge       |     No |
+        |   | DisableAdderTreeOptimization |     No |
+        |   | DisableAdderTrivialRemoval   |     No |
+        |   | DisableDSPAluOperator        |     No |
+        |   | DisableDSPFullRecognition    |     No |
+        |   | DisableDSPPreOperator        |     No |
+        |   | DisableDSPRegisters          |     No |
+        |   | DisableLoadAndResetBypass    |     No |
+        |   | DisableRAMRegisters          |     No |
+        |   | ManageAsynchronousReadPort   |    Yes |
+        |   | ManageUninitializedLoops     |     No |
+        |   | MappingEffort                |   High |
+        |   | MaxRegisterCount             |   2500 |
+        |   | OptimizedMux                 |    Yes |
+        |   | VariantAwareSynthesis        |    Yes |
+        |   +------------------------------+--------+
+        |   Pre-mapping constant cells
+        |     Pre-mapping constant cells succeeded in 2 milli-seconds
+        |   Pre-mapping-hier dff cells
+        |     Pre-mapping-hier dff cells succeeded in 2 milli-seconds
+        |   Pre-mapping-hier adders
+        |     Normalize adders
+        |     Found Generator: add_3u_3u::GENE_ADD / false : 3 : 0 : 3 : 3
+        |     Found Generator: add_6u_6u::GENE_ADD / false : 6 : 0 : 6 : 6
+        |     Found Generator: add_8u_8u::GENE_ADD / false : 8 : 0 : 8 : 8
+        |     Found Generator: add_7u_7u::GENE_ADD / false : 7 : 0 : 7 : 7
+        |     Found Generator: add_4u_4u::GENE_ADD / false : 4 : 0 : 4 : 4
+        |     Found Generator: add_5u_5u::GENE_ADD / false : 5 : 0 : 5 : 5
+        |     Found Generator: add_2u_2u::GENE_ADD / false : 2 : 0 : 2 : 2
+        |     Found Generator: add_9u_9u::GENE_ADD / false : 9 : 0 : 9 : 9
+        |     Classify adders
+        |     Found Generator: add_3u_3u::GENE_ADD / false : 3 : 0 : 3 : 3
+        |     Found Generator: add_6u_6u::GENE_ADD / false : 6 : 0 : 6 : 6
+        |     Found Generator: add_8u_8u::GENE_ADD / false : 8 : 0 : 8 : 8
+        |     Found Generator: add_7u_7u::GENE_ADD / false : 7 : 0 : 7 : 7
+        |     Found Generator: add_4u_4u::GENE_ADD / false : 4 : 0 : 4 : 4
+        |     Found Generator: add_5u_5u::GENE_ADD / false : 5 : 0 : 5 : 5
+        |     Found Generator: add_2u_2u::GENE_ADD / false : 2 : 0 : 2 : 2
+        |     Found Generator: add_9u_9u::GENE_ADD / false : 9 : 0 : 9 : 9
+        |     Collapse: Merging Linked adders
+        |     Remove Trivial adders
+        |     Pre-mapping-hier adders succeeded in 24 milli-seconds
+        |   Flattening Top Module cell:
+        |     Flattening Module cells succeeded in 1 second
+        |   Pre-mapping memories
+        |     Pre-mapping memories succeeded in 141 milli-seconds
+        |   Flattening Top Module cell:
+        |     Flattening Module cells succeeded in 543 milli-seconds
+        |   Pre-mapping constant cells
+        |     Pre-mapping constant cells succeeded in 17 milli-seconds
+        |   Pre-mapping tristate cells
+        |     Pre-mapping tristate cells succeeded in 1 milli-second
+        |   Pre-mapping latch cells
+        |     Pre-mapping latch cells succeeded in 0 milli-second
+        |   Pre-mapping dff cells
+        |     Pre-mapping dff cells succeeded in 559 milli-seconds
+        |   Pre-mapping dsp groups
+        |     Collapse: Merging dsp groups
+        |     Pre-mapping dsp groups succeeded in 0 milli-second
+        |   Flattening Top Module cell:
+        |     Flattening Module cells succeeded in 52 milli-seconds
+        |   Pre-mapping top pads
+        |     Pre-mapping top pads succeeded in 0 milli-second
+        |   Pre-mapping top pads
+        |     Pre-mapping top pads succeeded in 3 milli-seconds
+        |   Preparing logic cell: LOGIC from: test_complet_nano
+        |     Preparing logic cell succeeded in 488 milli-seconds
+        |   Optimize cycle 1
+        |   Optimize cycle 2
+        |   Optimize cycle 3
+        |   Optimize cycle 4
+        |     Mapping logic cell succeeded in 2 minutes and 3 seconds
+        |   Post-mapping adders
+        |     Post-mapping adders succeeded in 12 milli-seconds
+        |   Post-mapping GenMultiplier
+        |     Post-mapping GenMultiplier succeeded in 0 milli-second
+        |   Post-mapping lessThan
+        |     Post-mapping lessThan succeeded in 224 milli-seconds
+        |   Post-mapping adders cleanup
+        |     Post-mapping adders cleanup succeeded in 4 milli-seconds
+        |     Flattening logic cell succeeded in 169 milli-seconds
+        |   Post-mapping lut cells
+        |     Post-mapping lut cells succeeded in 182 milli-seconds
+        |   Post-mapping adder cells
+        |     Post-mapping adder cells succeeded in 3 milli-seconds
+        |   Post-mapping dsp cells
+        |     Post-mapping dsp cells succeeded in 0 milli-second
+        |   Post-mapping rfb cells
+        |     Post-mapping rfb cells succeeded in 0 milli-second
+        |   Post-mapping dff cells
+        |     Post-mapping dff cells succeeded in 73 milli-seconds
+        |   Post-mapping top pads
+        |     Created 9 Pads
+        |     Post-mapping top pads succeeded in 41 milli-seconds
+        |   Checking design
+        |     Checking design succeeded in 19 milli-seconds
+        |   Reporting Instance Directives usage
+        |     Nothing to report
+        |   Reporting Instance Initializers usage
+        |     Nothing to report
+        |   Reporting instances
+        |   Synthesizing project (step 2/2) succeeded in 2 minutes and 18 seconds
+        | Saving archive in 'mapped-auto.nym'
+        |   Saving succeeded in 78 milli-seconds
+        | Placing project (step 1/5) with PREPAR-5.0
+        |   +--------------------------------------------------------------+
+        |   |       Retained options for 'Placing project (step 1/5)'      |
+        |   +--------------------+--------------------+--------------------+
+        |   |               Name | Asked Value        | Effective Value    |
+        |   +--------------------+--------------------+--------------------+
+        |   |    BypassingEffort | Medium             | Medium             |
+        |   +--------------------+--------------------+--------------------+
+        |   Cleaning design
+        |     Cleaning design succeeded in 25 milli-seconds
+        |   Converting instances
+        |     Extracting HDL locations
+        |       Extracting HDL locations in 19 milli-seconds
+WARNING |     Merging duplicated NX_BD 'nano_T_1|CKB_0' into 'nano_R_1|CKB_0'
+WARNING |     Removing useless BD 'CKB_0' (system -> system)
+WARNING |     Removing useless BD 'CKB_0' (system -> system)
+        |     Converting instances succeeded in 545 milli-seconds
+        |   Converting nets
+        |     Converting nets succeeded in 111 milli-seconds
+        |   Developping instances
+        |     Developping instances succeeded in 488 milli-seconds
+        |   Developping drawers
+        |     Developping drawers succeeded in 64 milli-seconds
+        |   Placing ring
+        |     Assigning <CKG::WFGRack::WFGSpot "SPOT[CKG2:WFG.WFG_C1]" WFG+WFB Free>
+        |     Placing ring succeeded in 1 second
+        |   Cleaving nets
+        |     Cleaving nets succeeded in 165 milli-seconds
+        |   Merging nets
+        |     Merging nets succeeded in 32 milli-seconds
+        |   Cleaning nets
+        |     Cleaning nets succeeded in 3 milli-seconds
+        |   Creating converters
+        |     Creating converters succeeded in 20 milli-seconds
+        |   Bypassing converters with a medium effort
+        |     Bypassing converters with a medium effort succeeded in 10 milli-seconds
+        |   Sharing CSCs
+        |     Sharing CSCs succeeded in 1 milli-second
+        |   Conforming modules
+        |     Conforming modules succeeded in 9 milli-seconds
+        |   Destroying BFF[{~}:1%~rfb_0[D]]
+        |   Checking resources
+        |     Checking resources succeeded in 34 milli-seconds
+        |   Populating core
+        |     Dispatching test_complet_nano in [10 3 20 10]
+        |       Dispatching succeeded in 126 milli-seconds
+REMARK  |     Set automatic aperture constraint to [9 3 21 10]
+        |     Populating core succeeded in 937 milli-seconds
+        |   Routing ring
+        |     Routing ring succeeded in 6 milli-seconds
+        |   Placing project (step 1/5) succeeded in 4 seconds
+        | Saving archive in 'prepared-auto.nym'
+        |   Saving succeeded in 159 milli-seconds
+        | Placing project (step 2/5) with STELAR-5.0
+        |   +--------------------------------------------------------------+
+        |   |       Retained options for 'Placing project (step 2/5)'      |
+        |   +--------------------+--------------------+--------------------+
+        |   |               Name | Asked Value        | Effective Value    |
+        |   +--------------------+--------------------+--------------------+
+        |   Dispatching test_complet_nano in [9 3 21 10]
+        |     Dispatching succeeded in 80 milli-seconds
+        |   Placing project (step 2/5) succeeded in 270 milli-seconds
+        | Saving archive in 'spreaded-auto.nym'
+        |   Saving succeeded in 162 milli-seconds
+        | Placing project (step 3/5) with PULSAR-5.0
+        |   +--------------------------------------------------------------+
+        |   |       Retained options for 'Placing project (step 3/5)'      |
+        |   +--------------------+--------------------+--------------------+
+        |   |               Name | Asked Value        | Effective Value    |
+        |   +--------------------+--------------------+--------------------+
+        |   |   CongestionEffort | High               | High               |
+        |   |      DensityEffort | Low                | Low                |
+        |   |            Dynamic | No                 | No                 |
+        |   |      RoutingEffort | Medium             | Medium             |
+        |   +--------------------+--------------------+--------------------+
+        |   Optimizing routes with effort Medium
+        |     Optimizing routes with effort Medium done in 33 seconds
+        |     +----------------------------------------------------------------------------------------------+
+        |     |                 REPORT [AFTER OPTIMIZING ROUTES] [DENSITY:0.7] [CONGESTION:1]                |
+        |     +--------+--------+---------+------------+------------+----------+----------+---------+--------+
+        |     |  Depth |   Buds | Coarses | Oversize:0 | Overflow:0 | Incoming | Outgoing |   Gauge |  Moves |
+        |     +--------+--------+---------+------------+------------+----------+----------+---------+--------+
+        |     |      1 |    731 |   3.209 |            |            |    1.066 |      710 | 983.294 | 17.647 |
+        |     +--------+--------+---------+------------+------------+----------+----------+---------+--------+
+        |   Placing project (step 3/5) succeeded in 35 seconds
+        | Saving archive in 'placed-auto.nym'
+        |   Saving succeeded in 200 milli-seconds
+        | Placing project (step 4/5) with BLIZAR-5.0
+        |   +--------------------------------------------------------------+
+        |   |       Retained options for 'Placing project (step 4/5)'      |
+        |   +--------------------+--------------------+--------------------+
+        |   |               Name | Asked Value        | Effective Value    |
+        |   +--------------------+--------------------+--------------------+
+        |   |    PolishingEffort | High               | High               |
+        |   +--------------------+--------------------+--------------------+
+        |   Placing project (step 4/5) succeeded in 206 milli-seconds
+        | Saving archive in 'polished-auto.nym'
+        |   Saving succeeded in 220 milli-seconds
+        | Placing project (step 5/5) with QUASAR-5.0
+        |   +--------------------------------------------------------------+
+        |   |       Retained options for 'Placing project (step 5/5)'      |
+        |   +--------------------+--------------------+--------------------+
+        |   |               Name | Asked Value        | Effective Value    |
+        |   +--------------------+--------------------+--------------------+
+        |   Placing project (step 5/5) succeeded in 277 milli-seconds
+        | Saving archive in 'squaded-auto.nym'
+        |   Saving succeeded in 203 milli-seconds
+        | Routing project (step 1/3) with GUEPAR-5.0
+        |   +--------------------------------------------------------------+
+        |   |       Retained options for 'Routing project (step 1/3)'      |
+        |   +--------------------+--------------------+--------------------+
+        |   |               Name | Asked Value        | Effective Value    |
+        |   +--------------------+--------------------+--------------------+
+        |   |            Dynamic | No                 | No                 |
+        |   +--------------------+--------------------+--------------------+
+        |   Routing project (step 1/3) succeeded in 3 seconds
+        | Saving archive in 'grouped-auto.nym'
+        |   Saving succeeded in 243 milli-seconds
+        | Routing project (step 2/3) with PANDAR-5.0
+        |   +--------------------------------------------------------------+
+        |   |       Retained options for 'Routing project (step 2/3)'      |
+        |   +--------------------+--------------------+--------------------+
+        |   |               Name | Asked Value        | Effective Value    |
+        |   +--------------------+--------------------+--------------------+
+        |   |            Dynamic | No                 | No                 |
+        |   +--------------------+--------------------+--------------------+
+        |   Routing project (step 2/3) succeeded in 2 seconds
+        | Saving archive in 'spotted-auto.nym'
+        |   Saving succeeded in 270 milli-seconds
+        | Routing project (step 3/3) with NECTAR-5.0
+        |   +--------------------------------------------------------------+
+        |   |       Retained options for 'Routing project (step 3/3)'      |
+        |   +--------------------+--------------------+--------------------+
+        |   |               Name | Asked Value        | Effective Value    |
+        |   +--------------------+--------------------+--------------------+
+        |   |            Dynamic | No                 | No                 |
+        |   +--------------------+--------------------+--------------------+
+        |   Routing project (step 3/3) succeeded in 6 seconds
+        | Saving archive in 'routed-auto.nym'
+        |   Saving succeeded in 539 milli-seconds
+        | Generating bitstream of project with BITWIN-5.0
+        |   Creating config lines
+        |     Creating config lines succeeded in 2 seconds
+        |   Creating context lines
+        |     Creating context lines succeeded in 212 milli-seconds
+        |   +------------------------------------+
+        |   |      Configuration bits report     |
+        |   +----------------+---------+---------+
+        |   | Total count    | 6189616 |   100 % |
+        |   | Total used     |  859621 | 13.88 % |
+        |   | Total critical |   72583 |  1.17 % |
+        |   +----------------+---------+---------+
+        |   Generating bitstream of project succeeded in 7 seconds
+        | Saving archive in 'routed-auto.nym'
+        |   Saving succeeded in 581 milli-seconds
+        | Closing project succeeded

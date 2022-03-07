@@ -1,0 +1,35 @@
+////////////////////////////////////////////////////////////////////////////////
+// NXpython NXpython3 v2020.1
+//
+//
+// Date:              Tue Sep 28 12:53:35 2021
+//
+// Command line       /opt/NanoXplore/NXmap3/2020.1/bin/nxpython3 
+// Distribution:      Ubuntu 18.04.4 LTS
+////////////////////////////////////////////////////////////////////////////////
+
+        |   ----------------------------------------------
+        |   - HDL Source code report                     -
+        |   ----------------------------------------------
+        |     <Library>		:: <File>
+        |     work		:: ./../../OpenCores/can/trunk/rtl/verilog/can_acf.v
+        |     work		:: ./../../OpenCores/can/trunk/rtl/verilog/can_bsp.v
+        |     work		:: ./../../OpenCores/can/trunk/rtl/verilog/can_btl.v
+        |     work		:: ./../../OpenCores/can/trunk/rtl/verilog/can_crc.v
+        |     work		:: ./can_defines.v
+        |     work		:: ./../../OpenCores/can/trunk/rtl/verilog/can_fifo.v
+        |     work		:: ./../../OpenCores/can/trunk/rtl/verilog/can_ibo.v
+        |     work		:: ./../../OpenCores/can/trunk/rtl/verilog/can_register_asyn_syn.v
+        |     work		:: ./../../OpenCores/can/trunk/rtl/verilog/can_register_asyn.v
+        |     work		:: ./../../OpenCores/can/trunk/rtl/verilog/can_register_syn.v
+        |     work		:: ./../../OpenCores/can/trunk/rtl/verilog/can_register.v
+        |     work		:: ./../../OpenCores/can/trunk/rtl/verilog/can_registers.v
+        |     work		:: ./../../OpenCores/can/trunk/rtl/verilog/can_top.v
+        |     work		:: /opt/NanoXplore/NXmap3/2020.1/share/modelsim/nxLibrary.vhdp
+        |     work		:: ./can_controller.vhd
+        |     work		:: ./nano_R.vhd
+        |     work		:: ./nano_T.vhd
+        |     work		:: ./test_complet_nano.vhd
+        |     work		:: ./wishbone_driver.vhdl
+        |     
+        |     Top Cell: test_complet_nano	(work :: ./test_complet_nano.vhd)

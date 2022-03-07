@@ -1,0 +1,50 @@
+////////////////////////////////////////////////////////////////////////////////
+// NXpython NXpython3 v2020.1
+//
+//
+// Date:              Tue Sep 28 12:53:35 2021
+//
+// Command line       /opt/NanoXplore/NXmap3/2020.1/bin/nxpython3 
+// Distribution:      Ubuntu 18.04.4 LTS
+////////////////////////////////////////////////////////////////////////////////
+
+        |   ----------------------------------------------
+        |   - Unconnected Nets analysis                  -
+        |   ----------------------------------------------
+        |     
+        |     --------------------------------------------
+        |     - Cells Summary                            -
+        |     --------------------------------------------
+        |     
+        |       Cells with ignored  Unused Inputs:      3
+        |     
+        |     --------------------------------------------
+        |     - Cells Global Report                      -
+        |     --------------------------------------------
+        |     
+        |       Cell: can_registers
+        |         Unused   Inputs:          1
+        |     
+        |       Cell: can_fifo
+        |         Unused   Inputs:          1
+        |     
+        |       Cell: can_bsp
+        |         Unused   Inputs:          2
+        |     
+        |     --------------------------------------------
+        |     - Cells Detailed Report                    -
+        |     --------------------------------------------
+        |     
+        |       Cell: can_registers
+        |         Unused   Inputs:
+        |           Input Port: overload_frame :: 	Unused
+        |     
+        |       Cell: can_fifo
+        |         Unused   Inputs:
+        |           Input Port: fifo_selected :: 	Unused
+        |     
+        |       Cell: can_bsp
+        |         Unused   Inputs:
+        |           Input Port: addr[6] :: 	Unused
+        |           Input Port: addr[7] :: 	Unused
+        |     

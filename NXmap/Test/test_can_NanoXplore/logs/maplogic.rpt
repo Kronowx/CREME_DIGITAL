@@ -1,0 +1,120 @@
+////////////////////////////////////////////////////////////////////////////////
+// NXpython NXpython3 v2020.1
+//
+//
+// Date:              Tue Sep 28 12:53:35 2021
+//
+// Command line       /opt/NanoXplore/NXmap3/2020.1/bin/nxpython3 
+// Distribution:      Ubuntu 18.04.4 LTS
+////////////////////////////////////////////////////////////////////////////////
+
+        |   ----------------------------------------------
+        |   - Standard Logic processing                  -
+        |   ----------------------------------------------
+        |   Design contains 3 Native Elements
+        |   	3 NX_BD
+        |   
+        |   Flattening Design
+        |     Exploding Cell: test_complet_nano
+        |     Removed 248 nets (unused)
+        |     Removed 248 instances (unused)
+        |   Analyzing Memory
+        |   Flattening Design
+        |     Exploding Cell: test_complet_nano
+        |     Removed 6 nets (unused)
+        |     Removed 6 instances (unused)
+        |   Removed 2763 nets (invisible)
+        |   Removed 2682 instances (invisible)
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i219
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i219
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i239
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i239
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i259
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i259
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i279
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i279
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i299
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i299
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i319
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i319
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i339
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i339
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i359
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i359
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i379
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i379
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i399
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i399
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i419
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i419
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i439
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i439
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i459
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i459
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i479
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i479
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i499
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i499
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i519
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_R_1|can_controller_1|driver_1|i519
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i219
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i219
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i239
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i239
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i259
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i259
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i279
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i279
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i299
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i299
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i319
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i319
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i339
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i339
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i359
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i359
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i379
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i379
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i399
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i399
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i419
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i419
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i439
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i439
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i459
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i459
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i479
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i479
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i499
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i499
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i519
+        |     Fake Tristate gate found: converted to And gate - test_complet_nano::nano_T_1|can_controller_1|driver_1|i519
+        |   Analyzing Dsp
+        |   Flattening Design
+        |   Boolean optimization ...
+        |     step 1
+        |   Removed 966 nets (invisible)
+        |   Removed 966 instances (invisible)
+        |   Removed 331 nets (invisible)
+        |   Removed 331 instances (invisible)
+        |     step 2
+        |   Removed 138 nets (invisible)
+        |   Removed 138 instances (invisible)
+        |     Exploding Cell: test_complet_nano
+        |   Mapping logic cell: LOGIC
+        |     Optimizing #Luts ...
+        |     step 1 :
+        |             lut = 2612
+        |     step 2 :
+        |     step 3 :
+        |             lut = 2609
+        |     step 4 :
+        |     step 5 :
+        |     step 6 :
+        |     step 7 :
+        |             lut = 2594
+        |     final step
+        |             lut = 2594
+        |   Flattening logic cell
+        |     Removed 2 nets (unused)
+        |     Removed 102 instances (unused)
