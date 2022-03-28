@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="2fs"></ZoomEndTime>
-      <Cursor1Time time="100000fs"></Cursor1Time>
+      <ZoomStartTime time="31380000fs"></ZoomStartTime>
+      <ZoomEndTime time="31380146fs"></ZoomEndTime>
+      <Cursor1Time time="31380028fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="166"></NameColumnWidth>
-      <ValueColumnWidth column_width="76"></ValueColumnWidth>
+      <NameColumnWidth column_width="151"></NameColumnWidth>
+      <ValueColumnWidth column_width="111"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="18" />
+   <WVObjectSize size="21" />
    <wvobject fp_name="/tb_I2C_PERIPHERAL/sig_CLK" type="logic">
       <obj_property name="ElementShortName">sig_CLK</obj_property>
       <obj_property name="ObjectShortName">sig_CLK</obj_property>
@@ -71,6 +71,7 @@
    <wvobject fp_name="/tb_I2C_PERIPHERAL/device_word_send" type="array">
       <obj_property name="ElementShortName">device_word_send[31:0]</obj_property>
       <obj_property name="ObjectShortName">device_word_send[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/etat" type="other">
       <obj_property name="ElementShortName">etat</obj_property>
@@ -91,5 +92,17 @@
    <wvobject fp_name="/tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/sig_sda_padoen_o" type="logic">
       <obj_property name="ElementShortName">sig_sda_padoen_o</obj_property>
       <obj_property name="ObjectShortName">sig_sda_padoen_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/sig_rd_wr" type="logic">
+      <obj_property name="ElementShortName">sig_rd_wr</obj_property>
+      <obj_property name="ObjectShortName">sig_rd_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/sig_scl_pad_o" type="logic">
+      <obj_property name="ElementShortName">sig_scl_pad_o</obj_property>
+      <obj_property name="ObjectShortName">sig_scl_pad_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/sig_scl_padoen_o" type="logic">
+      <obj_property name="ElementShortName">sig_scl_padoen_o</obj_property>
+      <obj_property name="ObjectShortName">sig_scl_padoen_o</obj_property>
    </wvobject>
 </wave_config>

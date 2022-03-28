@@ -67,7 +67,7 @@ constant SR     : std_logic_vector(2 downto 0)  :=  "100"; -- Status register
 -----Valeur des registre---------------------
 --constant prescalerbin : std_logic_vector(15 downto 0) := "0000000110010000"; --prescaller vaut 400 baudrate vaut 50000 pour f=100Meg
 constant prescalerbin : std_logic_vector(15 downto 0) := "0000000011001000";--prescaller vaut 200 baudrate vaut 100000 pour f=100Meg c'est plus classique comme baudrate
-constant ctrInit : std_logic_vector(7 downto 0) := "11000000";
+constant ctrInit : std_logic_vector(7 downto 0) := "11000000";  --bit 7 : core enable bit 6 : interrupt on 
 
 ----------Signaux interne----------------------
 signal sig_port_read_peripheral         : std_logic_vector(31 downto 0) := (others => '0'); --! Tampon entre le traitment interne et les sorties
@@ -322,7 +322,7 @@ begin
                   write_wishbone(TXR,sig_port_write_addr_peripheral & '0');
                 end if;
                 etat <= WAIT_WISHBONE_BUSY;
-                etat_futur<=BUS_WRITE_ADDR_END;
+                etat_futur <= BUS_WRITE_ADDR_END;
               end if;
 
             when BUS_WRITE_ADDR_END =>

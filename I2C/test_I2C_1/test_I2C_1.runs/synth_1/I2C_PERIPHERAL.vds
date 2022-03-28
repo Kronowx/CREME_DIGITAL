@@ -1,0 +1,322 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar 28 17:40:18 2022
+# Process ID: 3260
+# Current directory: D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.runs/synth_1
+# Command line: vivado.exe -log I2C_PERIPHERAL.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source I2C_PERIPHERAL.tcl
+# Log file: D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.runs/synth_1/I2C_PERIPHERAL.vds
+# Journal file: D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source I2C_PERIPHERAL.tcl -notrace
+Command: synth_design -top I2C_PERIPHERAL -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9096
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1114.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'I2C_PERIPHERAL' [D:/CREME_DIGITAL/I2C/test_I2C_1/sources/I2C_PERIPHERAL.vhdl:57]
+INFO: [Synth 8-3491] module 'i2c_master_top' declared at 'D:/CREME_DIGITAL/I2C/test_I2C_1/sources/i2c_master_top.v:78' bound to instance 'i2c_top_1' of component 'i2c_master_top' [D:/CREME_DIGITAL/I2C/test_I2C_1/sources/I2C_PERIPHERAL.vhdl:197]
+INFO: [Synth 8-6157] synthesizing module 'i2c_master_top' [D:/CREME_DIGITAL/I2C/test_I2C_1/sources/i2c_master_top.v:78]
+	Parameter ARST_LVL bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'i2c_master_byte_ctrl' [D:/CREME_DIGITAL/I2C/test_I2C_1/sources/i2c_master_byte_ctrl.v:75]
+	Parameter ST_IDLE bound to: 5'b00000 
+	Parameter ST_START bound to: 5'b00001 
+	Parameter ST_READ bound to: 5'b00010 
+	Parameter ST_WRITE bound to: 5'b00100 
+	Parameter ST_ACK bound to: 5'b01000 
+	Parameter ST_STOP bound to: 5'b10000 
+INFO: [Synth 8-6157] synthesizing module 'i2c_master_bit_ctrl' [D:/CREME_DIGITAL/I2C/test_I2C_1/sources/i2c_master_bit_ctrl.v:143]
+	Parameter idle bound to: 18'b000000000000000000 
+	Parameter start_a bound to: 18'b000000000000000001 
+	Parameter start_b bound to: 18'b000000000000000010 
+	Parameter start_c bound to: 18'b000000000000000100 
+	Parameter start_d bound to: 18'b000000000000001000 
+	Parameter start_e bound to: 18'b000000000000010000 
+	Parameter stop_a bound to: 18'b000000000000100000 
+	Parameter stop_b bound to: 18'b000000000001000000 
+	Parameter stop_c bound to: 18'b000000000010000000 
+	Parameter stop_d bound to: 18'b000000000100000000 
+	Parameter rd_a bound to: 18'b000000001000000000 
+	Parameter rd_b bound to: 18'b000000010000000000 
+	Parameter rd_c bound to: 18'b000000100000000000 
+	Parameter rd_d bound to: 18'b000001000000000000 
+	Parameter wr_a bound to: 18'b000010000000000000 
+	Parameter wr_b bound to: 18'b000100000000000000 
+	Parameter wr_c bound to: 18'b001000000000000000 
+	Parameter wr_d bound to: 18'b010000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'i2c_master_bit_ctrl' (1#1) [D:/CREME_DIGITAL/I2C/test_I2C_1/sources/i2c_master_bit_ctrl.v:143]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_master_byte_ctrl' (2#1) [D:/CREME_DIGITAL/I2C/test_I2C_1/sources/i2c_master_byte_ctrl.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_master_top' (3#1) [D:/CREME_DIGITAL/I2C/test_I2C_1/sources/i2c_master_top.v:78]
+INFO: [Synth 8-3491] module 'WISHBONE_MASTER' declared at 'D:/CREME_DIGITAL/I2C/test_I2C_1/sources/wishbone_master.vhdl:36' bound to instance 'driver_1' of component 'WISHBONE_MASTER' [D:/CREME_DIGITAL/I2C/test_I2C_1/sources/I2C_PERIPHERAL.vhdl:219]
+INFO: [Synth 8-638] synthesizing module 'WISHBONE_MASTER' [D:/CREME_DIGITAL/I2C/test_I2C_1/sources/wishbone_master.vhdl:59]
+INFO: [Synth 8-256] done synthesizing module 'WISHBONE_MASTER' (4#1) [D:/CREME_DIGITAL/I2C/test_I2C_1/sources/wishbone_master.vhdl:59]
+INFO: [Synth 8-226] default block is never used [D:/CREME_DIGITAL/I2C/test_I2C_1/sources/I2C_PERIPHERAL.vhdl:280]
+INFO: [Synth 8-256] done synthesizing module 'I2C_PERIPHERAL' (5#1) [D:/CREME_DIGITAL/I2C/test_I2C_1/sources/I2C_PERIPHERAL.vhdl:57]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1114.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1114.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1114.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'i2c_master_bit_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'i2c_master_byte_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'etat_reg' in module 'WISHBONE_MASTER'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |               000000000000000001 |               000000000000000000
+                 start_a |               000000000000000010 |               000000000000000001
+                 start_b |               000000000000000100 |               000000000000000010
+                 start_c |               000000000000001000 |               000000000000000100
+                 start_d |               000000000000010000 |               000000000000001000
+                 start_e |               000000000000100000 |               000000000000010000
+                  stop_a |               000000000001000000 |               000000000000100000
+                  stop_b |               000000000010000000 |               000000000001000000
+                  stop_c |               000000000100000000 |               000000000010000000
+                  stop_d |               000000001000000000 |               000000000100000000
+                    wr_a |               000000010000000000 |               000010000000000000
+                    wr_b |               000000100000000000 |               000100000000000000
+                    wr_c |               000001000000000000 |               001000000000000000
+                    wr_d |               000010000000000000 |               010000000000000000
+                    rd_a |               000100000000000000 |               000000001000000000
+                    rd_b |               001000000000000000 |               000000010000000000
+                    rd_c |               010000000000000000 |               000000100000000000
+                    rd_d |               100000000000000000 |               000001000000000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'one-hot' in module 'i2c_master_bit_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                              000 |                            00000
+                ST_START |                              001 |                            00001
+                 ST_READ |                              010 |                            00010
+                ST_WRITE |                              011 |                            00100
+                  ST_ACK |                              100 |                            01000
+                 ST_STOP |                              101 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'sequential' in module 'i2c_master_byte_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+       bus_request_write |                              001 |                              001
+      wait_for_ack_write |                              010 |                              011
+        bus_request_read |                              011 |                              010
+       wait_for_ack_read |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'etat_reg' using encoding 'sequential' in module 'WISHBONE_MASTER'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1114.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   14 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 2     
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 7     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 35    
++---Muxes : 
+	  32 Input   32 Bit        Muxes := 2     
+	  24 Input   18 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 3     
+	   7 Input   16 Bit        Muxes := 1     
+	   4 Input   16 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 14    
+	   5 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 3     
+	  32 Input    5 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 9     
+	   6 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 8     
+	  15 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 2     
+	  32 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 27    
+	  18 Input    1 Bit        Muxes := 5     
+	   6 Input    1 Bit        Muxes := 6     
+	   4 Input    1 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 9     
+	  32 Input    1 Bit        Muxes := 7     
+	   3 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1114.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++---------------+------------+---------------+----------------+
+|Module Name    | RTL Object | Depth x Width | Implemented As | 
++---------------+------------+---------------+----------------+
+|I2C_PERIPHERAL | etat_futur | 32x5          | LUT            | 
+|I2C_PERIPHERAL | sig_addr   | 32x3          | LUT            | 
+|I2C_PERIPHERAL | etat_futur | 32x5          | LUT            | 
+|I2C_PERIPHERAL | sig_addr   | 32x3          | LUT            | 
++---------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1114.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1114.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1114.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1114.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1114.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1114.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1114.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1114.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     2|
+|3     |LUT2 |    10|
+|4     |LUT3 |     4|
+|5     |LUT4 |    16|
+|6     |LUT5 |    20|
+|7     |LUT6 |    29|
+|8     |FDRE |    41|
+|9     |FDSE |     1|
+|10    |IBUF |     6|
+|11    |OBUF |    33|
++------+-----+------+
+
+Report Instance Areas: 
++------+------------+----------------+------+
+|      |Instance    |Module          |Cells |
++------+------------+----------------+------+
+|1     |top         |                |   163|
+|2     |  driver_1  |WISHBONE_MASTER |    58|
+|3     |  i2c_top_1 |i2c_master_top  |     3|
++------+------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1114.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1114.086 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1114.086 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1114.086 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1125.949 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1125.949 ; gain = 11.863
+INFO: [Common 17-1381] The checkpoint 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.runs/synth_1/I2C_PERIPHERAL.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file I2C_PERIPHERAL_utilization_synth.rpt -pb I2C_PERIPHERAL_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 28 17:40:47 2022...
