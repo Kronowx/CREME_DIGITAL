@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../sources/I2C_PERIPHERAL.vhdl" \
+"../../../../sources/wishbone_master.vhdl" \
+"../../../../sources/testbench_I2C_PERIPHERAL.vhdl" \
+
+# Do not sort compile order
+nosort

@@ -137,9 +137,13 @@ begin
     end read_i2c_driver;
 
   begin
-    sig_RESET_BAR <= '0';             -- On lance la procédure de RESET
+  
+  -- ATTENTION IL FAUT PENSER A RECHANGER RST 
+  
+  
+    sig_RESET_BAR <= '1';             -- On lance la procédure de RESET 
     wait for 100 us;                  -- Pendant un temps
-    sig_RESET_BAR <= '1';             -- On relache le Reset
+    sig_RESET_BAR <= '0';             -- On relache le Reset
     wait until sig_PORT_FREE = '1';   -- On attend que le module SPI_PERIPHERAL soit disponible
     write_i2c_driver(device_addr,device_word_send,"00"); -- Ecriture d'un paquet de 8 bits
     write_i2c_driver(device_addr,device_word_send,"01"); -- Ecriture d'un paquet de 16 bits

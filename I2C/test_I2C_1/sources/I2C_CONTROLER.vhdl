@@ -22,8 +22,10 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
-library NX;
-use NX.nxPackage.all;
+
+-- Pour l'instant, pas de NX
+--library NX;
+--use NX.nxPackage.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -224,11 +226,13 @@ begin
     --sda=>SDA
     --);
 
-    BD_0 : NX_BD port map
-    (
-    I=>RESET,
-    O=>sig_rst
-    );
+
+-- Pour l'instant pas de lib NX
+--    BD_0 : NX_BD port map
+--    (
+--    I=>RESET,
+--    O=>sig_rst
+--    );
 
 
 
