@@ -206,6 +206,7 @@ begin
       wb_cyc_i=>sig_cyc,
       wb_ack_o=>sig_ack,
       wb_inta_o=>sig_inta,
+      
       scl_pad_i=>sig_scl_pad_i,
       scl_pad_o=>sig_scl_pad_o,
       scl_padoen_o=>sig_scl_padoen_o,
@@ -236,7 +237,7 @@ begin
     SCL <= sig_scl_pad_o when (sig_scl_padoen_o = '0') else 'Z';
     SDA <= sig_sda_pad_o when (sig_sda_padoen_o = '0') else 'Z';
     sig_scl_pad_i <= SCL;
-    sig_scl_pad_i <= SDA;
+    sig_sda_pad_i <= SDA;
 
     PORT_FREE <= sig_port_free_peripheral;
 
