@@ -65,7 +65,8 @@ constant RXR    : std_logic_vector(2 downto 0)  :=  "011"; -- Receive register
 constant CR     : std_logic_vector(2 downto 0)  :=  "100"; -- Command register
 constant SR     : std_logic_vector(2 downto 0)  :=  "100"; -- Status register
 -----Valeur des registre---------------------
-constant prescalerbin : std_logic_vector(15 downto 0) := "0000000110010000";
+--constant prescalerbin : std_logic_vector(15 downto 0) := "0000000110010000"; --prescaller vaut 400 baudrate vaut 50000 pour f=100Meg
+constant prescalerbin : std_logic_vector(15 downto 0) := "0000000011001000";--prescaller vaut 200 baudrate vaut 100000 pour f=100Meg c'est plus classique comme baudrate
 constant ctrInit : std_logic_vector(7 downto 0) := "11000000";
 
 ----------Signaux interne----------------------
@@ -222,7 +223,7 @@ begin
       START         => sig_start,                    --! Start pin for activate transmission
       RD_WR         => sig_rd_wr,                   --! Start pin for activate transmission
       REG_ADDR      => sig_addr,
-      REG_DATA      => sig_data,  --! Vecteur permettant de temporiser le registre d'adresse                    --! Receive pin for CAN
+      REG_DATA      => sig_data,                        --! Vecteur permettant de temporiser le registre d'adresse                    --! Receive pin for CAN
       PORT_0_READ   => sig_port_read,
       PORT_FREE     => sig_port_free,                     --! Output which indicate that the time has elapsed
       WB_DAT_I      => sig_data_i,
@@ -237,6 +238,7 @@ begin
     SCL <= sig_scl_pad_o when (sig_scl_padoen_o = '0') else 'Z';
     SDA <= sig_sda_pad_o when (sig_sda_padoen_o = '0') else 'Z';
     sig_scl_pad_i <= SCL;
+    --attention a la faute de frappe sur le pdf fourni dans les archives
     sig_sda_pad_i <= SDA;
 
     PORT_FREE <= sig_port_free_peripheral;
@@ -244,8 +246,8 @@ begin
     PROCESS_I2C : process(CLK)
       procedure write_wishbone
       (
-        constant proc_reg_addr : in std_logic_vector(2 downto 0) := "000"
-        ;proc_reg_data : in std_logic_vector(7 downto 0) := x"00"
+        constant proc_reg_addr : in std_logic_vector(2 downto 0) := "000";
+        proc_reg_data : in std_logic_vector(7 downto 0) := x"00"
       ) is
       begin
               sig_addr <= proc_reg_addr;
@@ -277,14 +279,14 @@ begin
         else
           case etat is
             -------------- Initialisation du peripherique I2C ---------------
-            when BUS_WRITE_PRERlo_init=>
+            when BUS_WRITE_PRERlo_init=> --état dans lequel on init le baud rate (bit de poid faible)
               if(sig_port_free = '1') then
                 write_wishbone(PRERlo,prescalerbin(7 downto 0));
                 etat <= WAIT_WISHBONE_BUSY;
                 etat_futur<=BUS_WRITE_PRERhi_init;
               end if;
 
-            when BUS_WRITE_PRERhi_init=>
+            when BUS_WRITE_PRERhi_init=>--état dans lequel on init le baud rate (bit de poid fort)
               if(sig_port_free = '1') then
                 write_wishbone(PRERhi,prescalerbin(15 downto 8));
                 etat <= WAIT_WISHBONE_BUSY;
