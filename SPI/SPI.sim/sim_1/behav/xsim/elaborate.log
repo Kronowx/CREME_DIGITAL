@@ -1,0 +1,26 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4ec714912c2f452c8d04aee6833e4705 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_CONTROLER_behav xil_defaultlib.tb_SPI_CONTROLER xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module xil_defaultlib.fifo4
+Compiling module xil_defaultlib.simple_spi_top
+Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
+Compiling architecture behavioral of entity xil_defaultlib.SPI_PERIPHERAL [spi_peripheral_default]
+Compiling architecture behavioral of entity xil_defaultlib.SPI_CONTROLER [spi_controler_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_spi_controler
+Built simulation snapshot tb_SPI_CONTROLER_behav

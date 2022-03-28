@@ -1,0 +1,12 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+G:/nosave/Nanosat/FPGA/Librairie/OpenCores/test_SPI/fifo4.v,1643965322,verilog,,G:/nosave/Nanosat/FPGA/Librairie/OpenCores/test_SPI/simple_spi_top.v,G:/nosave/Nanosat/FPGA/Librairie/OpenCores/test_SPI/timescale.v,fifo4,,,,,,,,
+G:/nosave/Nanosat/FPGA/Librairie/OpenCores/test_SPI/simple_spi_top.v,1648475413,verilog,,,G:/nosave/Nanosat/FPGA/Librairie/OpenCores/test_SPI/timescale.v,simple_spi_top,,,,,,,,
+G:/nosave/Nanosat/FPGA/Librairie/OpenCores/test_SPI/timescale.v,1643965322,verilog,,,,,,,,,,,,
+G:/nosave/Nanosat/FPGA/NXmap/Test/test_spi/SPI_CONTROLER.vhdl,1648477404,vhdl,,,,spi_controler,,,,,,,,
+G:/nosave/Nanosat/FPGA/NXmap/Test/test_spi/SPI_PERIPHERAL.vhdl,1648477515,vhdl,,,,spi_peripheral,,,,,,,,
+G:/nosave/Nanosat/FPGA/NXmap/Test/test_spi/test_bench_SPI_CONTROLER.vhdl,1648477541,vhdl,,,,tb_spi_controler,,,,,,,,
+G:/nosave/Nanosat/FPGA/NXmap/Test/test_spi/wishbone_master.vhdl,1648477361,vhdl,,,,wishbone_master,,,,,,,,
+G:/nosave/Nanosat/SPI/SPI.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,

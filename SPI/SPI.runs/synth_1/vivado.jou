@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar 28 15:16:18 2022
+# Process ID: 8420
+# Current directory: G:/nosave/Nanosat/SPI/SPI.runs/synth_1
+# Command line: vivado.exe -log SPI_CONTROLER.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SPI_CONTROLER.tcl
+# Log file: G:/nosave/Nanosat/SPI/SPI.runs/synth_1/SPI_CONTROLER.vds
+# Journal file: G:/nosave/Nanosat/SPI/SPI.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source SPI_CONTROLER.tcl -notrace
