@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="2000000001fs"></ZoomEndTime>
-      <Cursor1Time time="247232472fs"></Cursor1Time>
+      <ZoomEndTime time="74001fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="166"></NameColumnWidth>
-      <ValueColumnWidth column_width="80"></ValueColumnWidth>
+      <NameColumnWidth column_width="151"></NameColumnWidth>
+      <ValueColumnWidth column_width="99"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="15" />
+   <WVObjectSize size="25" />
    <wvobject fp_name="/tb_I2C_PERIPHERAL/sig_CLK" type="logic">
       <obj_property name="ElementShortName">sig_CLK</obj_property>
       <obj_property name="ObjectShortName">sig_CLK</obj_property>
@@ -79,5 +79,45 @@
    <wvobject fp_name="/tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/etat_futur" type="other">
       <obj_property name="ElementShortName">etat_futur</obj_property>
       <obj_property name="ObjectShortName">etat_futur</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/PRERlo" type="array">
+      <obj_property name="ElementShortName">PRERlo[2:0]</obj_property>
+      <obj_property name="ObjectShortName">PRERlo[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/PRERhi" type="array">
+      <obj_property name="ElementShortName">PRERhi[2:0]</obj_property>
+      <obj_property name="ObjectShortName">PRERhi[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_I2C_PERIPHERAL/simulateur_slave/scl" type="logic">
+      <obj_property name="ElementShortName">scl</obj_property>
+      <obj_property name="ObjectShortName">scl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/sig_adr" type="array">
+      <obj_property name="ElementShortName">sig_adr[2:0]</obj_property>
+      <obj_property name="ObjectShortName">sig_adr[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/sig_data_i" type="array">
+      <obj_property name="ElementShortName">sig_data_i[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sig_data_i[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/sig_data_o" type="array">
+      <obj_property name="ElementShortName">sig_data_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sig_data_o[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/sig_addr" type="array">
+      <obj_property name="ElementShortName">sig_addr[2:0]</obj_property>
+      <obj_property name="ObjectShortName">sig_addr[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/sig_data" type="array">
+      <obj_property name="ElementShortName">sig_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sig_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/sig_start" type="logic">
+      <obj_property name="ElementShortName">sig_start</obj_property>
+      <obj_property name="ObjectShortName">sig_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/sig_rd_wr" type="logic">
+      <obj_property name="ElementShortName">sig_rd_wr</obj_property>
+      <obj_property name="ObjectShortName">sig_rd_wr</obj_property>
    </wvobject>
 </wave_config>

@@ -138,11 +138,19 @@ begin
 
   begin
   
+  -- ATTENTION IL FAUT PENSER A RECHANGER RST 
   
+--    sig_SCL <= 'H';
+--    wait for 1ns;
+--    sig_SDA <= 'H';
+--    wait for 1ns;
+    
     sig_RESET_BAR <= '0';             -- On lance la procédure de RESET 
     wait for 100 us;                  -- Pendant un temps
     sig_RESET_BAR <= '1';             -- On relache le Reset
     wait until sig_PORT_FREE = '1';   -- On attend que le module SPI_PERIPHERAL soit disponible
+    
+    wait for 1 ns;
     write_i2c_driver(device_addr,device_word_send,"00"); -- Ecriture d'un paquet de 8 bits
     write_i2c_driver(device_addr,device_word_send,"01"); -- Ecriture d'un paquet de 16 bits
     write_i2c_driver(device_addr,device_word_send,"10"); -- Ecriture d'un paquet de 24 bits
