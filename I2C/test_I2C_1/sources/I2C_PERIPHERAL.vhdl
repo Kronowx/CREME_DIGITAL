@@ -513,18 +513,18 @@ begin
 
             -------------- WISHBONE -----------------------------------------
             when WAIT_WISHBONE_BUSY =>
-              if(sig_PORT_FREE = '0') then
+              if(sig_port_free = '0') then
                 sig_start <= '0';
                 etat <= WAIT_WISHBONE_FINISH;
               end if;
 
             when WAIT_WISHBONE_FINISH =>
-              if(sig_PORT_FREE = '1') then
+              if(sig_port_free = '1') then
                 etat <= etat_futur;
               end if;
 
             when WAIT_I2C_IRQ =>
-              if(sig_int = '1') then
+              if(sig_inta = '1') then -- attention : etait ecris sig_int
                 sig_addr <= CR;
                 sig_data <= "00000001";
                 sig_start <= '1';
@@ -534,12 +534,13 @@ begin
               end if;
 
             when BUS_READ_STATUS =>
-              if(sig_PORT_FREE = '1') then
+              if(sig_port_free = '1') then
                 sig_addr <= SR;
                 sig_start <= '1';
                 sig_rd_wr <= '0';
                 etat        <= WAIT_WISHBONE_BUSY;
-                etat_futur  <= BUS_WRITE_DATA_8_END;
+                etat_futur  <= BUS_READ_STATUS_CHECK;
+                --BUS_WRITE_DATA_8_END;
               end if;
 
             when BUS_READ_STATUS_CHECK =>

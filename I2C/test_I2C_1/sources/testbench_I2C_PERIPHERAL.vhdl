@@ -140,10 +140,10 @@ begin
   
   -- ATTENTION IL FAUT PENSER A RECHANGER RST 
   
---    sig_SCL <= 'H';
---    wait for 1ns;
---    sig_SDA <= 'H';
---    wait for 1ns;
+    sig_SCL <= 'H';
+    wait for 1ns;
+    sig_SDA <= 'H';
+    wait for 1ns;
     
     sig_RESET_BAR <= '0';             -- On lance la procédure de RESET 
     wait for 100 us;                  -- Pendant un temps
