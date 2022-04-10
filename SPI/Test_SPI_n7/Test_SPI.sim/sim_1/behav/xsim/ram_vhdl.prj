@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../CREME/FPGA/NXmap/Test/test_spi/ram.vhdl" \
+
+# Do not sort compile order
+nosort

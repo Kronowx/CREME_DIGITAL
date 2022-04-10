@@ -1,0 +1,13 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+Z:/S8/Nanosat/CREME/FPGA/Librairie/OpenCores/test_SPI/fifo4.v,1643965322,verilog,,Z:/S8/Nanosat/CREME/FPGA/Librairie/OpenCores/test_SPI/simple_spi_top.v,Z:/S8/Nanosat/CREME/FPGA/Librairie/OpenCores/test_SPI/timescale.v,fifo4,,,,,,,,
+Z:/S8/Nanosat/CREME/FPGA/Librairie/OpenCores/test_SPI/simple_spi_top.v,1643965322,verilog,,,Z:/S8/Nanosat/CREME/FPGA/Librairie/OpenCores/test_SPI/timescale.v,simple_spi_top,,,,,,,,
+Z:/S8/Nanosat/CREME/FPGA/Librairie/OpenCores/test_SPI/timescale.v,1643965322,verilog,,,,,,,,,,,,
+Z:/S8/Nanosat/CREME/FPGA/NXmap/Test/test_spi/SPI_CONTROLER.vhdl,1649165293,vhdl,,,,spi_controler,,,,,,,,
+Z:/S8/Nanosat/CREME/FPGA/NXmap/Test/test_spi/SPI_PERIPHERAL.vhdl,1648478058,vhdl,,,,spi_peripheral,,,,,,,,
+Z:/S8/Nanosat/CREME/FPGA/NXmap/Test/test_spi/test_bench_SPI_CONTROLER.vhdl,1648478962,vhdl,,,,tb_spi_controler,,,,,,,,
+Z:/S8/Nanosat/CREME/FPGA/NXmap/Test/test_spi/testbench_SPI_PERIPHERAL.vhdl,1648478708,vhdl,,,,tb_spi_peripheral,,,,,,,,
+Z:/S8/Nanosat/CREME/FPGA/NXmap/Test/test_spi/wishbone_master.vhdl,1643965324,vhdl,,,,wishbone_master,,,,,,,,
+Z:/S8/Nanosat/Test_SPI/Test_SPI.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
