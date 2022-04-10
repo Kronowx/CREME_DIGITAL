@@ -1,9 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../../FPGA/NXmap/Test/test_spi/SPI_CONTROLER.vhdl" \
-"../../../../../FPGA/NXmap/Test/test_spi/SPI_PERIPHERAL.vhdl" \
-"../../../../../FPGA/NXmap/Test/test_spi/wishbone_master.vhdl" \
-"../../../../../FPGA/NXmap/Test/test_spi/test_bench_SPI_CONTROLER.vhdl" \
-
-# Do not sort compile order
-nosort

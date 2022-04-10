@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "G:/nosave/Nanosat/FPGA/NXmap/Test/test_spi/SPI_PERIPHERAL.vhdl" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'SPI_PERIPHERAL'
-INFO: [VRFC 10-163] Analyzing VHDL file "G:/nosave/Nanosat/FPGA/NXmap/Test/test_spi/test_bench_SPI_CONTROLER.vhdl" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_SPI_CONTROLER'
