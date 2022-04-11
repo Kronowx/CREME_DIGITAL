@@ -2,12 +2,11 @@
 # Webtalk v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Apr  5 16:44:12 2022
-# Process ID: 10692
+# Start of session at: Mon Apr 11 14:24:45 2022
+# Process ID: 11928
 # Current directory: D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim
 # Command line: wbtcv.exe -mode batch -source D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim/xsim.dir/tb_I2C_PERIPHERAL_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
 source D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim/xsim.dir/tb_I2C_PERIPHERAL_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Tue Apr  5 16:44:12 2022...

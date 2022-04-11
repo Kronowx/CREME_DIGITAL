@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Apr 11 14:08:52 2022
+# Process ID: 6448
+# Current directory: D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7956 D:\nanosat\CREME_DIGITAL\I2C\test_I2C_1\test_I2C_1.xpr
+# Log file: D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/vivado.log
+# Journal file: D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL.tcl
+close_sim
+launch_simulation
+open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL.tcl
+run 10 ms
+close_sim
+launch_simulation
+open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL.tcl
+close_sim
+launch_simulation
+open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL.tcl
+run 10ms
+close_sim
+launch_simulation
+open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL.tcl
+run 10ms
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_sim

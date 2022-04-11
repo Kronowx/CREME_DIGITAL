@@ -70,7 +70,8 @@ component i2c_slave_model is
 end component;
 
 begin
-
+sig_SCL <= 'H';
+sig_SDA <= 'H';
   evaluate_I2C_PERIPHERAL : I2C_PERIPHERAL
   Port map
   (
@@ -127,7 +128,7 @@ begin
       ;SIZE : in std_logic_vector(1 downto 0) := "00"
     ) is
     begin
-      sig_PORT_WRITE_ADDR <= ADDR;          -- Adresse I2C visee 0x53
+      sig_PORT_WRITE_ADDR <= ADDR;          -- Adresse I2C visee
       sig_DATA_SIZE <= SIZE;                -- On specifie la taille
       sig_RD_WR <= '0';                     -- On demande une lecture a cette adresse
       sig_START <= '1';                     -- On lance le module
@@ -137,23 +138,16 @@ begin
     end read_i2c_driver;
 
   begin
-  
-  -- ATTENTION IL FAUT PENSER A RECHANGER RST 
-  
-    sig_SCL <= 'H';
-    wait for 1ns;
-    sig_SDA <= 'H';
-    wait for 1ns;
-    
-    sig_RESET_BAR <= '0';             -- On lance la procédure de RESET 
+    sig_RESET_BAR <= '0';             -- On lance la procédure de RESET
     wait for 100 us;                  -- Pendant un temps
     sig_RESET_BAR <= '1';             -- On relache le Reset
     wait until sig_PORT_FREE = '1';   -- On attend que le module SPI_PERIPHERAL soit disponible
-    
-    wait for 1 ns;
     write_i2c_driver(device_addr,device_word_send,"00"); -- Ecriture d'un paquet de 8 bits
+    wait for 100 us;                  -- Pendant un temps
     write_i2c_driver(device_addr,device_word_send,"01"); -- Ecriture d'un paquet de 16 bits
+    wait for 100 us;                  -- Pendant un temps
     write_i2c_driver(device_addr,device_word_send,"10"); -- Ecriture d'un paquet de 24 bits
+    wait for 100 us;                  -- Pendant un temps
     write_i2c_driver(device_addr,device_word_send,"11"); -- Ecriture d'un paquet de 32 bits
     wait;
 
