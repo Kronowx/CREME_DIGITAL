@@ -1,0 +1,104 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Apr 11 15:27:17 2022
+# Process ID: 4708
+# Current directory: D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1200 D:\nanosat\CREME_DIGITAL\I2C\test_I2C_1\test_I2C_1.xpr
+# Log file: D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/vivado.log
+# Journal file: D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL.tcl
+run 10ms
+restart
+run 10 ms
+save_wave_config {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg}
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+save_wave_config {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL.tcl
+run 10 ms
+file mkdir D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/sim_1/new/tb_I2C_PERIPHERAL_READ.vhd w ]
+add_files -fileset sim_1 D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/sim_1/new/tb_I2C_PERIPHERAL_READ.vhd
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_I2C_PERIPHERAL_READ [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_simulation
+open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL_READ.tcl
+restart
+run 10 ms
+restart
+run 10 ms
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+save_wave_config {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL_READ.tcl
+restart
+run 10 ms
+run 10 ms
+restart
+run 10 ms
+save_wave_config {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL_READ.tcl
+run 10 ms
+close_sim
+launch_simulation
+open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL_READ.tcl
+run 5 ms
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL_READ.tcl
+run 5 ms
+save_wave_config {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL_READ.tcl
+run 5 ms
+run 1àms
+save_wave_config {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL_READ.tcl
+run 5 ms
+close_sim
+launch_simulation
+open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL_READ.tcl
+run 5 ms
+close_sim
+launch_simulation
+open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL_READ.tcl
+run 5ms
+close_sim
