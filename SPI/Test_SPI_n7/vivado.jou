@@ -1,0 +1,145 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Apr 11 14:09:17 2022
+# Process ID: 9040
+# Current directory: G:/S8/Nanosat/NANOSAT_11_04/CREME_DIGITAL/SPI/Test_SPI_n7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8136 G:\S8\Nanosat\NANOSAT_11_04\CREME_DIGITAL\SPI\Test_SPI_n7\Test_SPI.xpr
+# Log file: G:/S8/Nanosat/NANOSAT_11_04/CREME_DIGITAL/SPI/Test_SPI_n7/vivado.log
+# Journal file: G:/S8/Nanosat/NANOSAT_11_04/CREME_DIGITAL/SPI/Test_SPI_n7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/S8/Nanosat/NANOSAT_11_04/CREME_DIGITAL/SPI/Test_SPI_n7/Test_SPI.xpr
+update_compile_order -fileset sources_1
+file mkdir G:/S8/Nanosat/NANOSAT_11_04/CREME_DIGITAL/SPI/Test_SPI_n7/Test_SPI.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open G:/S8/Nanosat/NANOSAT_11_04/CREME_DIGITAL/SPI/Test_SPI_n7/Test_SPI.srcs/sim_1/new/tb_histogramm.vhd w ]
+add_files -fileset sim_1 G:/S8/Nanosat/NANOSAT_11_04/CREME_DIGITAL/SPI/Test_SPI_n7/Test_SPI.srcs/sim_1/new/tb_histogramm.vhd
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Histogram_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Histogram [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source Histogram_tb.tcl
+run 500 us
+close_sim
+launch_simulation
+source Histogram_tb.tcl
+run 500 us
+close_sim
+launch_simulation
+source Histogram_tb.tcl
+run 200 ns
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open G:/S8/Nanosat/NANOSAT_11_04/CREME_DIGITAL/SPI/Test_SPI_n7/Test_SPI.srcs/sim_1/new/tb_ram.vhd w ]
+add_files -fileset sim_1 G:/S8/Nanosat/NANOSAT_11_04/CREME_DIGITAL/SPI/Test_SPI_n7/Test_SPI.srcs/sim_1/new/tb_ram.vhd
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ram_intel [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ram_intel_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_simulation
+launch_simulation
+source ram_intel_tb.tcl
+run 200 ns
+restart
+run 200 ns
+relaunch_sim
+run 200 ns
+restart
+run 200 ns
+relaunch_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Histogram_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Histogram [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source Histogram_tb.tcl
+run 200 ns
+run 200 ns
+run 200 ns
+run 200 us
+close_sim
+launch_simulation
+source Histogram_tb.tcl
+run 200 us
+close_sim
+launch_simulation
+source Histogram_tb.tcl
+run 200 us
+close_sim
+launch_simulation
+source Histogram_tb.tcl
+run 200 us
+close_sim
+launch_simulation
+source Histogram_tb.tcl
+close_sim
+launch_simulation
+source Histogram_tb.tcl
+run 200 us
+close_sim
+launch_simulation
+source Histogram_tb.tcl
+run 200 us
+restart
+run 200 us
+close_sim
+launch_simulation
+source Histogram_tb.tcl
+restart
+run 200 us
+restart
+run 200 us
+close_sim
+launch_simulation
+source Histogram_tb.tcl
+run 200 us
+restart
+run 200 us
+restart
+run 200 us
+close_sim
+launch_simulation
+source Histogram_tb.tcl
+run 200 us
+close_sim

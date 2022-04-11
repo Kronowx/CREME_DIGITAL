@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "Z:/S8/Nanosat/CREME/FPGA/NXmap/Test/test_spi/SPI_CONTROLER.vhdl" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'SPI_CONTROLER'
+INFO: [VRFC 10-163] Analyzing VHDL file "G:/S8/Nanosat/NANOSAT_11_04/CREME_DIGITAL/SPI/Test_SPI_n7/Test_SPI.srcs/sources_1/new/ram_intel.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ram_intel'
