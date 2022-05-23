@@ -3,65 +3,33 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="tb_I2C_PERIPHERAL_READ_behav.wdb" id="1">
+      <db_ref path="tb_I2C_CONTROLER_behav.wdb" id="1">
          <top_modules>
             <top_module name="glbl" />
-            <top_module name="tb_I2C_PERIPHERAL_READ" />
+            <top_module name="tb_I2C_CONTROLER" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="539657910fs"></ZoomStartTime>
-      <ZoomEndTime time="1242657911fs"></ZoomEndTime>
-      <Cursor1Time time="938657910fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="950000001fs"></ZoomEndTime>
+      <Cursor1Time time="132311000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="190"></NameColumnWidth>
-      <ValueColumnWidth column_width="135"></ValueColumnWidth>
+      <ValueColumnWidth column_width="123"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="11" />
-   <wvobject fp_name="/tb_I2C_PERIPHERAL_READ/sig_CLK" type="logic">
+   <WVObjectSize size="3" />
+   <wvobject fp_name="/tb_I2C_CONTROLER/sig_CLK" type="logic">
       <obj_property name="ElementShortName">sig_CLK</obj_property>
       <obj_property name="ObjectShortName">sig_CLK</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_I2C_PERIPHERAL_READ/simulateur_slave/scl" type="logic">
-      <obj_property name="ElementShortName">scl</obj_property>
-      <obj_property name="ObjectShortName">scl</obj_property>
+   <wvobject fp_name="/tb_I2C_CONTROLER/sig_SCL" type="logic">
+      <obj_property name="ElementShortName">sig_SCL</obj_property>
+      <obj_property name="ObjectShortName">sig_SCL</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_I2C_PERIPHERAL_READ/simulateur_slave/sda" type="logic">
-      <obj_property name="ElementShortName">sda</obj_property>
-      <obj_property name="ObjectShortName">sda</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL/PORT_FREE" type="logic">
-      <obj_property name="ElementShortName">PORT_FREE</obj_property>
-      <obj_property name="ObjectShortName">PORT_FREE</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL/etat" type="other">
-      <obj_property name="ElementShortName">etat</obj_property>
-      <obj_property name="ObjectShortName">etat</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL/etat_futur" type="other">
-      <obj_property name="ElementShortName">etat_futur</obj_property>
-      <obj_property name="ObjectShortName">etat_futur</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_I2C_PERIPHERAL_READ/simulateur_slave/rw" type="logic">
-      <obj_property name="ElementShortName">rw</obj_property>
-      <obj_property name="ObjectShortName">rw</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_I2C_PERIPHERAL_READ/simulateur_slave/slave_ack" type="array">
-      <obj_property name="ElementShortName">slave_ack[2:0]</obj_property>
-      <obj_property name="ObjectShortName">slave_ack[2:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL/sig_adr" type="array">
-      <obj_property name="ElementShortName">sig_adr[2:0]</obj_property>
-      <obj_property name="ObjectShortName">sig_adr[2:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL/sig_data" type="array">
-      <obj_property name="ElementShortName">sig_data[7:0]</obj_property>
-      <obj_property name="ObjectShortName">sig_data[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL/sig_port_read" type="array">
-      <obj_property name="ElementShortName">sig_port_read[7:0]</obj_property>
-      <obj_property name="ObjectShortName">sig_port_read[7:0]</obj_property>
+   <wvobject fp_name="/tb_I2C_CONTROLER/sig_SDA" type="logic">
+      <obj_property name="ElementShortName">sig_SDA</obj_property>
+      <obj_property name="ObjectShortName">sig_SDA</obj_property>
    </wvobject>
 </wave_config>

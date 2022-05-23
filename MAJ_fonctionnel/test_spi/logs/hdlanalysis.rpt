@@ -1,0 +1,92 @@
+////////////////////////////////////////////////////////////////////////////////
+// NXpython NXpython3 v2020.1
+//
+//
+// Date:              Wed Feb 2 16:23:56 2022
+//
+// Command line       /opt/NanoXplore/NXmap3/2020.1/bin/nxpython3 
+// Distribution:      Ubuntu 18.04.4 LTS
+////////////////////////////////////////////////////////////////////////////////
+
+        |   ----------------------------------------------
+        |   - HDL Source code analysis                   -
+        |   ----------------------------------------------
+REMARK  |     Add Verilog Include Path: ./../../OpenCores/test_SPI
+REMARK  |     Add Verilog Include Path: ./../../OpenCores/test_SPI
+REMARK  |     Add Verilog Include Path: ./../../OpenCores/test_SPI
+REMARK  |     The vhdl library search path for library "std" is now "/opt/NanoXplore/NXmap3/2020.1/share/vhdl/std"
+REMARK  |     The vhdl library search path for library "ieee" is now "/opt/NanoXplore/NXmap3/2020.1/share/vhdl/ieee"
+REMARK  |     The vhdl library search path for library "synopsys" is now "/opt/NanoXplore/NXmap3/2020.1/share/vhdl/synopsys"
+REMARK  |     The vhdl library search path for library "vl" is now "/opt/NanoXplore/NXmap3/2020.1/share/vhdl/vl"
+REMARK  |     ./SPI_PERIPHERAL.vhdl(193): going to verilog side to elaborate module 'simple_spi_top'
+REMARK  |     ./../../OpenCores/test_SPI/simple_spi_top.v(73): compiling module 'simple_spi_top'
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(122): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(123): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(128): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(131): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(141): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(142): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(143): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(144): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(153): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(155): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(178): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(180): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(185): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(187): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(200): delay control is not supported for synthesis
+REMARK  |     ./../../OpenCores/test_SPI/fifo4.v(59): compiling module 'fifo4'
+WARNING |     ./../../OpenCores/test_SPI/fifo4.v(92): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/fifo4.v(94): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/fifo4.v(96): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/fifo4.v(102): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/fifo4.v(104): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/fifo4.v(106): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/fifo4.v(115): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/fifo4.v(123): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/fifo4.v(125): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/fifo4.v(127): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/fifo4.v(129): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(233): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(236): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(237): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(238): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(239): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(240): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(241): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(242): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(243): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(244): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(245): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(246): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(247): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(235): full_case directive is effective : might cause synthesis - simulation differences
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(257): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(258): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(259): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(260): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(261): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(262): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(266): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(267): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(272): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(273): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(274): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(277): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(278): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(279): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(285): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(286): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(291): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(292): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(295): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(296): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(297): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(299): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(300): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(304): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(315): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(318): delay control is not supported for synthesis
+WARNING |     ./../../OpenCores/test_SPI/simple_spi_top.v(320): delay control is not supported for synthesis
+REMARK  |     Renaming nx#NX_RAM(std_mode="NOECC_6kx8",mem_ctxt="11<...>000000000000000000")(1,10)(1,38911)
+        |          to: NX_RAM

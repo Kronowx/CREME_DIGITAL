@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May 23 17:28:31 2022
+# Process ID: 7724
+# Current directory: D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.runs/impl_1
+# Command line: vivado.exe -log I2C_CONTROLER.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source I2C_CONTROLER.tcl -notrace
+# Log file: D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.runs/impl_1/I2C_CONTROLER.vdi
+# Journal file: D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source I2C_CONTROLER.tcl -notrace

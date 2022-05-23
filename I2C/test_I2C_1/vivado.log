@@ -2,89 +2,59 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Apr 11 15:27:17 2022
-# Process ID: 4708
-# Current directory: D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1200 D:\nanosat\CREME_DIGITAL\I2C\test_I2C_1\test_I2C_1.xpr
-# Log file: D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/vivado.log
-# Journal file: D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1\vivado.jou
+# Start of session at: Mon May 23 14:47:52 2022
+# Process ID: 8928
+# Current directory: D:/CREME_DIGITAL/I2C/test_I2C_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10332 D:\CREME_DIGITAL\I2C\test_I2C_1\test_I2C_1.xpr
+# Log file: D:/CREME_DIGITAL/I2C/test_I2C_1/vivado.log
+# Journal file: D:/CREME_DIGITAL/I2C/test_I2C_1\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.xpr
-WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.gen/sources_1'.
+open_project D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.xpr
+INFO: [Project 1-313] Project file moved from 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.gen/sources_1', nor could it be found using path 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
-open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 1111.023 ; gain = 0.000
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1091.152 ; gain = 0.000
 update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/sim_1/new/tb_I2C_PERIPHERAL_READ.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/sim_1/new/tb_I2C_PERIPHERAL_READ.vhd
+update_compile_order -fileset sim_1
+set_property top tb_I2C_PERIPHERAL [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
 launch_simulation
 Command: launch_simulation 
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-54] Inspecting design source files for 'tb_I2C_PERIPHERAL' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
 "xvlog --incr --relax -prj tb_I2C_PERIPHERAL_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CREME_DIGITAL/I2C/test_I2C_1/sources/i2c_master_bit_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i2c_master_bit_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CREME_DIGITAL/I2C/test_I2C_1/sources/i2c_master_byte_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i2c_master_byte_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CREME_DIGITAL/I2C/test_I2C_1/sources/i2c_master_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i2c_master_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CREME_DIGITAL/I2C/test_I2C_1/sources/i2c_slave_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i2c_slave_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
 "xvhdl --incr --relax -prj tb_I2C_PERIPHERAL_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/sources/I2C_PERIPHERAL.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/CREME_DIGITAL/I2C/test_I2C_1/sources/I2C_PERIPHERAL.vhdl" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'I2C_PERIPHERAL'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/sources/wishbone_master.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/CREME_DIGITAL/I2C/test_I2C_1/sources/wishbone_master.vhdl" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'WISHBONE_MASTER'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/sources/testbench_I2C_PERIPHERAL.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/CREME_DIGITAL/I2C/test_I2C_1/sources/testbench_I2C_PERIPHERAL.vhdl" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'tb_I2C_PERIPHERAL'
 INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-INFO: [Common 17-41] Interrupt caught. Command should exit soon.
-"xelab -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_behav xil_defaultlib.tb_I2C_PERIPHERAL xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2020.2
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_behav xil_defaultlib.tb_I2C_PERIPHERAL xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.std_logic_textio
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling package vl.vl_types
-Compiling module xil_defaultlib.glbl
-Compiling module xil_defaultlib.i2c_master_bit_ctrl
-Compiling module xil_defaultlib.i2c_master_byte_ctrl
-Compiling module xil_defaultlib.i2c_master_top(ARST_LVL=1'b0)
-Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
-Compiling architecture behavioral of entity xil_defaultlib.I2C_PERIPHERAL [i2c_peripheral_default]
-Compiling module xil_defaultlib.i2c_slave_model(I2C_ADR=7'b01000...
-Compiling architecture behavioral of entity xil_defaultlib.tb_i2c_peripheral
-INFO: [Common 17-344] 'run_program' was cancelled
-INFO: [Vivado 12-5357] 'elaborate' step aborted
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1111.023 ; gain = 0.000
-INFO: [Common 17-344] 'launch_simulation' was cancelled
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_I2C_PERIPHERAL' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_I2C_PERIPHERAL_vlog.prj"
-"xvhdl --incr --relax -prj tb_I2C_PERIPHERAL_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
 "xelab -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_behav xil_defaultlib.tb_I2C_PERIPHERAL xil_defaultlib.glbl -log elaborate.log"
 Vivado Simulator 2020.2
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
@@ -119,19 +89,29 @@ Built simulation snapshot tb_I2C_PERIPHERAL_behav
   **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
-source D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim/xsim.dir/tb_I2C_PERIPHERAL_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Mon Apr 11 15:29:06 2022...
-run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1111.023 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+source D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim/xsim.dir/tb_I2C_PERIPHERAL_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon May 23 14:49:03 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1091.152 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_I2C_PERIPHERAL_behav -key {Behavioral:sim_1:Functional:tb_I2C_PERIPHERAL} -tclbatch {tb_I2C_PERIPHERAL.tcl} -view {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg} -log {simulate.log}"
+   with args "tb_I2C_PERIPHERAL_behav -key {Behavioral:sim_1:Functional:tb_I2C_PERIPHERAL} -tclbatch {tb_I2C_PERIPHERAL.tcl} -view {D:/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2020.2
 Time resolution is 1 ps
-open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
-WARNING: Simulation object /tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/sig_int was not found in the design.
+open_wave_config D:/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/sig_CLK was not found in the design.
+WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/simulateur_slave/scl was not found in the design.
+WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/simulateur_slave/sda was not found in the design.
+WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL/PORT_FREE was not found in the design.
+WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL/etat was not found in the design.
+WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL/etat_futur was not found in the design.
+WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/simulateur_slave/rw was not found in the design.
+WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/simulateur_slave/slave_ack was not found in the design.
+WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL/sig_adr was not found in the design.
+WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL/sig_data was not found in the design.
+WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL/sig_port_read was not found in the design.
 source tb_I2C_PERIPHERAL.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
@@ -146,141 +126,25 @@ source tb_I2C_PERIPHERAL.tcl
 DEBUG i2c_slave; stop condition detected at                    0
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_I2C_PERIPHERAL_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1111.023 ; gain = 0.000
-run 10ms
-DEBUG i2c_slave; start condition detected at            116271000
-DEBUG i2c_slave; command byte received (write) at            294103000
-DEBUG i2c_slave; address received. adr=a5, ack=1
-DEBUG i2c_slave; stop condition detected at            527411000
-DEBUG i2c_slave; start condition detected at            643701000
-DEBUG i2c_slave; command byte received (write) at            821323000
-DEBUG i2c_slave; start condition detected at            859731000
-DEBUG i2c_slave; stop condition detected at           1270771000
-DEBUG i2c_slave; start condition detected at           1387061000
-DEBUG i2c_slave; command byte received (write) at           1564683000
-DEBUG i2c_slave; start condition detected at           1603091000
-DEBUG i2c_slave; start condition detected at           1819231000
-DEBUG i2c_slave; stop condition detected at           2230271000
-DEBUG i2c_slave; start condition detected at           2346561000
-DEBUG i2c_slave; command byte received (write) at           2524183000
-DEBUG i2c_slave; start condition detected at           2562591000
-DEBUG i2c_slave; start condition detected at           2778731000
-DEBUG i2c_slave; start condition detected at           2994871000
-DEBUG i2c_slave; stop condition detected at           3405911000
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 10 ms
-DEBUG i2c_slave; stop condition detected at                    0
-DEBUG i2c_slave; start condition detected at            116271000
-DEBUG i2c_slave; command byte received (write) at            294103000
-DEBUG i2c_slave; address received. adr=a5, ack=1
-DEBUG i2c_slave; stop condition detected at            527411000
-DEBUG i2c_slave; start condition detected at            643701000
-DEBUG i2c_slave; command byte received (write) at            821323000
-DEBUG i2c_slave; start condition detected at            859731000
-DEBUG i2c_slave; stop condition detected at           1270771000
-DEBUG i2c_slave; start condition detected at           1387061000
-DEBUG i2c_slave; command byte received (write) at           1564683000
-DEBUG i2c_slave; start condition detected at           1603091000
-DEBUG i2c_slave; start condition detected at           1819231000
-DEBUG i2c_slave; stop condition detected at           2230271000
-DEBUG i2c_slave; start condition detected at           2346561000
-DEBUG i2c_slave; command byte received (write) at           2524183000
-DEBUG i2c_slave; start condition detected at           2562591000
-DEBUG i2c_slave; start condition detected at           2778731000
-DEBUG i2c_slave; start condition detected at           2994871000
-DEBUG i2c_slave; stop condition detected at           3405911000
-save_wave_config {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg}
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
-Starting synth_design
-Using part: xc7a100tcsg324-3
-Top: I2C_PERIPHERAL
-INFO: [Device 21-403] Loading part xc7a100tcsg324-3
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1638.082 ; gain = 229.852
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'I2C_PERIPHERAL' [D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/sources/I2C_PERIPHERAL.vhdl:57]
-INFO: [Synth 8-3491] module 'i2c_master_top' declared at 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/sources/i2c_master_top.v:78' bound to instance 'i2c_top_1' of component 'i2c_master_top' [D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/sources/I2C_PERIPHERAL.vhdl:202]
-INFO: [Synth 8-6157] synthesizing module 'i2c_master_top' [D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/sources/i2c_master_top.v:78]
-	Parameter ARST_LVL bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'i2c_master_byte_ctrl' [D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/sources/i2c_master_byte_ctrl.v:75]
-	Parameter ST_IDLE bound to: 5'b00000 
-	Parameter ST_START bound to: 5'b00001 
-	Parameter ST_READ bound to: 5'b00010 
-	Parameter ST_WRITE bound to: 5'b00100 
-	Parameter ST_ACK bound to: 5'b01000 
-	Parameter ST_STOP bound to: 5'b10000 
-INFO: [Synth 8-6157] synthesizing module 'i2c_master_bit_ctrl' [D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/sources/i2c_master_bit_ctrl.v:143]
-	Parameter idle bound to: 18'b000000000000000000 
-	Parameter start_a bound to: 18'b000000000000000001 
-	Parameter start_b bound to: 18'b000000000000000010 
-	Parameter start_c bound to: 18'b000000000000000100 
-	Parameter start_d bound to: 18'b000000000000001000 
-	Parameter start_e bound to: 18'b000000000000010000 
-	Parameter stop_a bound to: 18'b000000000000100000 
-	Parameter stop_b bound to: 18'b000000000001000000 
-	Parameter stop_c bound to: 18'b000000000010000000 
-	Parameter stop_d bound to: 18'b000000000100000000 
-	Parameter rd_a bound to: 18'b000000001000000000 
-	Parameter rd_b bound to: 18'b000000010000000000 
-	Parameter rd_c bound to: 18'b000000100000000000 
-	Parameter rd_d bound to: 18'b000001000000000000 
-	Parameter wr_a bound to: 18'b000010000000000000 
-	Parameter wr_b bound to: 18'b000100000000000000 
-	Parameter wr_c bound to: 18'b001000000000000000 
-	Parameter wr_d bound to: 18'b010000000000000000 
-INFO: [Synth 8-6155] done synthesizing module 'i2c_master_bit_ctrl' (1#1) [D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/sources/i2c_master_bit_ctrl.v:143]
-INFO: [Synth 8-6155] done synthesizing module 'i2c_master_byte_ctrl' (2#1) [D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/sources/i2c_master_byte_ctrl.v:75]
-INFO: [Synth 8-6155] done synthesizing module 'i2c_master_top' (3#1) [D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/sources/i2c_master_top.v:78]
-INFO: [Synth 8-3491] module 'WISHBONE_MASTER' declared at 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/sources/wishbone_master.vhdl:36' bound to instance 'driver_1' of component 'WISHBONE_MASTER' [D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/sources/I2C_PERIPHERAL.vhdl:223]
-INFO: [Synth 8-638] synthesizing module 'WISHBONE_MASTER' [D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/sources/wishbone_master.vhdl:59]
-INFO: [Synth 8-256] done synthesizing module 'WISHBONE_MASTER' (4#1) [D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/sources/wishbone_master.vhdl:59]
-INFO: [Synth 8-256] done synthesizing module 'I2C_PERIPHERAL' (5#1) [D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/sources/I2C_PERIPHERAL.vhdl:57]
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1713.574 ; gain = 305.344
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1713.574 ; gain = 305.344
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1713.574 ; gain = 305.344
----------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1713.574 ; gain = 0.000
-INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Completed Processing XDC Constraints
-
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1800.027 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-RTL Elaboration Complete:  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1916.680 ; gain = 508.449
-15 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:18 . Memory (MB): peak = 1916.680 ; gain = 805.656
-save_wave_config {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg}
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1091.152 ; gain = 0.000
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 launch_simulation
 Command: launch_simulation 
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-54] Inspecting design source files for 'tb_I2C_PERIPHERAL' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
 "xvlog --incr --relax -prj tb_I2C_PERIPHERAL_vlog.prj"
 "xvhdl --incr --relax -prj tb_I2C_PERIPHERAL_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/CREME_DIGITAL/I2C/test_I2C_1/sources/testbench_I2C_PERIPHERAL.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_I2C_PERIPHERAL'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
 "xelab -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_behav xil_defaultlib.tb_I2C_PERIPHERAL xil_defaultlib.glbl -log elaborate.log"
 Vivado Simulator 2020.2
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
@@ -289,16 +153,46 @@ Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module xil_defaultlib.i2c_master_bit_ctrl
+Compiling module xil_defaultlib.i2c_master_byte_ctrl
+Compiling module xil_defaultlib.i2c_master_top(ARST_LVL=1'b0)
+Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
+Compiling architecture behavioral of entity xil_defaultlib.I2C_PERIPHERAL [i2c_peripheral_default]
+Compiling module xil_defaultlib.i2c_slave_model(I2C_ADR=7'b01000...
+Compiling architecture behavioral of entity xil_defaultlib.tb_i2c_peripheral
+Built simulation snapshot tb_I2C_PERIPHERAL_behav
 INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_I2C_PERIPHERAL_behav -key {Behavioral:sim_1:Functional:tb_I2C_PERIPHERAL} -tclbatch {tb_I2C_PERIPHERAL.tcl} -view {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg} -log {simulate.log}"
+   with args "tb_I2C_PERIPHERAL_behav -key {Behavioral:sim_1:Functional:tb_I2C_PERIPHERAL} -tclbatch {tb_I2C_PERIPHERAL.tcl} -view {D:/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2020.2
 Time resolution is 1 ps
-open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+open_wave_config D:/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/sig_CLK was not found in the design.
+WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/simulateur_slave/scl was not found in the design.
+WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/simulateur_slave/sda was not found in the design.
+WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL/PORT_FREE was not found in the design.
+WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL/etat was not found in the design.
+WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL/etat_futur was not found in the design.
+WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/simulateur_slave/rw was not found in the design.
+WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/simulateur_slave/slave_ack was not found in the design.
+WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL/sig_adr was not found in the design.
+WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL/sig_data was not found in the design.
+WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL/sig_port_read was not found in the design.
 source tb_I2C_PERIPHERAL.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
@@ -313,61 +207,36 @@ source tb_I2C_PERIPHERAL.tcl
 DEBUG i2c_slave; stop condition detected at                    0
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_I2C_PERIPHERAL_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1916.680 ; gain = 0.000
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1091.152 ; gain = 0.000
 run 10 ms
 DEBUG i2c_slave; start condition detected at            116271000
-DEBUG i2c_slave; command byte received (write) at            294103000
-DEBUG i2c_slave; address received. adr=a5, ack=1
-DEBUG i2c_slave; stop condition detected at            527411000
-DEBUG i2c_slave; start condition detected at            643701000
-DEBUG i2c_slave; command byte received (write) at            821323000
-DEBUG i2c_slave; start condition detected at            859731000
-DEBUG i2c_slave; stop condition detected at           1270771000
-DEBUG i2c_slave; start condition detected at           1387061000
-DEBUG i2c_slave; command byte received (write) at           1564683000
-DEBUG i2c_slave; start condition detected at           1603091000
-DEBUG i2c_slave; start condition detected at           1819231000
-DEBUG i2c_slave; stop condition detected at           2230271000
-DEBUG i2c_slave; start condition detected at           2346561000
-DEBUG i2c_slave; command byte received (write) at           2524183000
-DEBUG i2c_slave; start condition detected at           2562591000
-DEBUG i2c_slave; start condition detected at           2778731000
-DEBUG i2c_slave; start condition detected at           2994871000
-DEBUG i2c_slave; stop condition detected at           3405911000
-file mkdir D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/sim_1/new
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/sim_1/new/tb_I2C_PERIPHERAL_READ.vhd w ]
-add_files -fileset sim_1 D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/sim_1/new/tb_I2C_PERIPHERAL_READ.vhd
-update_compile_order -fileset sim_1
-set_property top tb_I2C_PERIPHERAL_READ [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-update_compile_order -fileset sim_1
-launch_simulation
-Command: launch_simulation 
-boost::filesystem::remove: Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: "D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim/simulate.log"
+DEBUG i2c_slave; command byte received (read) at            294103000
+DEBUG i2c_slave; data block read xx from address xx (1)
+DEBUG i2c_slave; memcheck [0]=xx, [1]=xx, [2]=xx
+DEBUG i2c_slave; data block read xx from address xx (2)
+save_wave_config {D:/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg}
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
-close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1918.145 ; gain = 0.000
 launch_simulation
 Command: launch_simulation 
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_I2C_PERIPHERAL_READ' in fileset 'sim_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_I2C_PERIPHERAL' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_I2C_PERIPHERAL_READ_vlog.prj"
-"xvhdl --incr --relax -prj tb_I2C_PERIPHERAL_READ_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/sim_1/new/tb_I2C_PERIPHERAL_READ.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_I2C_PERIPHERAL_READ'
-INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_I2C_PERIPHERAL_vlog.prj"
+"xvhdl --incr --relax -prj tb_I2C_PERIPHERAL_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/CREME_DIGITAL/I2C/test_I2C_1/sources/testbench_I2C_PERIPHERAL.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_I2C_PERIPHERAL'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-"xelab -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_READ_behav xil_defaultlib.tb_I2C_PERIPHERAL_READ xil_defaultlib.glbl -log elaborate.log"
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
+"xelab -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_behav xil_defaultlib.tb_I2C_PERIPHERAL xil_defaultlib.glbl -log elaborate.log"
 Vivado Simulator 2020.2
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_READ_behav xil_defaultlib.tb_I2C_PERIPHERAL_READ xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_behav xil_defaultlib.tb_I2C_PERIPHERAL xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -389,56 +258,210 @@ Compiling module xil_defaultlib.i2c_master_byte_ctrl
 Compiling module xil_defaultlib.i2c_master_top(ARST_LVL=1'b0)
 Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
 Compiling architecture behavioral of entity xil_defaultlib.I2C_PERIPHERAL [i2c_peripheral_default]
-Compiling architecture behavioral of entity xil_defaultlib.tb_i2c_peripheral_read
-Built simulation snapshot tb_I2C_PERIPHERAL_READ_behav
+Compiling architecture behavioral of entity xil_defaultlib.tb_i2c_peripheral
+Built simulation snapshot tb_I2C_PERIPHERAL_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_I2C_PERIPHERAL_behav -key {Behavioral:sim_1:Functional:tb_I2C_PERIPHERAL} -tclbatch {tb_I2C_PERIPHERAL.tcl} -view {D:/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_I2C_PERIPHERAL_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1091.152 ; gain = 0.000
+run 10 ms
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 ms
+save_wave_config {D:/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_I2C_PERIPHERAL' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_I2C_PERIPHERAL_vlog.prj"
+"xvhdl --incr --relax -prj tb_I2C_PERIPHERAL_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/CREME_DIGITAL/I2C/test_I2C_1/sources/testbench_I2C_PERIPHERAL.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_I2C_PERIPHERAL'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
+"xelab -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_behav xil_defaultlib.tb_I2C_PERIPHERAL xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_behav xil_defaultlib.tb_I2C_PERIPHERAL xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module xil_defaultlib.i2c_master_bit_ctrl
+Compiling module xil_defaultlib.i2c_master_byte_ctrl
+Compiling module xil_defaultlib.i2c_master_top(ARST_LVL=1'b0)
+Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
+Compiling architecture behavioral of entity xil_defaultlib.I2C_PERIPHERAL [i2c_peripheral_default]
+Compiling module xil_defaultlib.i2c_slave_model(I2C_ADR=7'b01000...
+Compiling architecture behavioral of entity xil_defaultlib.tb_i2c_peripheral
+Built simulation snapshot tb_I2C_PERIPHERAL_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_I2C_PERIPHERAL_behav -key {Behavioral:sim_1:Functional:tb_I2C_PERIPHERAL} -tclbatch {tb_I2C_PERIPHERAL.tcl} -view {D:/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+DEBUG i2c_slave; stop condition detected at                    0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_I2C_PERIPHERAL_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1091.152 ; gain = 0.000
+run 10 ms
+DEBUG i2c_slave; start condition detected at            116271000
+DEBUG i2c_slave; command byte received (read) at            294103000
+DEBUG i2c_slave; data block read xx from address xx (1)
+DEBUG i2c_slave; memcheck [0]=xx, [1]=xx, [2]=xx
+DEBUG i2c_slave; data block read xx from address xx (2)
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 5 ms
+DEBUG i2c_slave; stop condition detected at                    0
+DEBUG i2c_slave; start condition detected at            116271000
+DEBUG i2c_slave; command byte received (read) at            294103000
+DEBUG i2c_slave; data block read xx from address xx (1)
+DEBUG i2c_slave; memcheck [0]=xx, [1]=xx, [2]=xx
+DEBUG i2c_slave; data block read xx from address xx (2)
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 5 ms
+DEBUG i2c_slave; stop condition detected at                    0
+DEBUG i2c_slave; start condition detected at            116271000
+DEBUG i2c_slave; command byte received (read) at            294103000
+DEBUG i2c_slave; data block read xx from address xx (1)
+DEBUG i2c_slave; memcheck [0]=xx, [1]=xx, [2]=xx
+DEBUG i2c_slave; data block read xx from address xx (2)
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse //n7fs/ahuvelin/MesDocs/Bureau/CREME_DIGITAL/I2C/test_I2C_1/sources/testbench_I2C_CONTROLER.vhdl
+update_compile_order -fileset sim_1
+set_property top tb_I2C_CONTROLER [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: "D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_I2C_CONTROLER' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_I2C_CONTROLER_vlog.prj"
+"xvhdl --incr --relax -prj tb_I2C_CONTROLER_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/CREME_DIGITAL/I2C/test_I2C_1/sources/I2C_CONTROLER.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'I2C_CONTROLER'
+INFO: [VRFC 10-163] Analyzing VHDL file "//n7fs/ahuvelin/MesDocs/Bureau/CREME_DIGITAL/I2C/test_I2C_1/sources/testbench_I2C_CONTROLER.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_I2C_CONTROLER'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
+"xelab -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_CONTROLER_behav xil_defaultlib.tb_I2C_CONTROLER xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_CONTROLER_behav xil_defaultlib.tb_I2C_CONTROLER xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module xil_defaultlib.i2c_master_bit_ctrl
+Compiling module xil_defaultlib.i2c_master_byte_ctrl
+Compiling module xil_defaultlib.i2c_master_top(ARST_LVL=1'b0)
+Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
+Compiling architecture behavioral of entity xil_defaultlib.I2C_PERIPHERAL [i2c_peripheral_default]
+Compiling architecture behavioral of entity xil_defaultlib.I2C_CONTROLER [i2c_controler_default]
+Compiling module xil_defaultlib.i2c_slave_model(I2C_ADR=7'b01000...
+Compiling architecture behavioral of entity xil_defaultlib.tb_i2c_controler
+Built simulation snapshot tb_I2C_CONTROLER_behav
 
 ****** Webtalk v2020.2 (64-bit)
   **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
   **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
-source D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim/xsim.dir/tb_I2C_PERIPHERAL_READ_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Mon Apr 11 16:53:45 2022...
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1918.145 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+source D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim/xsim.dir/tb_I2C_CONTROLER_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon May 23 17:03:40 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1091.152 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_I2C_PERIPHERAL_READ_behav -key {Behavioral:sim_1:Functional:tb_I2C_PERIPHERAL_READ} -tclbatch {tb_I2C_PERIPHERAL_READ.tcl} -view {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg} -log {simulate.log}"
+   with args "tb_I2C_CONTROLER_behav -key {Behavioral:sim_1:Functional:tb_I2C_CONTROLER} -tclbatch {tb_I2C_CONTROLER.tcl} -view {D:/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2020.2
 Time resolution is 1 ps
-open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
-WARNING: Simulation object /tb_I2C_PERIPHERAL/sig_CLK was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/sig_RESET_BAR was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/sig_START was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/sig_RD_WR was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/sig_PORT_READ was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/sig_PORT_WRITE_ADDR was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/sig_PORT_WRITE_DATA was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/sig_PORT_FREE was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/sig_DATA_SIZE was not found in the design.
+open_wave_config D:/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
 WARNING: Simulation object /tb_I2C_PERIPHERAL/sig_SCL was not found in the design.
 WARNING: Simulation object /tb_I2C_PERIPHERAL/sig_SDA was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/device_addr was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/device_word_send was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/etat was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/etat_futur was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/etat_futur2 was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/PRERlo was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/PRERhi was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/sig_adr was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/sig_data_i was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/sig_data_o was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/sig_addr was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/sig_data was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/sig_start was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/sig_rd_wr was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/sig_port_free_peripheral was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/evaluate_I2C_PERIPHERAL/sig_port_free was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/simulateur_slave/scl was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL/simulateur_slave/sda was not found in the design.
-source tb_I2C_PERIPHERAL_READ.tcl
+WARNING: Simulation object /tb_I2C_PERIPHERAL/sig_PORT_READ was not found in the design.
+source tb_I2C_CONTROLER.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -449,43 +472,63 @@ source tb_I2C_PERIPHERAL_READ.tcl
 #   }
 # }
 # run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_I2C_PERIPHERAL_READ_behav' loaded.
+DEBUG i2c_slave; stop condition detected at                    0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_I2C_CONTROLER_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1918.145 ; gain = 0.000
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1091.152 ; gain = 0.000
 restart
 INFO: [Simtcl 6-17] Simulation restarted
 run 10 ms
-run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1918.145 ; gain = 0.000
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 10 ms
-run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1918.145 ; gain = 0.000
+DEBUG i2c_slave; stop condition detected at                    0
+DEBUG i2c_slave; start condition detected at            116271000
+DEBUG i2c_slave; start condition detected at            332511000
+DEBUG i2c_slave; stop condition detected at            743551000
+DEBUG i2c_slave; start condition detected at            759591000
+DEBUG i2c_slave; start condition detected at            975881000
+DEBUG i2c_slave; stop condition detected at           1386921000
+DEBUG i2c_slave; start condition detected at           1402961000
+DEBUG i2c_slave; start condition detected at           1619251000
+DEBUG i2c_slave; stop condition detected at           2030291000
+DEBUG i2c_slave; start condition detected at           2046331000
+DEBUG i2c_slave; start condition detected at           2262621000
+DEBUG i2c_slave; stop condition detected at           2673661000
+DEBUG i2c_slave; start condition detected at           2689701000
+DEBUG i2c_slave; start condition detected at           2905991000
+DEBUG i2c_slave; stop condition detected at           3317031000
+DEBUG i2c_slave; start condition detected at           3333071000
+DEBUG i2c_slave; start condition detected at           3549361000
+DEBUG i2c_slave; stop condition detected at           3960401000
+ERROR: [Vivado 12-106] *** Exception: java.lang.IllegalArgumentException: URI has an authority component (See D:/CREME_DIGITAL/I2C/test_I2C_1/vivado_pid8928.debug)
+set_property top tb_I2C_PERIPHERAL [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
 update_compile_order -fileset sim_1
-update_compile_order -fileset sim_1
-update_compile_order -fileset sim_1
-save_wave_config {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg}
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
 launch_simulation
 Command: launch_simulation 
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
+boost::filesystem::remove: Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: "D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim/simulate.log"
+save_wave_config {D:/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1091.152 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_I2C_PERIPHERAL_READ' in fileset 'sim_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_I2C_PERIPHERAL' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_I2C_PERIPHERAL_READ_vlog.prj"
-"xvhdl --incr --relax -prj tb_I2C_PERIPHERAL_READ_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/sim_1/new/tb_I2C_PERIPHERAL_READ.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_I2C_PERIPHERAL_READ'
-INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_I2C_PERIPHERAL_vlog.prj"
+"xvhdl --incr --relax -prj tb_I2C_PERIPHERAL_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/CREME_DIGITAL/I2C/test_I2C_1/sources/testbench_I2C_PERIPHERAL.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_I2C_PERIPHERAL'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-"xelab -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_READ_behav xil_defaultlib.tb_I2C_PERIPHERAL_READ xil_defaultlib.glbl -log elaborate.log"
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
+"xelab -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_behav xil_defaultlib.tb_I2C_PERIPHERAL xil_defaultlib.glbl -log elaborate.log"
 Vivado Simulator 2020.2
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_READ_behav xil_defaultlib.tb_I2C_PERIPHERAL_READ xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_behav xil_defaultlib.tb_I2C_PERIPHERAL xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -508,28 +551,21 @@ Compiling module xil_defaultlib.i2c_master_top(ARST_LVL=1'b0)
 Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
 Compiling architecture behavioral of entity xil_defaultlib.I2C_PERIPHERAL [i2c_peripheral_default]
 Compiling module xil_defaultlib.i2c_slave_model(I2C_ADR=7'b01000...
-Compiling architecture behavioral of entity xil_defaultlib.tb_i2c_peripheral_read
-Built simulation snapshot tb_I2C_PERIPHERAL_READ_behav
+Compiling architecture behavioral of entity xil_defaultlib.tb_i2c_peripheral
+Built simulation snapshot tb_I2C_PERIPHERAL_behav
 INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_I2C_PERIPHERAL_READ_behav -key {Behavioral:sim_1:Functional:tb_I2C_PERIPHERAL_READ} -tclbatch {tb_I2C_PERIPHERAL_READ.tcl} -view {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg} -log {simulate.log}"
+   with args "tb_I2C_PERIPHERAL_behav -key {Behavioral:sim_1:Functional:tb_I2C_PERIPHERAL} -tclbatch {tb_I2C_PERIPHERAL.tcl} -view {D:/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2020.2
 Time resolution is 1 ps
-open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
-WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL_2/CLK was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL_2/SDA was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL_2/SCL was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL_2/RD_WR was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL_1/sig_port_write_addr_peripheral was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL_2/sig_port_read_peripheral was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL_1/etat was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL_1/etat_futur was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL_2/etat was not found in the design.
-WARNING: Simulation object /tb_I2C_PERIPHERAL_READ/evaluate_I2C_PERIPHERAL_2/etat_futur was not found in the design.
-source tb_I2C_PERIPHERAL_READ.tcl
+open_wave_config D:/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+WARNING: Simulation object /tb_I2C_CONTROLER/sig_CLK was not found in the design.
+WARNING: Simulation object /tb_I2C_CONTROLER/sig_SCL was not found in the design.
+WARNING: Simulation object /tb_I2C_CONTROLER/sig_SDA was not found in the design.
+source tb_I2C_PERIPHERAL.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -541,9 +577,9 @@ source tb_I2C_PERIPHERAL_READ.tcl
 # }
 # run 1000ns
 DEBUG i2c_slave; stop condition detected at                    0
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_I2C_PERIPHERAL_READ_behav' loaded.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_I2C_PERIPHERAL_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1918.145 ; gain = 0.000
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1091.152 ; gain = 0.000
 restart
 INFO: [Simtcl 6-17] Simulation restarted
 run 10 ms
@@ -553,600 +589,38 @@ DEBUG i2c_slave; command byte received (read) at            294103000
 DEBUG i2c_slave; data block read xx from address xx (1)
 DEBUG i2c_slave; memcheck [0]=xx, [1]=xx, [2]=xx
 DEBUG i2c_slave; data block read xx from address xx (2)
-run 10 ms
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 10 ms
-DEBUG i2c_slave; stop condition detected at                    0
-DEBUG i2c_slave; start condition detected at            116271000
-DEBUG i2c_slave; command byte received (read) at            294103000
-DEBUG i2c_slave; data block read xx from address xx (1)
-DEBUG i2c_slave; memcheck [0]=xx, [1]=xx, [2]=xx
 DEBUG i2c_slave; data block read xx from address xx (2)
-save_wave_config {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg}
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_I2C_PERIPHERAL_READ' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_I2C_PERIPHERAL_READ_vlog.prj"
-"xvhdl --incr --relax -prj tb_I2C_PERIPHERAL_READ_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/sim_1/new/tb_I2C_PERIPHERAL_READ.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_I2C_PERIPHERAL_READ'
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-"xelab -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_READ_behav xil_defaultlib.tb_I2C_PERIPHERAL_READ xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2020.2
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_READ_behav xil_defaultlib.tb_I2C_PERIPHERAL_READ xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.std_logic_textio
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling package vl.vl_types
-Compiling module xil_defaultlib.glbl
-Compiling module xil_defaultlib.i2c_master_bit_ctrl
-Compiling module xil_defaultlib.i2c_master_byte_ctrl
-Compiling module xil_defaultlib.i2c_master_top(ARST_LVL=1'b0)
-Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
-Compiling architecture behavioral of entity xil_defaultlib.I2C_PERIPHERAL [i2c_peripheral_default]
-Compiling module xil_defaultlib.i2c_slave_model(I2C_ADR=7'b01000...
-Compiling architecture behavioral of entity xil_defaultlib.tb_i2c_peripheral_read
-Built simulation snapshot tb_I2C_PERIPHERAL_READ_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_I2C_PERIPHERAL_READ_behav -key {Behavioral:sim_1:Functional:tb_I2C_PERIPHERAL_READ} -tclbatch {tb_I2C_PERIPHERAL_READ.tcl} -view {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2020.2
-Time resolution is 1 ps
-open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
-source tb_I2C_PERIPHERAL_READ.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-DEBUG i2c_slave; stop condition detected at                    0
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_I2C_PERIPHERAL_READ_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1918.645 ; gain = 0.500
-run 10 ms
-DEBUG i2c_slave; start condition detected at            116271000
-DEBUG i2c_slave; command byte received (write) at            294103000
-DEBUG i2c_slave; address received. adr=a5, ack=1
-DEBUG i2c_slave; stop condition detected at            527411000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_I2C_PERIPHERAL_READ' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_I2C_PERIPHERAL_READ_vlog.prj"
-"xvhdl --incr --relax -prj tb_I2C_PERIPHERAL_READ_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/sim_1/new/tb_I2C_PERIPHERAL_READ.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_I2C_PERIPHERAL_READ'
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-"xelab -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_READ_behav xil_defaultlib.tb_I2C_PERIPHERAL_READ xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2020.2
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_READ_behav xil_defaultlib.tb_I2C_PERIPHERAL_READ xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.std_logic_textio
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling package vl.vl_types
-Compiling module xil_defaultlib.glbl
-Compiling module xil_defaultlib.i2c_master_bit_ctrl
-Compiling module xil_defaultlib.i2c_master_byte_ctrl
-Compiling module xil_defaultlib.i2c_master_top(ARST_LVL=1'b0)
-Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
-Compiling architecture behavioral of entity xil_defaultlib.I2C_PERIPHERAL [i2c_peripheral_default]
-Compiling module xil_defaultlib.i2c_slave_model(I2C_ADR=7'b01000...
-Compiling architecture behavioral of entity xil_defaultlib.tb_i2c_peripheral_read
-Built simulation snapshot tb_I2C_PERIPHERAL_READ_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_I2C_PERIPHERAL_READ_behav -key {Behavioral:sim_1:Functional:tb_I2C_PERIPHERAL_READ} -tclbatch {tb_I2C_PERIPHERAL_READ.tcl} -view {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2020.2
-Time resolution is 1 ps
-open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
-source tb_I2C_PERIPHERAL_READ.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-DEBUG i2c_slave; stop condition detected at                    0
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_I2C_PERIPHERAL_READ_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1919.230 ; gain = 0.586
-run 5 ms
-DEBUG i2c_slave; start condition detected at            116271000
-DEBUG i2c_slave; command byte received (write) at            294103000
-DEBUG i2c_slave; address received. adr=a5, ack=1
-DEBUG i2c_slave; stop condition detected at            527411000
-DEBUG i2c_slave; start condition detected at            643701000
-DEBUG i2c_slave; command byte received (read) at            821323000
-DEBUG i2c_slave; data block read xx from address a5 (1)
-DEBUG i2c_slave; memcheck [0]=xx, [1]=xx, [2]=xx
-DEBUG i2c_slave; data block read xx from address a6 (2)
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_I2C_PERIPHERAL_READ' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_I2C_PERIPHERAL_READ_vlog.prj"
-"xvhdl --incr --relax -prj tb_I2C_PERIPHERAL_READ_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/sim_1/new/tb_I2C_PERIPHERAL_READ.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_I2C_PERIPHERAL_READ'
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-"xelab -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_READ_behav xil_defaultlib.tb_I2C_PERIPHERAL_READ xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2020.2
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_READ_behav xil_defaultlib.tb_I2C_PERIPHERAL_READ xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-ERROR: [VRFC 10-664] expression has 7 elements ; expected 32 [D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/sim_1/new/tb_I2C_PERIPHERAL_READ.vhd:145]
-ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-99] Step results log file:'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim/elaborate.log'
-ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1919.301 ; gain = 0.000
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_I2C_PERIPHERAL_READ' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_I2C_PERIPHERAL_READ_vlog.prj"
-"xvhdl --incr --relax -prj tb_I2C_PERIPHERAL_READ_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/sim_1/new/tb_I2C_PERIPHERAL_READ.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_I2C_PERIPHERAL_READ'
-INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-"xelab -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_READ_behav xil_defaultlib.tb_I2C_PERIPHERAL_READ xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2020.2
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_READ_behav xil_defaultlib.tb_I2C_PERIPHERAL_READ xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.std_logic_textio
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling package vl.vl_types
-Compiling module xil_defaultlib.glbl
-Compiling module xil_defaultlib.i2c_master_bit_ctrl
-Compiling module xil_defaultlib.i2c_master_byte_ctrl
-Compiling module xil_defaultlib.i2c_master_top(ARST_LVL=1'b0)
-Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
-Compiling architecture behavioral of entity xil_defaultlib.I2C_PERIPHERAL [i2c_peripheral_default]
-Compiling module xil_defaultlib.i2c_slave_model(I2C_ADR=7'b01000...
-Compiling architecture behavioral of entity xil_defaultlib.tb_i2c_peripheral_read
-Built simulation snapshot tb_I2C_PERIPHERAL_READ_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_I2C_PERIPHERAL_READ_behav -key {Behavioral:sim_1:Functional:tb_I2C_PERIPHERAL_READ} -tclbatch {tb_I2C_PERIPHERAL_READ.tcl} -view {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2020.2
-Time resolution is 1 ps
-open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
-source tb_I2C_PERIPHERAL_READ.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-DEBUG i2c_slave; stop condition detected at                    0
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_I2C_PERIPHERAL_READ_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1920.906 ; gain = 1.605
-run 5 ms
-DEBUG i2c_slave; start condition detected at            116271000
-DEBUG i2c_slave; command byte received (write) at            294103000
-DEBUG i2c_slave; address received. adr=00, ack=1
-DEBUG i2c_slave; stop condition detected at            527411000
-DEBUG i2c_slave; start condition detected at            643701000
-DEBUG i2c_slave; command byte received (read) at            821323000
-DEBUG i2c_slave; data block read xx from address 00 (1)
-DEBUG i2c_slave; memcheck [0]=xx, [1]=xx, [2]=xx
-DEBUG i2c_slave; data block read xx from address 01 (2)
-save_wave_config {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg}
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_I2C_PERIPHERAL_READ' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_I2C_PERIPHERAL_READ_vlog.prj"
-"xvhdl --incr --relax -prj tb_I2C_PERIPHERAL_READ_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/sim_1/new/tb_I2C_PERIPHERAL_READ.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_I2C_PERIPHERAL_READ'
-INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-"xelab -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_READ_behav xil_defaultlib.tb_I2C_PERIPHERAL_READ xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2020.2
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_READ_behav xil_defaultlib.tb_I2C_PERIPHERAL_READ xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.std_logic_textio
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling package vl.vl_types
-Compiling module xil_defaultlib.glbl
-Compiling module xil_defaultlib.i2c_master_bit_ctrl
-Compiling module xil_defaultlib.i2c_master_byte_ctrl
-Compiling module xil_defaultlib.i2c_master_top(ARST_LVL=1'b0)
-Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
-Compiling architecture behavioral of entity xil_defaultlib.I2C_PERIPHERAL [i2c_peripheral_default]
-Compiling module xil_defaultlib.i2c_slave_model(I2C_ADR=7'b01000...
-Compiling architecture behavioral of entity xil_defaultlib.tb_i2c_peripheral_read
-Built simulation snapshot tb_I2C_PERIPHERAL_READ_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_I2C_PERIPHERAL_READ_behav -key {Behavioral:sim_1:Functional:tb_I2C_PERIPHERAL_READ} -tclbatch {tb_I2C_PERIPHERAL_READ.tcl} -view {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2020.2
-Time resolution is 1 ps
-open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
-source tb_I2C_PERIPHERAL_READ.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-DEBUG i2c_slave; stop condition detected at                    0
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_I2C_PERIPHERAL_READ_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 2476.191 ; gain = 0.000
-run 5 ms
-DEBUG i2c_slave; start condition detected at            116271000
-DEBUG i2c_slave; command byte received (write) at            294103000
-DEBUG i2c_slave; address received. adr=55, ack=1
-DEBUG i2c_slave; stop condition detected at            527411000
-DEBUG i2c_slave; start condition detected at            643701000
-DEBUG i2c_slave; command byte received (read) at            821323000
-DEBUG i2c_slave; data block read xx from address 55 (1)
-DEBUG i2c_slave; memcheck [0]=xx, [1]=xx, [2]=xx
-DEBUG i2c_slave; data block read xx from address 56 (2)
-run 1àms
-ERROR: [#UNDEF] Time value 1à is not a valid number
-save_wave_config {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg}
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_I2C_PERIPHERAL_READ' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_I2C_PERIPHERAL_READ_vlog.prj"
-"xvhdl --incr --relax -prj tb_I2C_PERIPHERAL_READ_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/sim_1/new/tb_I2C_PERIPHERAL_READ.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_I2C_PERIPHERAL_READ'
-INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-"xelab -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_READ_behav xil_defaultlib.tb_I2C_PERIPHERAL_READ xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2020.2
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_READ_behav xil_defaultlib.tb_I2C_PERIPHERAL_READ xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.std_logic_textio
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling package vl.vl_types
-Compiling module xil_defaultlib.glbl
-Compiling module xil_defaultlib.i2c_master_bit_ctrl
-Compiling module xil_defaultlib.i2c_master_byte_ctrl
-Compiling module xil_defaultlib.i2c_master_top(ARST_LVL=1'b0)
-Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
-Compiling architecture behavioral of entity xil_defaultlib.I2C_PERIPHERAL [i2c_peripheral_default]
-Compiling module xil_defaultlib.i2c_slave_model(I2C_ADR=7'b01000...
-Compiling architecture behavioral of entity xil_defaultlib.tb_i2c_peripheral_read
-Built simulation snapshot tb_I2C_PERIPHERAL_READ_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_I2C_PERIPHERAL_READ_behav -key {Behavioral:sim_1:Functional:tb_I2C_PERIPHERAL_READ} -tclbatch {tb_I2C_PERIPHERAL_READ.tcl} -view {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2020.2
-Time resolution is 1 ps
-open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
-source tb_I2C_PERIPHERAL_READ.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_I2C_PERIPHERAL_READ_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 2476.191 ; gain = 0.000
-run 5 ms
-DEBUG i2c_slave; stop condition detected at            627610000
-DEBUG i2c_slave; start condition detected at            643701000
-DEBUG i2c_slave; command byte received (read) at            821323000
-DEBUG i2c_slave; data block read xx from address xx (1)
-DEBUG i2c_slave; memcheck [0]=xx, [1]=xx, [2]=xx
 DEBUG i2c_slave; data block read xx from address xx (2)
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
+set_property top tb_I2C_CONTROLER [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
 launch_simulation
 Command: launch_simulation 
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_I2C_PERIPHERAL_READ' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_I2C_PERIPHERAL_READ_vlog.prj"
-"xvhdl --incr --relax -prj tb_I2C_PERIPHERAL_READ_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/sim_1/new/tb_I2C_PERIPHERAL_READ.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_I2C_PERIPHERAL_READ'
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-"xelab -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_READ_behav xil_defaultlib.tb_I2C_PERIPHERAL_READ xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2020.2
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_READ_behav xil_defaultlib.tb_I2C_PERIPHERAL_READ xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.std_logic_textio
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling package vl.vl_types
-Compiling module xil_defaultlib.glbl
-Compiling module xil_defaultlib.i2c_master_bit_ctrl
-Compiling module xil_defaultlib.i2c_master_byte_ctrl
-Compiling module xil_defaultlib.i2c_master_top(ARST_LVL=1'b0)
-Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
-Compiling architecture behavioral of entity xil_defaultlib.I2C_PERIPHERAL [i2c_peripheral_default]
-Compiling module xil_defaultlib.i2c_slave_model(I2C_ADR=7'b01000...
-Compiling architecture behavioral of entity xil_defaultlib.tb_i2c_peripheral_read
-Built simulation snapshot tb_I2C_PERIPHERAL_READ_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_I2C_PERIPHERAL_READ_behav -key {Behavioral:sim_1:Functional:tb_I2C_PERIPHERAL_READ} -tclbatch {tb_I2C_PERIPHERAL_READ.tcl} -view {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2020.2
-Time resolution is 1 ps
-open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
-source tb_I2C_PERIPHERAL_READ.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_I2C_PERIPHERAL_READ_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 2476.191 ; gain = 0.000
-run 5 ms
-DEBUG i2c_slave; stop condition detected at            627610000
-DEBUG i2c_slave; start condition detected at            643701000
-DEBUG i2c_slave; command byte received (read) at            821323000
-DEBUG i2c_slave; data block read xx from address xx (1)
-DEBUG i2c_slave; memcheck [0]=xx, [1]=xx, [2]=xx
-DEBUG i2c_slave; data block read xx from address xx (2)
+boost::filesystem::remove: Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: "D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim/simulate.log"
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_I2C_PERIPHERAL_READ' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_I2C_PERIPHERAL_READ_vlog.prj"
-"xvhdl --incr --relax -prj tb_I2C_PERIPHERAL_READ_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/sim_1/new/tb_I2C_PERIPHERAL_READ.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_I2C_PERIPHERAL_READ'
-INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-"xelab -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_READ_behav xil_defaultlib.tb_I2C_PERIPHERAL_READ xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2020.2
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 24c58750813845b8ae3c582db6a5e685 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_I2C_PERIPHERAL_READ_behav xil_defaultlib.tb_I2C_PERIPHERAL_READ xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.std_logic_textio
-Compiling package ieee.numeric_std
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling package vl.vl_types
-Compiling module xil_defaultlib.glbl
-Compiling module xil_defaultlib.i2c_master_bit_ctrl
-Compiling module xil_defaultlib.i2c_master_byte_ctrl
-Compiling module xil_defaultlib.i2c_master_top(ARST_LVL=1'b0)
-Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
-Compiling architecture behavioral of entity xil_defaultlib.I2C_PERIPHERAL [i2c_peripheral_default]
-Compiling module xil_defaultlib.i2c_slave_model(I2C_ADR=7'b01000...
-Compiling architecture behavioral of entity xil_defaultlib.tb_i2c_peripheral_read
-Built simulation snapshot tb_I2C_PERIPHERAL_READ_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_I2C_PERIPHERAL_READ_behav -key {Behavioral:sim_1:Functional:tb_I2C_PERIPHERAL_READ} -tclbatch {tb_I2C_PERIPHERAL_READ.tcl} -view {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2020.2
-Time resolution is 1 ps
-open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
-source tb_I2C_PERIPHERAL_READ.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-DEBUG i2c_slave; stop condition detected at                    0
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_I2C_PERIPHERAL_READ_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 2476.191 ; gain = 0.000
-run 5ms
-DEBUG i2c_slave; start condition detected at            116271000
-DEBUG i2c_slave; command byte received (write) at            294103000
-DEBUG i2c_slave; address received. adr=55, ack=1
-DEBUG i2c_slave; stop condition detected at            527411000
-DEBUG i2c_slave; start condition detected at            643701000
-DEBUG i2c_slave; command byte received (read) at            821323000
-DEBUG i2c_slave; data block read xx from address 55 (1)
-DEBUG i2c_slave; memcheck [0]=xx, [1]=xx, [2]=xx
-DEBUG i2c_slave; data block read xx from address 56 (2)
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
+launch_runs synth_1 -jobs 2
+[Mon May 23 17:15:14 2022] Launched synth_1...
+Run output will be captured here: D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.runs/synth_1/runme.log
+file mkdir D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/constrs_1
+file mkdir D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/constrs_1/new
+close [ open D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/constrs_1/new/Zybo_constr.xdc w ]
+add_files -fileset constrs_1 D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/constrs_1/new/Zybo_constr.xdc
+set_property top I2C_CONTROLER [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+open_hw_manager
+launch_runs impl_1 -jobs 2
+[Mon May 23 17:23:45 2022] Launched synth_1...
+Run output will be captured here: D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.runs/synth_1/runme.log
+[Mon May 23 17:23:45 2022] Launched impl_1...
+Run output will be captured here: D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.runs/impl_1/runme.log
+set_property part xc7z010clg400-1 [current_project]
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+[Mon May 23 17:27:33 2022] Launched synth_1...
+Run output will be captured here: D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.runs/synth_1/runme.log
+[Mon May 23 17:27:33 2022] Launched impl_1...
+Run output will be captured here: D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.runs/impl_1/runme.log
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 11 18:04:11 2022...
+INFO: [Common 17-206] Exiting Vivado at Mon May 23 17:29:39 2022...

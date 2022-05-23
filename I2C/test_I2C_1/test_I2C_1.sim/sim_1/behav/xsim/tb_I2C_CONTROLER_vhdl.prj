@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../sources/I2C_CONTROLER.vhdl" \
+"../../../../sources/I2C_PERIPHERAL.vhdl" \
+"../../../../sources/wishbone_master.vhdl" \
+"//n7fs/ahuvelin/MesDocs/Bureau/CREME_DIGITAL/I2C/test_I2C_1/sources/testbench_I2C_CONTROLER.vhdl" \
+
+# Do not sort compile order
+nosort

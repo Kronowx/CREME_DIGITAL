@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/sim_1/new/tb_I2C_PERIPHERAL_READ.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_I2C_PERIPHERAL_READ'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/CREME_DIGITAL/I2C/test_I2C_1/sources/testbench_I2C_PERIPHERAL.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_I2C_PERIPHERAL'

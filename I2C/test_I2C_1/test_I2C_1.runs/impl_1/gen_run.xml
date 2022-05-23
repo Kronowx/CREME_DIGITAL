@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1653319653">
+  <File Type="BITSTR-BMM" Name="I2C_CONTROLER_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="I2C_CONTROLER_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="I2C_CONTROLER_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="I2C_CONTROLER_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="I2C_CONTROLER.tcl"/>
+  <File Type="OPT-TIMING" Name="I2C_CONTROLER_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="I2C_CONTROLER_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="I2C_CONTROLER_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="I2C_CONTROLER_reports.tcl"/>
+  <File Type="OPT-DRC" Name="I2C_CONTROLER_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="I2C_CONTROLER.hwdef"/>
+  <File Type="PWROPT-DCP" Name="I2C_CONTROLER_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="I2C_CONTROLER_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="I2C_CONTROLER_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="I2C_CONTROLER_placed.dcp"/>
+  <File Type="PLACE-IO" Name="I2C_CONTROLER_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="I2C_CONTROLER_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="I2C_CONTROLER_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="I2C_CONTROLER_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="I2C_CONTROLER_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="I2C_CONTROLER_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="I2C_CONTROLER_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="I2C_CONTROLER_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="I2C_CONTROLER_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="I2C_CONTROLER.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="I2C_CONTROLER_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="I2C_CONTROLER_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="I2C_CONTROLER_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="I2C_CONTROLER.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="I2C_CONTROLER_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="I2C_CONTROLER_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="I2C_CONTROLER_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="I2C_CONTROLER_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="I2C_CONTROLER_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="I2C_CONTROLER_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="I2C_CONTROLER_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="I2C_CONTROLER.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="I2C_CONTROLER_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="I2C_CONTROLER_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="I2C_CONTROLER_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="I2C_CONTROLER_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="I2C_CONTROLER_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="I2C_CONTROLER_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="I2C_CONTROLER_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="I2C_CONTROLER_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="I2C_CONTROLER_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="I2C_CONTROLER_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="I2C_CONTROLER_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="I2C_CONTROLER_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="I2C_CONTROLER_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="I2C_CONTROLER_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="I2C_CONTROLER_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="I2C_CONTROLER_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="I2C_CONTROLER_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="I2C_CONTROLER_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="I2C_CONTROLER_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="I2C_CONTROLER_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="I2C_CONTROLER_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="I2C_CONTROLER.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="I2C_CONTROLER_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="I2C_CONTROLER.rbt"/>
+  <File Type="BITSTR-NKY" Name="I2C_CONTROLER.nky"/>
+  <File Type="PDI-FILE" Name="I2C_CONTROLER.pdi"/>
+  <File Type="RCFI_FILE" Name="I2C_CONTROLER.rcfi"/>
+  <File Type="CFI_FILE" Name="I2C_CONTROLER.cfi"/>
+  <File Type="RNPI_FILE" Name="I2C_CONTROLER.rnpi"/>
+  <File Type="NPI_FILE" Name="I2C_CONTROLER.npi"/>
+  <File Type="RBD_FILE" Name="I2C_CONTROLER.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="I2C_CONTROLER.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="I2C_CONTROLER.sysdef"/>
+  <File Type="BG-BGN" Name="I2C_CONTROLER.bgn"/>
+  <File Type="BG-DRC" Name="I2C_CONTROLER.drc"/>
+  <File Type="RDI-RDI" Name="I2C_CONTROLER.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/sources/timescale.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/sources/i2c_master_defines.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/sources/i2c_master_bit_ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/sources/i2c_master_byte_ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/sources/i2c_master_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/sources/I2C_PERIPHERAL.vhdl">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/sources/wishbone_master.vhdl">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/sources/I2C_CONTROLER.vhdl">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/sources/package_i2c_master.vhdl">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/sources/i2c_slave_model.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="I2C_CONTROLER"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Zybo_constr.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
