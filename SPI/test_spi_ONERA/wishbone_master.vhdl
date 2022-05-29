@@ -79,7 +79,7 @@ PROCESS_WISHBONE_MASTER : process (CLK)
                 WB_STB_O <= '0';
                 WB_ADR_O <= (others => 'Z');
                 WB_WE_O <= '0';
-                PORT_FREE <= '0';
+                PORT_FREE <= '0'; -- put at 1 to check if the value change in the tb : 0 is the good one
                 etat <= IDLE;
          else
             case etat is

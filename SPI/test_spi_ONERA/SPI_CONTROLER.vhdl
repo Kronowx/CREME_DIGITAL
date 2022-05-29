@@ -48,6 +48,7 @@ entity SPI_CONTROLER is
         ;SCK                : out std_logic --! Clock en sortie du module SPI
         ;MOSI               : out std_logic --! MOSI en sortie du module SPI
         ;MISO               : in std_logic  --! MISO en sortie du module SPI
+        ;FLAG_RAM            : out std_logic --! Flag d'envoie dans la RAM
     );
 end SPI_CONTROLER;
 
@@ -139,10 +140,11 @@ begin
       else
         case etat is
         when IDLE =>
+        FLAG_RAM <= '0';
           if PULSE_SHAPER_FAST = '1' then
-            if sig_PORT_FREE ='1' then
+            if sig_PORT_FREE ='1' then                                            -- passae jamais à 1 dans histo
               sig_PORT_WRITE <= x"00000008";--x"A5A5A5A5"; -- voie 1 choisie
-              sig_DATA_SIZE <= "00";
+              sig_DATA_SIZE <= "00"; -- que 8 bits
               sig_START <= '1';
               etat<=START_RELEASE;
             end if;
@@ -163,6 +165,7 @@ begin
         when HISTOGRAM_ACQ =>
         if HISTO_ACQ = '1' then
           HISTO_SIGNAL <= '0';
+          FLAG_RAM <= '1';
           etat<=IDLE;
         end if;
 

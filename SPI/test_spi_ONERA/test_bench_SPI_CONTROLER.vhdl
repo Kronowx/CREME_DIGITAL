@@ -37,6 +37,7 @@ architecture Behavioral of tb_SPI_CONTROLER is
   signal sig_SCK                :  std_logic  := '0';
   signal sig_MOSI               :  std_logic  := '0';
   signal sig_MISO               :  std_logic  := '0';
+  signal sig_FLAG               :  std_logic  := '0';
 
 component SPI_CONTROLER is
   port
@@ -50,6 +51,7 @@ component SPI_CONTROLER is
       ;SCK                : out std_logic --! Clock en sortie du module SPI
       ;MOSI               : out std_logic --! MOSI en sortie du module SPI
       ;MISO               : in std_logic  --! MISO en sortie du module SPI
+       ;FLAG_RAM            : out std_logic --! Flag d'envoie dans la RAM
     );
 end component;
 
@@ -66,7 +68,8 @@ Port map
   SAMPLE                => sig_SAMPLE,
   SCK                   => sig_SCK,
   MOSI                  => sig_MOSI,
-  MISO                  => sig_MISO
+  MISO                  => sig_MISO,
+  FLAG_RAM              => sig_FLAG--! Flag d'envoie dans la RAM
 );
 
 sig_MISO <= sig_MOSI; -- Loopback

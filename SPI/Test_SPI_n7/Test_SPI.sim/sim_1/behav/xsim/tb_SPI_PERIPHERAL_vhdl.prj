@@ -1,8 +1,8 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
-"../../../../../CREME/FPGA/NXmap/Test/test_spi/SPI_PERIPHERAL.vhdl" \
-"../../../../../CREME/FPGA/NXmap/Test/test_spi/wishbone_master.vhdl" \
-"../../../../../CREME/FPGA/NXmap/Test/test_spi/testbench_SPI_PERIPHERAL.vhdl" \
+"../../../../../test_spi_ONERA/SPI_PERIPHERAL.vhdl" \
+"../../../../../test_spi_ONERA/wishbone_master.vhdl" \
+"../../../../../test_spi_ONERA/testbench_SPI_PERIPHERAL.vhdl" \
 
 # Do not sort compile order
 nosort

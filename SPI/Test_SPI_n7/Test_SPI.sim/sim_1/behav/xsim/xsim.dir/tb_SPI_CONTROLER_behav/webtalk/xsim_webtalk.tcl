@@ -1,6 +1,6 @@
-webtalk_init -webtalk_dir Z:/S8/Nanosat/Test_SPI/Test_SPI.sim/sim_1/behav/xsim/xsim.dir/tb_SPI_CONTROLER_behav/webtalk/
+webtalk_init -webtalk_dir D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim/xsim.dir/tb_SPI_CONTROLER_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Tue Apr  5 17:27:49 2022" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Mon May 23 15:20:57 2022" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2020.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "3064766" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "df6116cc-82aa-4362-94a0-f2b87eb19e62" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "3c61a2ac43e34e5e91b563c6fc1f8ff5" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "19" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "29" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Windows Server 2016 or Windows 10" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz" -context "user_environment"
@@ -24,9 +24,9 @@ webtalk_add_data -client project -key system_ram -value "8.000 GB" -context "use
 webtalk_register_client -client xsim
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
-webtalk_add_data -client xsim -key runtime -value "501 us" -context "xsim\\usage"
+webtalk_add_data -client xsim -key runtime -value "2001 us" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "3" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "0.17_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "12032_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 899613649 -regid "211907161_174131903_210695890_024" -xml Z:/S8/Nanosat/Test_SPI/Test_SPI.sim/sim_1/behav/xsim/xsim.dir/tb_SPI_CONTROLER_behav/webtalk/usage_statistics_ext_xsim.xml -html Z:/S8/Nanosat/Test_SPI/Test_SPI.sim/sim_1/behav/xsim/xsim.dir/tb_SPI_CONTROLER_behav/webtalk/usage_statistics_ext_xsim.html -wdm Z:/S8/Nanosat/Test_SPI/Test_SPI.sim/sim_1/behav/xsim/xsim.dir/tb_SPI_CONTROLER_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.47_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "15296_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 667321022 -regid "211907161_174131903_210695890_024" -xml D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim/xsim.dir/tb_SPI_CONTROLER_behav/webtalk/usage_statistics_ext_xsim.xml -html D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim/xsim.dir/tb_SPI_CONTROLER_behav/webtalk/usage_statistics_ext_xsim.html -wdm D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim/xsim.dir/tb_SPI_CONTROLER_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

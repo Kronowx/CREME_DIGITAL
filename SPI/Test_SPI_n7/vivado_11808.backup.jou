@@ -1,0 +1,141 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May 23 14:47:57 2022
+# Process ID: 11808
+# Current directory: D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10760 D:\1005_creme\CREME_DIGITAL-TEAM_SPI\SPI\Test_SPI_n7\Test_SPI.xpr
+# Log file: D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/vivado.log
+# Journal file: D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.xpupdate_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+source tb_SPI_CONTROLER.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_SPI_PERIPHERAL [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top SPI_PERIPHERAL [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+close_sim
+launch_simulation
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+source tb_SPI_PERIPHERAL.tcl
+run 1000 us
+restart
+run 1000 us
+close_sim
+launch_simulation
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+source tb_SPI_PERIPHERAL.tcl
+restart
+run 1000 us
+restart
+run all
+restart
+run 1000 us
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_SPI_CONTROLER [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_simulation
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+source tb_SPI_CONTROLER.tcl
+run 1000 us
+run 1000 us
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_SPI_PERIPHERAL [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+close_project
+open_project D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+source tb_SPI_PERIPHERAL.tcl
+run 1000 us
+restart
+run 1000 us
+run 1000 us
+close_sim
+launch_simulation
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+source tb_SPI_PERIPHERAL.tcl
+run 1000 us
+restart
+run 1000 us
+run 1000 us
+close_sim
+launch_simulation
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+source tb_SPI_PERIPHERAL.tcl
+restart
+run 1000 us
+close_sim
+launch_simulation
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+source tb_SPI_PERIPHERAL.tcl
+restart
+run 1000 us
+close_sim
+launch_simulation
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+source tb_SPI_PERIPHERAL.tcl
+restart
+run 1000 us
+run 1000 us
+close_sim
+launch_simulation
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+source tb_SPI_PERIPHERAL.tcl
+run 1000 us
+restart
+run 1000 us
+close_sim
+launch_simulation
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+source tb_SPI_PERIPHERAL.tcl
+restart
+run 1000 us
+close_sim
+launch_simulation
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+source tb_SPI_PERIPHERAL.tcl
+run 1000 us
+run 1000 us
+save_wave_config {D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+source tb_SPI_PERIPHERAL.tcl
+close_sim
+launch_simulation
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+source tb_SPI_PERIPHERAL.tcl
+close_sim
+launch_simulation
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+source tb_SPI_PERIPHERAL.tcl
+close_sim

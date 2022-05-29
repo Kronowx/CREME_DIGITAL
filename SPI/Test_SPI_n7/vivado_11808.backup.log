@@ -1,0 +1,1247 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May 23 14:47:57 2022
+# Process ID: 11808
+# Current directory: D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10760 D:\1005_creme\CREME_DIGITAL-TEAM_SPI\SPI\Test_SPI_n7\Test_SPI.xpr
+# Log file: D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/vivado.log
+# Journal file: D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+ERROR: [Vivado 12-106] *** Exception: java.lang.NullPointerException (See D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/vivado_pid11808.debug)
+open_project: Time (s): cpu = launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SPI_CONTROLER' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SPI_CONTROLER_vlog.prj"
+"xvhdl --incr --relax -prj tb_SPI_CONTROLER_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/S8/Nanosat/CREME/FPGA/NXmap/Test/test_spi/test_bench_SPI_CONTROLER.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_SPI_CONTROLER'
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xelab -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_CONTROLER_behav xil_defaultlib.tb_SPI_CONTROLER xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_CONTROLER_behav xil_defaultlib.tb_SPI_CONTROLER xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module xil_defaultlib.fifo4
+Compiling module xil_defaultlib.simple_spi_top
+Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
+Compiling architecture behavioral of entity xil_defaultlib.SPI_PERIPHERAL [spi_peripheral_default]
+Compiling architecture behavioral of entity xil_defaultlib.SPI_CONTROLER [spi_controler_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_spi_controler
+Built simulation snapshot tb_SPI_CONTROLER_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim/xsim.dir/tb_SPI_CONTROLER_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon May 23 14:49:11 2022...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1112.453 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SPI_CONTROLER_behav -key {Behavioral:sim_1:Functional:tb_SPI_CONTROLER} -tclbatch {tb_SPI_CONTROLER.tcl} -view {D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_FLAG was not found in the design.
+source tb_SPI_CONTROLER.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SPI_CONTROLER_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 1112.453 ; gain = 0.000
+set_property top tb_SPI_PERIPHERAL [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+set_property top SPI_PERIPHERAL [current_fileset]
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: "D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SPI_PERIPHERAL' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SPI_PERIPHERAL_vlog.prj"
+"xvhdl --incr --relax -prj tb_SPI_PERIPHERAL_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xelab -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SPI_PERIPHERAL_behav -key {Behavioral:sim_1:Functional:tb_SPI_PERIPHERAL} -tclbatch {tb_SPI_PERIPHERAL.tcl} -view {D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_CLK was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_RESET_BAR was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_PULSE_SHAPER_FAST was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_HISTO_ACQ was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_HISTO_SIGNAL was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_SAMPLE was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_SCK was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_MOSI was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_MISO was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_FLAG was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/evaluate_SPI_CONTROLER/etat was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/evaluate_SPI_CONTROLER/SPI_PERIPHERAL_CREME/driver_1/PORT_FREE was not found in the design.
+source tb_SPI_PERIPHERAL.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SPI_PERIPHERAL_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1112.453 ; gain = 0.000
+run 1000 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SPI_PERIPHERAL' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SPI_PERIPHERAL_vlog.prj"
+"xvhdl --incr --relax -prj tb_SPI_PERIPHERAL_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xelab -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SPI_PERIPHERAL_behav -key {Behavioral:sim_1:Functional:tb_SPI_PERIPHERAL} -tclbatch {tb_SPI_PERIPHERAL.tcl} -view {D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_CLK was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_RESET_BAR was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_PULSE_SHAPER_FAST was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_HISTO_ACQ was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_HISTO_SIGNAL was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_SAMPLE was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_SCK was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_MOSI was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_MISO was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_FLAG was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/evaluate_SPI_CONTROLER/etat was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/evaluate_SPI_CONTROLER/SPI_PERIPHERAL_CREME/driver_1/PORT_FREE was not found in the design.
+source tb_SPI_PERIPHERAL.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SPI_PERIPHERAL_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1112.453 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+set_property top tb_SPI_CONTROLER [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: "D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SPI_CONTROLER' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SPI_CONTROLER_vlog.prj"
+"xvhdl --incr --relax -prj tb_SPI_CONTROLER_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xelab -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_CONTROLER_behav xil_defaultlib.tb_SPI_CONTROLER xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_CONTROLER_behav xil_defaultlib.tb_SPI_CONTROLER xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SPI_CONTROLER_behav -key {Behavioral:sim_1:Functional:tb_SPI_CONTROLER} -tclbatch {tb_SPI_CONTROLER.tcl} -view {D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_FLAG was not found in the design.
+source tb_SPI_CONTROLER.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SPI_CONTROLER_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1112.453 ; gain = 0.000
+run 1000 us
+run 1000 us
+set_property top tb_SPI_PERIPHERAL [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus: "D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SPI_PERIPHERAL' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SPI_PERIPHERAL_vlog.prj"
+"xvhdl --incr --relax -prj tb_SPI_PERIPHERAL_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/test_spi_ONERA/testbench_SPI_PERIPHERAL.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_SPI_PERIPHERAL'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xelab -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module xil_defaultlib.fifo4
+Compiling module xil_defaultlib.simple_spi_top
+Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
+Compiling architecture behavioral of entity xil_defaultlib.SPI_PERIPHERAL [spi_peripheral_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_spi_peripheral
+Built simulation snapshot tb_SPI_PERIPHERAL_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim/xsim.dir/tb_SPI_PERIPHERAL_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon May 23 15:21:40 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SPI_PERIPHERAL_behav -key {Behavioral:sim_1:Functional:tb_SPI_PERIPHERAL} -tclbatch {tb_SPI_PERIPHERAL.tcl} -view {D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_CLK was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_RESET_BAR was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_PULSE_SHAPER_FAST was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_HISTO_ACQ was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_HISTO_SIGNAL was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_SAMPLE was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_SCK was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_MOSI was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_MISO was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_FLAG was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/evaluate_SPI_CONTROLER/etat was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/evaluate_SPI_CONTROLER/SPI_PERIPHERAL_CREME/driver_1/PORT_FREE was not found in the design.
+source tb_SPI_PERIPHERAL.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SPI_PERIPHERAL_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1112.453 ; gain = 0.000
+run 1000 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+run 1000 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SPI_PERIPHERAL' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SPI_PERIPHERAL_vlog.prj"
+"xvhdl --incr --relax -prj tb_SPI_PERIPHERAL_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/test_spi_ONERA/testbench_SPI_PERIPHERAL.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_SPI_PERIPHERAL'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xelab -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module xil_defaultlib.fifo4
+Compiling module xil_defaultlib.simple_spi_top
+Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
+Compiling architecture behavioral of entity xil_defaultlib.SPI_PERIPHERAL [spi_peripheral_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_spi_peripheral
+Built simulation snapshot tb_SPI_PERIPHERAL_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SPI_PERIPHERAL_behav -key {Behavioral:sim_1:Functional:tb_SPI_PERIPHERAL} -tclbatch {tb_SPI_PERIPHERAL.tcl} -view {D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_CLK was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_RESET_BAR was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_PULSE_SHAPER_FAST was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_HISTO_ACQ was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_HISTO_SIGNAL was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_SAMPLE was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_SCK was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_MOSI was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_MISO was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_FLAG was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/evaluate_SPI_CONTROLER/etat was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/evaluate_SPI_CONTROLER/SPI_PERIPHERAL_CREME/driver_1/PORT_FREE was not found in the design.
+source tb_SPI_PERIPHERAL.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SPI_PERIPHERAL_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1112.453 ; gain = 0.000
+run 1000 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+run 1000 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SPI_PERIPHERAL' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SPI_PERIPHERAL_vlog.prj"
+"xvhdl --incr --relax -prj tb_SPI_PERIPHERAL_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/test_spi_ONERA/testbench_SPI_PERIPHERAL.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_SPI_PERIPHERAL'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xelab -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module xil_defaultlib.fifo4
+Compiling module xil_defaultlib.simple_spi_top
+Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
+Compiling architecture behavioral of entity xil_defaultlib.SPI_PERIPHERAL [spi_peripheral_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_spi_peripheral
+Built simulation snapshot tb_SPI_PERIPHERAL_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SPI_PERIPHERAL_behav -key {Behavioral:sim_1:Functional:tb_SPI_PERIPHERAL} -tclbatch {tb_SPI_PERIPHERAL.tcl} -view {D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_CLK was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_RESET_BAR was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_PULSE_SHAPER_FAST was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_HISTO_ACQ was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_HISTO_SIGNAL was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_SAMPLE was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_SCK was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_MOSI was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_MISO was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_FLAG was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/evaluate_SPI_CONTROLER/etat was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/evaluate_SPI_CONTROLER/SPI_PERIPHERAL_CREME/driver_1/PORT_FREE was not found in the design.
+source tb_SPI_PERIPHERAL.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SPI_PERIPHERAL_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1285.000 ; gain = 12.273
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SPI_PERIPHERAL' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SPI_PERIPHERAL_vlog.prj"
+"xvhdl --incr --relax -prj tb_SPI_PERIPHERAL_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/test_spi_ONERA/testbench_SPI_PERIPHERAL.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_SPI_PERIPHERAL'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xelab -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module xil_defaultlib.fifo4
+Compiling module xil_defaultlib.simple_spi_top
+Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
+Compiling architecture behavioral of entity xil_defaultlib.SPI_PERIPHERAL [spi_peripheral_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_spi_peripheral
+Built simulation snapshot tb_SPI_PERIPHERAL_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SPI_PERIPHERAL_behav -key {Behavioral:sim_1:Functional:tb_SPI_PERIPHERAL} -tclbatch {tb_SPI_PERIPHERAL.tcl} -view {D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_CLK was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_RESET_BAR was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_PULSE_SHAPER_FAST was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_HISTO_ACQ was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_HISTO_SIGNAL was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_SAMPLE was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_SCK was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_MOSI was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_MISO was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_FLAG was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/evaluate_SPI_CONTROLER/etat was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/evaluate_SPI_CONTROLER/SPI_PERIPHERAL_CREME/driver_1/PORT_FREE was not found in the design.
+source tb_SPI_PERIPHERAL.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SPI_PERIPHERAL_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1285.000 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SPI_PERIPHERAL' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SPI_PERIPHERAL_vlog.prj"
+"xvhdl --incr --relax -prj tb_SPI_PERIPHERAL_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/test_spi_ONERA/testbench_SPI_PERIPHERAL.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_SPI_PERIPHERAL'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xelab -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module xil_defaultlib.fifo4
+Compiling module xil_defaultlib.simple_spi_top
+Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
+Compiling architecture behavioral of entity xil_defaultlib.SPI_PERIPHERAL [spi_peripheral_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_spi_peripheral
+Built simulation snapshot tb_SPI_PERIPHERAL_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SPI_PERIPHERAL_behav -key {Behavioral:sim_1:Functional:tb_SPI_PERIPHERAL} -tclbatch {tb_SPI_PERIPHERAL.tcl} -view {D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_CLK was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_RESET_BAR was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_PULSE_SHAPER_FAST was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_HISTO_ACQ was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_HISTO_SIGNAL was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_SAMPLE was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_SCK was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_MOSI was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_MISO was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_FLAG was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/evaluate_SPI_CONTROLER/etat was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/evaluate_SPI_CONTROLER/SPI_PERIPHERAL_CREME/driver_1/PORT_FREE was not found in the design.
+source tb_SPI_PERIPHERAL.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SPI_PERIPHERAL_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1285.000 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+run 1000 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SPI_PERIPHERAL' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SPI_PERIPHERAL_vlog.prj"
+"xvhdl --incr --relax -prj tb_SPI_PERIPHERAL_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/test_spi_ONERA/testbench_SPI_PERIPHERAL.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_SPI_PERIPHERAL'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xelab -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module xil_defaultlib.fifo4
+Compiling module xil_defaultlib.simple_spi_top
+Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
+Compiling architecture behavioral of entity xil_defaultlib.SPI_PERIPHERAL [spi_peripheral_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_spi_peripheral
+Built simulation snapshot tb_SPI_PERIPHERAL_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SPI_PERIPHERAL_behav -key {Behavioral:sim_1:Functional:tb_SPI_PERIPHERAL} -tclbatch {tb_SPI_PERIPHERAL.tcl} -view {D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_CLK was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_RESET_BAR was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_PULSE_SHAPER_FAST was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_HISTO_ACQ was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_HISTO_SIGNAL was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_SAMPLE was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_SCK was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_MOSI was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_MISO was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_FLAG was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/evaluate_SPI_CONTROLER/etat was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/evaluate_SPI_CONTROLER/SPI_PERIPHERAL_CREME/driver_1/PORT_FREE was not found in the design.
+source tb_SPI_PERIPHERAL.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SPI_PERIPHERAL_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1872.762 ; gain = 0.000
+run 1000 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SPI_PERIPHERAL' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SPI_PERIPHERAL_vlog.prj"
+"xvhdl --incr --relax -prj tb_SPI_PERIPHERAL_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/test_spi_ONERA/testbench_SPI_PERIPHERAL.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_SPI_PERIPHERAL'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xelab -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module xil_defaultlib.fifo4
+Compiling module xil_defaultlib.simple_spi_top
+Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
+Compiling architecture behavioral of entity xil_defaultlib.SPI_PERIPHERAL [spi_peripheral_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_spi_peripheral
+Built simulation snapshot tb_SPI_PERIPHERAL_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SPI_PERIPHERAL_behav -key {Behavioral:sim_1:Functional:tb_SPI_PERIPHERAL} -tclbatch {tb_SPI_PERIPHERAL.tcl} -view {D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_CLK was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_RESET_BAR was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_PULSE_SHAPER_FAST was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_HISTO_ACQ was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_HISTO_SIGNAL was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_SAMPLE was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_SCK was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_MOSI was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_MISO was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_FLAG was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/evaluate_SPI_CONTROLER/etat was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/evaluate_SPI_CONTROLER/SPI_PERIPHERAL_CREME/driver_1/PORT_FREE was not found in the design.
+source tb_SPI_PERIPHERAL.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+FATAL_ERROR: Vivado Simulator kernel has discovered an exceptional condition from which it cannot recover. Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+Time: 0 ps  Iteration: 0  Process: /tb_SPI_PERIPHERAL/line__77
+  File: D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/test_spi_ONERA/testbench_SPI_PERIPHERAL.vhdl
+
+HDL Line: D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/test_spi_ONERA/testbench_SPI_PERIPHERAL.vhdl:94
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SPI_PERIPHERAL_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1872.762 ; gain = 0.000
+WARNING: Simulation object /tb_SPI_PERIPHERAL/line__77/data_out was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /tb_SPI_PERIPHERAL/line__77/fstatus was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /tb_SPI_PERIPHERAL/line__77/v_ILINE was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /tb_SPI_PERIPHERAL/line__77/v_OLINE was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /tb_SPI_PERIPHERAL/line__77/V_PORT_READ was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /tb_SPI_PERIPHERAL/line__77/V_PORT_WRITE was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /tb_SPI_PERIPHERAL/line__77/file_lu_recu was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+FATAL_ERROR: Vivado Simulator kernel has discovered an exceptional condition from which it cannot recover. Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+Time: 0 ps  Iteration: 0  Process: /tb_SPI_PERIPHERAL/line__77
+  File: D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/test_spi_ONERA/testbench_SPI_PERIPHERAL.vhdl
+
+HDL Line: D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/test_spi_ONERA/testbench_SPI_PERIPHERAL.vhdl:94
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SPI_PERIPHERAL' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SPI_PERIPHERAL_vlog.prj"
+"xvhdl --incr --relax -prj tb_SPI_PERIPHERAL_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/test_spi_ONERA/testbench_SPI_PERIPHERAL.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_SPI_PERIPHERAL'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xelab -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module xil_defaultlib.fifo4
+Compiling module xil_defaultlib.simple_spi_top
+Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
+Compiling architecture behavioral of entity xil_defaultlib.SPI_PERIPHERAL [spi_peripheral_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_spi_peripheral
+Built simulation snapshot tb_SPI_PERIPHERAL_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SPI_PERIPHERAL_behav -key {Behavioral:sim_1:Functional:tb_SPI_PERIPHERAL} -tclbatch {tb_SPI_PERIPHERAL.tcl} -view {D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_CLK was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_RESET_BAR was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_PULSE_SHAPER_FAST was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_HISTO_ACQ was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_HISTO_SIGNAL was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_SAMPLE was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_SCK was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_MOSI was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_MISO was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/sig_FLAG was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/evaluate_SPI_CONTROLER/etat was not found in the design.
+WARNING: Simulation object /tb_SPI_CONTROLER/evaluate_SPI_CONTROLER/SPI_PERIPHERAL_CREME/driver_1/PORT_FREE was not found in the design.
+source tb_SPI_PERIPHERAL.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:01:42 . Memory (MB): peak = 1872.762 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:01:44 . Memory (MB): peak = 1872.762 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_SPI_PERIPHERAL_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:01:52 . Memory (MB): peak = 1872.762 ; gain = 0.000
+WARNING: Simulation object /tb_SPI_PERIPHERAL/line__77/data_out was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /tb_SPI_PERIPHERAL/line__77/fstatus was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /tb_SPI_PERIPHERAL/line__77/v_ILINE was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /tb_SPI_PERIPHERAL/line__77/v_OLINE was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /tb_SPI_PERIPHERAL/line__77/V_PORT_READ was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /tb_SPI_PERIPHERAL/line__77/V_PORT_WRITE was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /tb_SPI_PERIPHERAL/line__77/file_lu_recu was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+run 1000 us
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:21 . Memory (MB): peak = 1872.762 ; gain = 0.000
+run 1000 us
+run: Time (s): cpu = 00:00:10 ; elapsed = 00:02:04 . Memory (MB): peak = 1872.762 ; gain = 0.000
+save_wave_config {D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SPI_PERIPHERAL' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SPI_PERIPHERAL_vlog.prj"
+"xvhdl --incr --relax -prj tb_SPI_PERIPHERAL_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/test_spi_ONERA/testbench_SPI_PERIPHERAL.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_SPI_PERIPHERAL'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xelab -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module xil_defaultlib.fifo4
+Compiling module xil_defaultlib.simple_spi_top
+Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
+Compiling architecture behavioral of entity xil_defaultlib.SPI_PERIPHERAL [spi_peripheral_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_spi_peripheral
+Built simulation snapshot tb_SPI_PERIPHERAL_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SPI_PERIPHERAL_behav -key {Behavioral:sim_1:Functional:tb_SPI_PERIPHERAL} -tclbatch {tb_SPI_PERIPHERAL.tcl} -view {D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+WARNING: Simulation object /tb_SPI_PERIPHERAL/line__77/i was not found in the design.
+source tb_SPI_PERIPHERAL.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:01:07 . Memory (MB): peak = 1872.762 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:01:09 . Memory (MB): peak = 1872.762 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:01:17 . Memory (MB): peak = 1872.762 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SPI_PERIPHERAL' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SPI_PERIPHERAL_vlog.prj"
+"xvhdl --incr --relax -prj tb_SPI_PERIPHERAL_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/test_spi_ONERA/testbench_SPI_PERIPHERAL.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_SPI_PERIPHERAL'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xelab -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module xil_defaultlib.fifo4
+Compiling module xil_defaultlib.simple_spi_top
+Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
+Compiling architecture behavioral of entity xil_defaultlib.SPI_PERIPHERAL [spi_peripheral_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_spi_peripheral
+Built simulation snapshot tb_SPI_PERIPHERAL_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SPI_PERIPHERAL_behav -key {Behavioral:sim_1:Functional:tb_SPI_PERIPHERAL} -tclbatch {tb_SPI_PERIPHERAL.tcl} -view {D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+WARNING: Simulation object /tb_SPI_PERIPHERAL/line__77/i was not found in the design.
+source tb_SPI_PERIPHERAL.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:01:20 . Memory (MB): peak = 1872.762 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:01:23 . Memory (MB): peak = 1872.762 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:01:30 . Memory (MB): peak = 1872.762 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_SPI_PERIPHERAL' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_SPI_PERIPHERAL_vlog.prj"
+"xvhdl --incr --relax -prj tb_SPI_PERIPHERAL_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/test_spi_ONERA/testbench_SPI_PERIPHERAL.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_SPI_PERIPHERAL'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+"xelab -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 3c61a2ac43e34e5e91b563c6fc1f8ff5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_SPI_PERIPHERAL_behav xil_defaultlib.tb_SPI_PERIPHERAL xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module xil_defaultlib.fifo4
+Compiling module xil_defaultlib.simple_spi_top
+Compiling architecture behavioral of entity xil_defaultlib.WISHBONE_MASTER [wishbone_master_default]
+Compiling architecture behavioral of entity xil_defaultlib.SPI_PERIPHERAL [spi_peripheral_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_spi_peripheral
+Built simulation snapshot tb_SPI_PERIPHERAL_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/Test_SPI.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_SPI_PERIPHERAL_behav -key {Behavioral:sim_1:Functional:tb_SPI_PERIPHERAL} -tclbatch {tb_SPI_PERIPHERAL.tcl} -view {D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config D:/1005_creme/CREME_DIGITAL-TEAM_SPI/SPI/Test_SPI_n7/tb_SPI_CONTROLER_behav.wcfg
+WARNING: Simulation object /tb_SPI_PERIPHERAL/line__77/i was not found in the design.
+source tb_SPI_PERIPHERAL.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:25 . Memory (MB): peak = 1872.762 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:28 . Memory (MB): peak = 1872.762 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:36 . Memory (MB): peak = 1872.762 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 23 17:55:58 2022...

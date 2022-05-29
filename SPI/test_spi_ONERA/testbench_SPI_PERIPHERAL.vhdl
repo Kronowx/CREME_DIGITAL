@@ -37,7 +37,12 @@ architecture Behavioral of tb_SPI_PERIPHERAL is
   signal sig_SCK            :  std_logic :='0';
   signal sig_MOSI           :  std_logic :='0';
   signal sig_MISO           :  std_logic :='0';
+   signal cnt           :  integer :=0; --essaye pour le txt
+      signal i           :  integer :=0; --essaye pour le txt
 
+type integerFileType is file of Integer;
+file data_out :integerFileType;
+file file_lu_recu    : text open write_mode is "lu_recu.txt"; 
 component SPI_PERIPHERAL is
   port
     (
@@ -74,6 +79,28 @@ Port map
 sig_MISO <= sig_MOSI; -- Loopback
 
 
+process
+
+variable fstatus: FILE_OPEN_STATUS;
+
+
+variable v_ILINE : line;
+variable v_OLINE : line;
+
+variable V_PORT_READ : std_logic_vector(31 downto 0);   
+variable V_PORT_WRITE : std_logic_vector(31 downto 0); 
+
+begin
+
+file_open(fstatus,data_out, "lu_recu.txt", write_mode);
+for i in 1 to 2 loop
+        write(data_out, i);
+        --writeline(file_lu_recu,V_OLINE);
+      end loop;
+file_close(file_lu_recu);
+end process;
+    
+
 PROCESS_CLOCK : process
 begin
   sig_CLK <= not(sig_CLK);
@@ -90,34 +117,1622 @@ begin
   wait until sig_PORT_FREE = '1';-- On attend que le module SPI_PERIPHERAL soit disponible
      
   -- Ecriture d'un paquet de 8 bits
-  sig_PORT_WRITE <= x"A5A5A5A5";
-  sig_DATA_SIZE <= "00";
+  sig_PORT_WRITE <= x"03030303"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
   sig_START <= '1';
   wait until sig_PORT_FREE = '0';
   sig_START <= '0';
   wait until sig_PORT_FREE = '1';
   -- Ecriture d'un paquet de 16 bits
-  sig_PORT_WRITE <= x"5A5A5A5A";
+  sig_PORT_WRITE <= x"03030303";
   sig_DATA_SIZE <= "01";
   sig_START <= '1';
   wait until sig_PORT_FREE = '0';
   sig_START <= '0';
   wait until sig_PORT_FREE = '1';
   -- Ecriture d'un paquet de 24 bits
-  sig_PORT_WRITE <= x"A5A5A5A5";
+  sig_PORT_WRITE <= x"03030303";
   sig_DATA_SIZE <= "10";
   sig_START <= '1';
   wait until sig_PORT_FREE = '0';
   sig_START <= '0';
   wait until sig_PORT_FREE = '1';
   -- Ecriture d'un paquet de 32 bits
-  sig_PORT_WRITE <= x"5A5A5A5A";
+  sig_PORT_WRITE <= x"03030303";
+  sig_DATA_SIZE <= "00";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"57575757"; --A5A5A5A5
   sig_DATA_SIZE <= "11";
   sig_START <= '1';
   wait until sig_PORT_FREE = '0';
   sig_START <= '0';
   wait until sig_PORT_FREE = '1';
-
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"57575757"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"57575757"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"57575757"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"57575757"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"57575757"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+------------------------------------------------------------
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+    -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+   sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+    -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+   sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+    -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+   sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+    -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1'; sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+    -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+   sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+    -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1'; sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+    -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+   sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+    -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+   sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+    -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1'; sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+    -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+   sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+    -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+   sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+    -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+   sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+    -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1'; sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+    -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+   sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+    -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+   sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+    -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+   sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+    -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+   sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+    -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "11";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  -- Ecriture d'un paquet de 8 bits
+  sig_PORT_WRITE <= x"01010101"; --A5A5A5A5
+  sig_DATA_SIZE <= "01";
+  sig_START <= '1';
+  wait until sig_PORT_FREE = '0';
+  sig_START <= '0';
+  wait until sig_PORT_FREE = '1';
+  
+  
+  
+  
+  
   wait;
 
 end process;

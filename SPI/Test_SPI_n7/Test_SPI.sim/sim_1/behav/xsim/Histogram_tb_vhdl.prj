@@ -1,10 +1,10 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
 "../../../../Test_SPI.srcs/sources_1/new/Histogram.vhd" \
-"Z:/S8/Nanosat/CREME/FPGA/NXmap/Test/test_spi/SPI_CONTROLER.vhdl" \
-"Z:/S8/Nanosat/CREME/FPGA/NXmap/Test/test_spi/SPI_PERIPHERAL.vhdl" \
+"../../../../../test_spi_ONERA/SPI_CONTROLER.vhdl" \
+"../../../../../test_spi_ONERA/SPI_PERIPHERAL.vhdl" \
 "../../../../Test_SPI.srcs/sources_1/new/ram_intel.vhd" \
-"Z:/S8/Nanosat/CREME/FPGA/NXmap/Test/test_spi/wishbone_master.vhdl" \
+"../../../../../test_spi_ONERA/wishbone_master.vhdl" \
 "../../../../Test_SPI.srcs/sim_1/new/tb_histogramm.vhd" \
 
 # Do not sort compile order

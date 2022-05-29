@@ -23,9 +23,9 @@ architecture bench of Histogram_tb is
   signal CLK: std_logic:='0';
   signal RESET_BAR: std_logic;
   signal PULSE_SHAPER_FAST: std_logic;
-  signal HISTO_ACQ: std_logic;
+  signal HISTO_ACQ: std_logic:='0';
   signal MOSI: std_logic;
-  signal MISO: std_logic;
+  signal MISO: std_logic:='0';
   signal read_address: integer RANGE 0 to 255;
   signal we: std_logic;
   signal data_o: std_logic_vector (20 DOWNTO 0) ;
@@ -42,9 +42,9 @@ begin
                             we                => we,
                             data_o            => data_o );
 
---MISO <= MOSI; -- Loopback
 
-MISO <= MOSI; 
+
+MISO <= MOSI;
 
 
 PROCESS_CLOCK : process
@@ -53,25 +53,40 @@ begin
   wait for 5 ns;
 end process;
 
-PROCESS_TB : process
+PROCESS_PULSE : process
 begin
+  wait for 99 ns;
+  PULSE_SHAPER_FAST <= '0';
+  wait for 100 ns;
+  PULSE_SHAPER_FAST <= '1';
+  wait for 100 ns;
+  PULSE_SHAPER_FAST <= '0';
+  wait for 100 ns;
+  PULSE_SHAPER_FAST <= '1';
+wait;
+end process;
 
-
-  RESET_BAR <= '1';             -- On lance la procédure de RESET
-  wait for 11 ns;                  -- Pendant un temps
-  RESET_BAR <= '0' ;
-  wait for 11 ns; 
-  RESET_BAR <= '1';  
-  wait for 11 ns; 
-    RESET_BAR <= '0' ;
-  
+  PROCESS_TB2 : process
+begin
+  RESET_BAR <= '0';             -- On lance la procédure de RESET
+  wait for 10 us;                  -- Pendant un temps
+  RESET_BAR <= '1';             -- On relache le Reset
+  wait for 1 us;
   we<='1';
-  wait for 100 ns;     
-           -- On relache le Reset
-  PULSE_SHAPER_FAST<='1';
-  HISTO_ACQ<='1';
-
+  wait for 1 us;
+  
+  HISTO_ACQ <= '1';
+  wait for 50 ns;
+  HISTO_ACQ <= '0';
+  wait for 50 ns;
+  HISTO_ACQ <= '1';
+  wait for 50 ns;
+  HISTO_ACQ <= '0';
   wait;
-  end process;
+
+end process;
+  
+  
+  
   end bench;
   

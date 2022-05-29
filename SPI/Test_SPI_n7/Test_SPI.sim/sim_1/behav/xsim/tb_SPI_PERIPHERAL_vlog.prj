@@ -1,7 +1,7 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
-"../../../../../CREME/FPGA/Librairie/OpenCores/test_SPI/fifo4.v" \
-"../../../../../CREME/FPGA/Librairie/OpenCores/test_SPI/simple_spi_top.v" \
+"../../../../../../Librairie/OpenCores/test_SPI/fifo4.v" \
+"../../../../../../Librairie/OpenCores/test_SPI/simple_spi_top.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"
