@@ -35,7 +35,15 @@
 
 
 ## PARTIE I2C
+#### I2C_CONTROLER
+- écauche machine d'état de housekeeping
+- fichier à modifier pour finir le housekeeping
 
+#### I2C_PERIPHERAL
+- machine détat d'i2c utilisant les blocs wishbone
+- lecture ET ecriture testé avec des testbench et fonctionnel
+
+####
 
 ### TO_DO_LIST
 - [ ] compléter la machine de housekeeping (I2C_CONTROLER.vhdl) avec les vrais capteurs et leur procédure de communication
