@@ -29,18 +29,18 @@
 - Bloc de nanoxplore à garder qui permettra de tester la ram plus tard sous nanoxplore.
 
 ###TO_DO_LIST
-- [] finir le code de l'histogramme en intégrant la ram dans le code 
-- [] simuler un SPI slave pour le testbench
-- [] intégrer également la RT-Clock afin de dater les mesures de radiations
+- [ ] finir le code de l'histogramme en intégrant la ram dans le code 
+- [ ] simuler un SPI slave pour le testbench
+- [ ] intégrer également la RT-Clock afin de dater les mesures de radiations
 
 
 ##PARTIE I2C
 
 
 ###TO_DO_LIST
-- [] compléter la machine de housekeeping (I2C_CONTROLER.vhdl) avec les vrais capteurs et leur procédure de communication
-- [] intégrer une procédure d'écriture utilisable avant une lecture dans le cas ou pour acceder aux donnés du capteur il soit nécessaire de préciser le registre dans laquelle est stocké la donné
-- [] intégrer un déclenchement périodique par la rt_clock au housekeeping 
-- [] intégrer une mémoire ou stocker les donnés datées
-- [] mettre en place un système d'alarme qui prévient l'utilisateur dans le cas ou on dépasse des seuils sur la lecture de certains capteurs (courants/température...)
-- [] mettre en place un déclenchement de housekeeping sous demande de l'utilisateur
+- [ ] compléter la machine de housekeeping (I2C_CONTROLER.vhdl) avec les vrais capteurs et leur procédure de communication
+- [ ] intégrer une procédure d'écriture utilisable avant une lecture dans le cas ou pour acceder aux donnés du capteur il soit nécessaire de préciser le registre dans laquelle est stocké la donné
+- [ ] intégrer un déclenchement périodique par la rt_clock au housekeeping 
+- [ ] intégrer une mémoire ou stocker les donnés datées
+- [ ] mettre en place un système d'alarme qui prévient l'utilisateur dans le cas ou on dépasse des seuils sur la lecture de certains capteurs (courants/température...)
+- [ ] mettre en place un déclenchement de housekeeping sous demande de l'utilisateur
