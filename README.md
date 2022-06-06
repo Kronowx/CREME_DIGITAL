@@ -52,3 +52,4 @@
 - [ ] intégrer une mémoire ou stocker les donnés datées
 - [ ] mettre en place un système d'alarme qui prévient l'utilisateur dans le cas ou on dépasse des seuils sur la lecture de certains capteurs (courants/température...)
 - [ ] mettre en place un déclenchement de housekeeping sous demande de l'utilisateur
+- [ ] ajouter IP SP7 pour tester sur Zybo
