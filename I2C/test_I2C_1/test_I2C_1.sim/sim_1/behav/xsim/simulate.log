@@ -1,0 +1,11 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+DEBUG i2c_slave; stop condition detected at                    0
+DEBUG i2c_slave; stop condition detected at                    0
+DEBUG i2c_slave; start condition detected at            116271000
+DEBUG i2c_slave; command byte received (read) at            294103000
+DEBUG i2c_slave; data block read xx from address xx (1)
+DEBUG i2c_slave; memcheck [0]=xx, [1]=xx, [2]=xx
+DEBUG i2c_slave; data block read xx from address xx (2)
+DEBUG i2c_slave; data block read xx from address xx (2)
+DEBUG i2c_slave; data block read xx from address xx (2)

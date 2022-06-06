@@ -75,6 +75,8 @@ signal sig_port_write_addr_peripheral   : std_logic_vector(6 downto 0) := (other
 signal sig_data_size_peripheral         : std_logic_vector(1 downto 0);                    --! Tampon entre le traitment interne et les sorties
 signal sig_port_free_peripheral         : std_logic:='0';
 signal sig_rd_wr_peripheral             : std_logic:='0';
+signal sig_reset                        : std_logic;
+
 ------------signaax wishbone----------------------------
 signal sig_arst       : std_logic;
 signal sig_inta       : std_logic;
@@ -89,7 +91,6 @@ signal sig_stb      : std_logic;
 signal sig_cyc      : std_logic;
 signal sig_ack      : std_logic;
 signal sig_err      : std_logic;
-signal sig_int      : std_logic;
 signal sig_data_i   : std_logic_vector(7 downto 0);
 signal sig_data_o   : std_logic_vector(7 downto 0);
 
@@ -115,6 +116,9 @@ type behavior_state is
   ,BUS_WRITE_PRERlo_init
   ,BUS_WRITE_PRERhi_init
   ,BUS_WRITE_CTR_init
+  ,BUS_READ_PRERlo_init
+  ,BUS_READ_PRERhi_init
+  ,BUS_READ_CTR_init
   ,BUS_WRITE_ADDR
   ,BUS_WRITE_ADDR_END
   ,BUS_WRITE_DATA_8
@@ -192,12 +196,14 @@ component WISHBONE_MASTER
 end component;
 
 begin
+    sig_arst <= RESET_BAR;
+    sig_reset <= not(RESET_BAR);
 
     i2c_top_1 : i2c_master_top port map
     (
       wb_clk_i=>CLK,
-      wb_rst_i=>RESET_BAR,
-      arst_i=>'0',
+      wb_rst_i=>sig_reset,
+      arst_i=>sig_arst,
       wb_adr_i=>sig_adr,
       wb_dat_i=>sig_data_o,
       wb_dat_o=>sig_data_i,
@@ -236,7 +242,7 @@ begin
     SCL <= sig_scl_pad_o when (sig_scl_padoen_o = '0') else 'Z';
     SDA <= sig_sda_pad_o when (sig_sda_padoen_o = '0') else 'Z';
     sig_scl_pad_i <= SCL;
-    sig_scl_pad_i <= SDA;
+    sig_sda_pad_i <= SDA;
 
     PORT_FREE <= sig_port_free_peripheral;
 
@@ -272,10 +278,13 @@ begin
           sig_port_write_addr_peripheral <= (others => '0');
           sig_data_size_peripheral <= (others => '0');
           sig_port_free_peripheral <= '0';
+          etat_futur  <= IDLE;
+          etat_futur2 <= IDLE;
           etat<=BUS_WRITE_PRERlo_init;
         else
           case etat is
-            -------------- Initialisation du peripherique I2C ---------------
+          -------------- Initialisation du peripherique I2C ---------------
+          -- Ecriture du premier mot du baudrate
             when BUS_WRITE_PRERlo_init=>
               if(sig_port_free = '1') then
                 write_wishbone(PRERlo,prescalerbin(7 downto 0));
@@ -283,23 +292,47 @@ begin
                 etat_futur<=BUS_WRITE_PRERhi_init;
               end if;
 
+          -- Ecriture du second mot du baudrate
             when BUS_WRITE_PRERhi_init=>
               if(sig_port_free = '1') then
                 write_wishbone(PRERhi,prescalerbin(15 downto 8));
                 etat <= WAIT_WISHBONE_BUSY;
                 etat_futur<=BUS_WRITE_CTR_init;
               end if;
-
+          -- Demarrage de l'I2C + parametrage
             when BUS_WRITE_CTR_init=>
               if(sig_port_free = '1') then
                 write_wishbone(CTR,ctrInit);
-                etat_futur<=IDLE;
                 etat <= WAIT_WISHBONE_BUSY;
+                etat_futur<=BUS_READ_PRERlo_init;
+              end if;
+
+            when BUS_READ_PRERlo_init=>
+              if(sig_port_free = '1') then
+                read_wishbone(PRERlo);
+                etat <= WAIT_WISHBONE_BUSY;
+                etat_futur<=BUS_READ_PRERhi_init;
+              end if;
+
+            when BUS_READ_PRERhi_init=>
+              if(sig_port_free = '1') then
+                read_wishbone(PRERhi);
+                etat <= WAIT_WISHBONE_BUSY;
+                etat_futur<=BUS_READ_CTR_init;
+              end if;
+
+            when BUS_READ_CTR_init=>
+              if(sig_port_free = '1') then
+                read_wishbone(CTR);
+                etat <= WAIT_WISHBONE_BUSY;
+                etat_futur<=IDLE;
               end if;
 
             -------------- Routine -----------------------------------------
             when IDLE =>
               sig_port_free_peripheral <= '1';
+              etat_futur  <= IDLE;
+              etat_futur2 <= IDLE;
               if (START = '1') then
                 sig_port_write_addr_peripheral <= PORT_WRITE_ADDR;  -- On enregistre l'adresse du module a pointer.
                 sig_port_write_data_peripheral <= PORT_WRITE_DATA;  -- On enregistre les donnees du module a pointer.
@@ -346,12 +379,13 @@ begin
               if(sig_port_free = '1') then
                 if (sig_data_size_peripheral = "00") then
                   write_wishbone(CR, x"50");
-                  etat_futur2 <= IDLE;
+                  etat_futur  <=  WAIT_I2C_IRQ;
+                  etat_futur2 <=  IDLE;
                 else
                   write_wishbone(CR,x"90");
-                  etat_futur2 <= BUS_WRITE_DATA_16;
+                  etat_futur  <=  WAIT_I2C_IRQ;
+                  etat_futur2 <=  BUS_WRITE_DATA_16;
                 end if;
-                etat_futur  <=  WAIT_I2C_IRQ;
                 etat        <=  WAIT_WISHBONE_BUSY;
               end if;
 
@@ -366,12 +400,13 @@ begin
               if(sig_port_free = '1') then
                 if (sig_data_size_peripheral = "01") then
                   write_wishbone(CR, x"50");
-                  etat_futur2 <= IDLE;
+                  etat_futur  <=  WAIT_I2C_IRQ;
+                  etat_futur2 <=  IDLE;
                 else
                   write_wishbone(CR,x"90");
+                  etat_futur  <=  WAIT_I2C_IRQ;
                   etat_futur2 <= BUS_WRITE_DATA_24;
                 end if;
-                etat_futur  <=  WAIT_I2C_IRQ;
                 etat        <=  WAIT_WISHBONE_BUSY;
               end if;
 
@@ -386,12 +421,13 @@ begin
               if(sig_port_free = '1') then
                 if (sig_data_size_peripheral = "10") then
                   write_wishbone(CR, x"50");
-                  etat_futur2 <= IDLE;
+                  etat_futur  <=  WAIT_I2C_IRQ;
+                  etat_futur2 <=  IDLE;
                 else
                   write_wishbone(CR,x"90");
+                  etat_futur  <=  WAIT_I2C_IRQ;
                   etat_futur2 <= BUS_WRITE_DATA_32;
                 end if;
-                etat_futur  <=  WAIT_I2C_IRQ;
                 etat        <=  WAIT_WISHBONE_BUSY;
               end if;
 
@@ -405,8 +441,8 @@ begin
             when BUS_WRITE_DATA_32_END =>
               if(sig_port_free = '1') then
                 write_wishbone(CR, x"50");
-                etat_futur2 <= IDLE;
                 etat_futur  <=  WAIT_I2C_IRQ;
+                etat_futur2 <=  IDLE;
                 etat        <=  WAIT_WISHBONE_BUSY;
               end if;
 
@@ -512,45 +548,47 @@ begin
               etat <= BUS_RESULT;
 
             -------------- WISHBONE -----------------------------------------
+            -- Attente de la prise en charge de l'interface WISHBONE MASTER
             when WAIT_WISHBONE_BUSY =>
               if(sig_PORT_FREE = '0') then
                 sig_start <= '0';
                 etat <= WAIT_WISHBONE_FINISH;
               end if;
 
+              -- Attente de la fin de prise en charge de l'interface WISHBONE MASTER
             when WAIT_WISHBONE_FINISH =>
               if(sig_PORT_FREE = '1') then
                 etat <= etat_futur;
               end if;
 
+            ------------- IRQ ----------------------------------------------
+            -- Attente de terminaison d'un transfert
             when WAIT_I2C_IRQ =>
-              if(sig_int = '1') then
-                sig_addr <= CR;
-                sig_data <= "00000001";
-                sig_start <= '1';
-                sig_rd_wr <= '1';
+              if(sig_inta = '1') then
+                write_wishbone(CR,"00000001");
                 etat <= WAIT_WISHBONE_BUSY;
                 etat_futur <= BUS_READ_STATUS;
               end if;
 
-            when BUS_READ_STATUS =>
+            -- Lecture du registre des status.
+            when BUS_READ_STATUS => --
               if(sig_PORT_FREE = '1') then
-                sig_addr <= SR;
-                sig_start <= '1';
-                sig_rd_wr <= '0';
+                read_wishbone(SR);
                 etat        <= WAIT_WISHBONE_BUSY;
-                etat_futur  <= BUS_WRITE_DATA_8_END;
+                etat_futur  <= etat_futur2;
               end if;
 
+            -- Verification du registre des status
             when BUS_READ_STATUS_CHECK =>
               if((sig_port_read and x"E3") = x"00") then -- Tout c'est bien passe
-                etat        <= etat_futur2;
+                etat        <= etat_futur;
               else -- ERREUR I2C
                 etat        <= IDLE;
                 etat_futur  <= IDLE;
                 etat_futur2 <= IDLE;
               end if;
 
+            -- Valide en sortie du module les donnees en provenance du capteur I2C distant.
             when BUS_RESULT =>
               PORT_READ <= sig_port_read_peripheral;
               etat <= IDLE;

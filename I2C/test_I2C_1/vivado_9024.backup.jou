@@ -1,0 +1,98 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr  5 14:14:38 2022
+# Process ID: 9024
+# Current directory: D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5416 D:\nanosat\CREME_DIGITAL\I2C\test_I2C_1\test_I2C_1.xpr
+# Log file: D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/vivado.log
+# Journal file: D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top I2C_PERIPHERAL [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_I2C_PERIPHERAL.tcl
+run 10ms
+close_sim
+launch_simulation
+source tb_I2C_PERIPHERAL.tcl
+run 10ms
+restart
+run 10ms
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top i2c_master_top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+save_wave_config {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+set_property xsim.view D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source i2c_master_top.tcl
+restart
+run 1ms
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_I2C_PERIPHERAL [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL.tcl
+restart
+run 10ms
+save_wave_config {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL.tcl
+run 10ms
+close_sim
+launch_simulation
+open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL.tcl
+restart
+run 10ms
+restart
+run 10ms
+save_wave_config {D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL.tcl
+run 10ms
+restart
+run 10ms
+close_sim
+launch_simulation
+open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL.tcl
+run 1àms
+run 10ms
+close_sim
+launch_simulation
+open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL.tcl
+run 10ms
+close_sim
+launch_simulation
+open_wave_config D:/nanosat/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL.tcl
+run 10ms
+close_sim

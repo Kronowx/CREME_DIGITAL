@@ -1,0 +1,110 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May 23 14:47:52 2022
+# Process ID: 8928
+# Current directory: D:/CREME_DIGITAL/I2C/test_I2C_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10332 D:\CREME_DIGITAL\I2C\test_I2C_1\test_I2C_1.xpr
+# Log file: D:/CREME_DIGITAL/I2C/test_I2C_1/vivado.log
+# Journal file: D:/CREME_DIGITAL/I2C/test_I2C_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/sim_1/new/tb_I2C_PERIPHERAL_READ.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/sim_1/new/tb_I2C_PERIPHERAL_READ.vhd
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_I2C_PERIPHERAL [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+open_wave_config D:/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL.tcl
+close_sim
+launch_simulation
+open_wave_config D:/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL.tcl
+run 10 ms
+save_wave_config {D:/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL.tcl
+run 10 ms
+restart
+run 10 ms
+save_wave_config {D:/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL.tcl
+run 10 ms
+restart
+run 5 ms
+restart
+run 5 ms
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse //n7fs/ahuvelin/MesDocs/Bureau/CREME_DIGITAL/I2C/test_I2C_1/sources/testbench_I2C_CONTROLER.vhdl
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_I2C_CONTROLER [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_simulation
+open_wave_config D:/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_CONTROLER.tcl
+restart
+run 10 ms
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_I2C_PERIPHERAL [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+save_wave_config {D:/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/CREME_DIGITAL/I2C/test_I2C_1/tb_I2C_PERIPHERAL_behav.wcfg
+source tb_I2C_PERIPHERAL.tcl
+restart
+run 10 ms
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_I2C_CONTROLER [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+file mkdir D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/constrs_1
+file mkdir D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/constrs_1/new
+close [ open D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/constrs_1/new/Zybo_constr.xdc w ]
+add_files -fileset constrs_1 D:/CREME_DIGITAL/I2C/test_I2C_1/test_I2C_1.srcs/constrs_1/new/Zybo_constr.xdc
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top I2C_CONTROLER [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+open_hw_manager
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+set_property part xc7z010clg400-1 [current_project]
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1

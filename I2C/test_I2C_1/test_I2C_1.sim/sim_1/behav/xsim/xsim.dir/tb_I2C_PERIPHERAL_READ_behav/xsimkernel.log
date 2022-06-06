@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_I2C_PERIPHERAL_READ_behav/xsimk.exe -simmode gui -wdb tb_I2C_PERIPHERAL_READ_behav.wdb -simrunnum 0 -socket 49681
+Design successfully loaded
+Design Loading Memory Usage: 5964 KB (Peak: 5964 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 14952 KB (Peak: 14952 KB)
+Simulation CPU Usage: 1921 ms
